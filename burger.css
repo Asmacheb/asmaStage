@@ -1,0 +1,524 @@
+/* BURGERRRRRRRRRRRRR*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Cette propriété s'assure que padding et border sont inclus dans la largeur/hauteur total(e) de l'élément */
+  }
+  html, body {
+    width: 100%;
+    height: 100%;
+   
+  }
+ 
+  
+  .burger-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+  }
+  .navbar{
+    display: none;
+  }
+  
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #171816ae;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 7vh;
+  z-index: 1000;
+  
+}
+
+.burgerMenu {
+  display: none;
+}
+.navLogo{
+  display: none;
+}
+.navMenu{
+  display: none; 
+}
+/* Styles pour le menu responsive */
+@media screen and (max-width: 767px) {
+  .navLogo {
+      width: 40px;
+      height: 40px;
+      display: block;
+  }
+ .navbar{
+  display: block;
+ }
+  .navLogo img {
+      width: 100%;
+      height: 100%;
+  }
+
+  .burgerMenu {
+      display: block;
+  }
+
+  .navMenu {
+      display: block;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 7vh;
+      left: 0;
+      background-color: #171816ae;
+      color: white;
+      list-style: none;
+  }
+
+  .navMenu.active {
+      display: flex;
+  }
+
+  .menuDeroulant {
+      display: none;
+      flex-direction: column;
+      list-style: none;
+      color: white;
+  }
+
+  .submenu:hover .menuDeroulant,
+  .submenu .menuDeroulant.active {
+      display: flex;
+  }
+
+  .navMenu li {
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      color: white;
+  }
+
+  .burger-menu img {
+      height: 40px;
+      width: 40px;
+  }
+
+  .navMenu a, .menuDeroulant a {
+      color: white; /* Assure que le texte des liens est en blanc */
+      text-decoration: none; /* Supprime la décoration des liens */
+  }
+
+  .navMenu a:hover, .menuDeroulant a:hover {
+      background-color: #f1f1f1;
+      color: black; /* Change la couleur du texte au survol pour une meilleure visibilité */
+  }
+}
+
+    
+/* SMASH BURGEEERRRRRRRRRR */
+
+.backSmash {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: url(img/burgersmash.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  
+  .titre2 {
+    width: 50vw;
+    height: 100vh;
+    color: #5A7C2A;
+  }
+  
+  .h2Second {
+    height: 65vh;
+    width: 50vw;
+    margin-left: -3vw;
+    margin-top: 5vh;
+  }
+  .h2{
+    font-size: 1.8em;
+  }
+  .description2{
+    color: white;
+    font-size: 1.2em;
+    width: 40vw;
+    margin-left: 5vw;
+    margin-top: 5vh;
+  }
+  .prix-container2 {
+    height: 35vh;
+    width: 50vw;
+    display: flex;
+    justify-content: flex-start; /* Alignement à gauche */
+    align-items: center;
+    margin-left: 20px; /* Ajustez la valeur pour votre besoin */
+  }
+  
+  .prix2 {
+    display: flex;
+    flex-direction: row;
+    gap: 50px; /* Espace entre les options */
+    align-items: center;
+    margin-left: 13vw;
+  }
+  
+  .option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -12vh;
+    gap: 5px; /* Espacement entre le texte et le cercle */
+  }
+  
+  .option span {
+    font-size: 1.5em;
+    color: #5A7C2A; /* Ajustez la couleur pour correspondre au thème */
+  }
+  
+  .prix2 p {
+    height: 70px;
+    width: 70px;
+    font-size: 1.4em;
+    background-color: #5A7C2A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid white;
+  }
+  
+  
+  .titresupp2 {
+    width: 50vw;
+    height: 100vh;
+   
+  }
+  
+  .h2supp2{
+    height: 20vh;
+    width: 50vw;
+    color: #5A7C2A;
+    font-size: 1.8em;
+    margin-top: 5vh;
+  }
+  .suppléments2{
+    height: 45vh;
+    width: 35vw;
+    margin-top: 10vh;
+    margin-left: 7vw;
+  
+  }
+  
+  .suppléments2 img{
+    height: 100px;
+   
+  }
+  
+  .optionsupp2{
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; 
+    margin-top: -5vh;
+  }
+  .optionsupp2 span{
+    font-size: 1.5em;
+    color: #C2402D;
+  }
+  .optionsupp2 p{
+    height: 70px;
+    width: 70px;
+    font-size: 1.4em;
+    background-color:#C2402D;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid white
+  }
+
+
+  /* BURGER SIMPLEEEEEEEEEE */
+
+.backSimple {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: url(img/burgersimpe.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  
+
+
+  /* ROYAL BURGERRRRRRRRRRR*/
+
+.backRoyal {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: url(img/burgerroyal.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  
+  
+  /* CHICKEN BURGERRRRRRRRRRR*/
+
+.backChicken {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: url(img/chickenburger.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  
+
+  
+  
+  /* FISH BURGERRRRRRRRRRR*/
+
+.backFish {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: url(img/fishburger.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+ 
+
+  .item {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 100px;
+    overflow: hidden; /* Maintenu pour le zoom mais vérifiez son impact sur les labels */
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.item:hover img {
+    transform: scale(1.3);
+}
+
+.label {
+    position: absolute;
+    z-index: 10;
+    bottom: 10px;
+    left: 0;
+    right: 0; /* Assurez-vous que le label est centré horizontalement */
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Améliore la visibilité */
+    visibility: hidden;
+    font-size: 0.9em;
+    padding: 2px 0;
+}
+
+.item:hover .label {
+    visibility: visible;
+}
+
+/* RESPONSIVES */
+
+
+/* TÉLÉPHONE */
+@media screen and (max-width: 767px){
+  .burger-menu {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+  }
+  .burger-menu img{
+    height: 35px;
+    width: 35px;
+  }
+
+  .backSimple {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/backtelephone.png);
+    background-color: black;
+    display: flex;
+    flex-direction: column; /* Les enfants sont disposés en colonne */
+    align-items: center; /* Centre les enfants horizontalement */
+    padding: 0 20px; /* Ajout de padding pour ne pas que le contenu touche les bords */
+  }
+  .backSmash {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/backtelephone.png);
+    background-color: black;
+    display: flex;
+    flex-direction: column; /* Les enfants sont disposés en colonne */
+    align-items: center; /* Centre les enfants horizontalement */
+    padding: 0 20px; /* Ajout de padding pour ne pas que le contenu touche les bords */
+  }
+  .backFish {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/backtelephone.png);
+    background-color: black;
+    display: flex;
+    flex-direction: column; /* Les enfants sont disposés en colonne */
+    align-items: center; /* Centre les enfants horizontalement */
+    padding: 0 20px; /* Ajout de padding pour ne pas que le contenu touche les bords */
+  }
+  .backChicken {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/backtelephone.png);
+    background-color: black;
+    display: flex;
+    flex-direction: column; /* Les enfants sont disposés en colonne */
+    align-items: center; /* Centre les enfants horizontalement */
+    padding: 0 20px; /* Ajout de padding pour ne pas que le contenu touche les bords */
+  }
+  .backRoyal {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/backtelephone.png);
+    background-color: black;
+    display: flex;
+    flex-direction: column; /* Les enfants sont disposés en colonne */
+    align-items: center; /* Centre les enfants horizontalement */
+    padding: 0 20px; /* Ajout de padding pour ne pas que le contenu touche les bords */
+  }
+
+
+  .titre2{
+    width: 100vw;
+    height: 45vh; /* Prend toute la largeur de la vue */
+    overflow: hidden; /* Évite le débordement hors de la vue */
+    
+  }
+  .titresupp2{
+    width: 100vw;
+    height: 55vh;
+  }
+  .h2Second{
+    height: 10vh;
+    width: 100vw;
+  }
+  .description2{
+    width: 95vw;
+    height: 5vh; /* Utilisation de la largeur complète de l'écran */
+  }
+  .prix-container2{
+    display: flex;
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: center; /* Centre les éléments verticalement */
+    height: 15vh; 
+    width: 100vw; 
+    margin-left: -40px;
+    margin-top: 120px;
+    /* margin: 120px 50px 50px 50px; */
+  }
+.option span{
+    font-size: 1em;
+}
+.prix2 p{
+  height: 60px;
+  width: 60px;
+  font-size: 1em;
+}
+.prix2{
+  height: 15vh;
+  width: 90vw;
+}
+  .h2 {
+    font-size: 1.2em;
+    height: 5vh; 
+    width: 100vw;
+  }
+
+  .h2supp2{
+    font-size: 1.1em;
+    height: 10vh;
+    width: 100vw;
+    margin-top: 40px;
+ 
+  }
+
+  .suppléments2 img {
+    height: 45px;
+    width: 45px; 
+  }
+  .suppléments2{
+    height: 15vh;
+    width: 90vw;
+    margin-top: -10px;
+  }
+.suppléments2 .item{
+  height: 65px;
+  width: 65px;
+}
+ 
+  .optionsupp2{
+    height: 15vh;
+    width: 90vw;
+    margin-top: 15px;
+    gap: 10px;
+    margin-left: 20px;
+  }
+  .optionsupp2 span {
+    font-size: 1.1em; 
+    margin-top:15px;
+  }
+
+  .optionsupp2 p {
+    height: 50px;
+    width: 50px;
+    font-size: 1em; /* Taille de police pour le prix */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.item:hover img {
+    transform: scale(1.3);
+}
+
+.label {
+    position: absolute;
+    z-index: 10;
+    bottom: 10px;
+    left: 0;
+    right: 0; /* Assurez-vous que le label est centré horizontalement */
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Améliore la visibilité */
+    visibility: hidden;
+    font-size: 0.9em;
+    padding: 2px 0;
+}
+}

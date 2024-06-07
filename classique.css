@@ -1,0 +1,1393 @@
+/* CLASSIQUUUEEEEEEEEEEEEEE*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Cette propriété s'assure que padding et border sont inclus dans la largeur/hauteur total(e) de l'élément */
+  }
+  html, body {
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+   
+  .burger-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+  }
+  .navbar{
+    display: none;
+  }
+  
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #171816ae;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 7vh;
+  z-index: 1000;
+  
+}
+
+.burgerMenu {
+  display: none;
+}
+.navLogo{
+  display: none;
+}
+.navMenu{
+  display: none; 
+}
+  /* Styles pour le menu responsive */
+@media screen and (max-width: 767px) {
+  .navLogo {
+      width: 40px;
+      height: 40px;
+      display: block;
+  }
+
+  .navLogo img {
+      width: 100%;
+      height: 100%;
+  }
+
+  .burgerMenu {
+      display: block;
+  }
+
+  .navMenu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 7vh;
+      left: 0;
+      background-color: #171816ae;
+      color: white;
+      list-style: none;
+  }
+
+  .navMenu.active {
+      display: flex;
+  }
+
+  .menuDeroulant {
+      display: none;
+      flex-direction: column;
+      list-style: none;
+      color: white;
+  }
+
+  .submenu:hover .menuDeroulant,
+  .submenu .menuDeroulant.active {
+      display: flex;
+  }
+
+  .navMenu li {
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      color: white;
+  }
+
+  .burger-menu img {
+      height: 40px;
+      width: 40px;
+  }
+
+  .navMenu a, .menuDeroulant a {
+      color: white; /* Assure que le texte des liens est en blanc */
+      text-decoration: none; /* Supprime la décoration des liens */
+  }
+
+  .navMenu a:hover, .menuDeroulant a:hover {
+      background-color: #f1f1f1;
+      color: black; /* Change la couleur du texte au survol pour une meilleure visibilité */
+  }
+}
+
+    
+/* KEBAAAABBBBBBBBBBB*/
+
+.backKebab {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: url(img/lekebab.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  .titre2 {
+    width: 50vw;
+    height: 100vh;
+    color: #5A7C2A;
+  }
+  
+  .h2Second {
+    height: 65vh;
+    width: 50vw;
+    margin-left: -3vw;
+    margin-top: 5vh;
+  }
+  .h2{
+    font-size: 1.8em;
+  }
+  .description2{
+    color: white;
+    font-size: 1.2em;
+    width: 40vw;
+    margin-left: 5vw;
+    margin-top: 5vh;
+  }
+  .prix-container2 {
+    height: 35vh;
+    width: 50vw;
+    display: flex;
+    justify-content: flex-start; /* Alignement à gauche */
+    align-items: center;
+    margin-left: 20px; /* Ajustez la valeur pour votre besoin */
+  }
+  
+  .prix2 {
+    display: flex;
+    flex-direction: row;
+    gap: 50px; /* Espace entre les options */
+    align-items: center;
+    margin-left: 13vw;
+  }
+  
+  .option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -12vh;
+    gap: 5px; /* Espacement entre le texte et le cercle */
+  }
+  
+  .option span {
+    font-size: 1.5em;
+    color: #5A7C2A; /* Ajustez la couleur pour correspondre au thème */
+  }
+  
+  .prix2 p {
+    height: 70px;
+    width: 70px;
+    font-size: 1.4em;
+    background-color: #5A7C2A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid white;
+  }
+  
+  
+  .titresupp2 {
+    width: 50vw;
+    height: 100vh;
+   
+  }
+  
+  .h2supp2{
+    height: 20vh;
+    width: 50vw;
+    color: #5A7C2A;
+    font-size: 1.8em;
+    margin-top: 5vh;
+  }
+  .suppléments2{
+    height: 45vh;
+    width: 35vw;
+    margin-top: 10vh;
+    margin-left: 7vw;
+  
+  }
+  
+  .suppléments2 img{
+    height: 100px;
+   
+  }
+  
+  .optionsupp2{
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; 
+    margin-top: -5vh;
+  }
+  .optionsupp2 span{
+    font-size: 1.5em;
+    color: #C2402D;
+  }
+  .optionsupp2 p{
+    height: 70px;
+    width: 70px;
+    font-size: 1.4em;
+    background-color:#C2402D;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid white
+  }
+
+
+     
+/* PANINIIIIIIIIIIIII*/
+.titresupp1, .titre1 {
+    flex: 1; /* Donne aux conteneurs une flexibilité pour utiliser l'espace disponible */
+    width: 100%; /* Assurez-vous que les conteneurs utilisent toute la largeur */
+}
+.backPanini {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: url(img/lepanini.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+
+  .backGalette {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: url(img/lepanini.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+
+  .titre1 {
+    width: 50vw;
+    height: 100vh;
+    color: #5A7C2A;
+  }
+  
+  .h2Premier {
+    height: 65vh;
+    width: 50vw;
+    margin-left: -3vw;
+    margin-top: 5vh;
+  }
+  .h2{
+    font-size: 1.8em;
+  }
+  .description1{
+    color: white;
+    font-size: 1.2em;
+    width: 40vw;
+    margin-left: 5vw;
+    margin-top: 3vh;
+  }
+  .prix-container1 {
+    height: 35vh;
+    width: 50vw;
+    display: flex;
+    justify-content: flex-start; /* Alignement à gauche */
+    align-items: center;
+    margin-left: -50px;  
+    margin-top: 40px;
+  }
+  
+  .prix1 {
+    display: flex;
+    flex-direction: row;
+    gap: 50px; /* Espace entre les options */
+    align-items: center;
+    margin-left: 13vw;
+  }
+  
+  .option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -12vh;
+    gap: 5px; /* Espacement entre le texte et le cercle */
+  }
+  
+  .option span {
+    font-size: 1.5em;
+    color: #5A7C2A; /* Ajustez la couleur pour correspondre au thème */
+  }
+  
+  .prix1 p {
+    height: 70px;
+    width: 70px;
+    font-size: 1.4em;
+    background-color: #5A7C2A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid white;
+  }
+  
+  
+  .titresupp1 {
+    width: 50vw;
+    height: 100vh;
+  }
+  .h2viande{
+    height: 10vh;
+    width: 50vw;
+    color: #5A7C2A;
+    font-size: 1.8em;
+    margin-top: 5vh;
+  }
+  .viandes{
+    height: 30vh;
+    width: 35vw;
+    margin-left: 7vw;
+  }
+  .viandes img{
+    height: 100px; 
+  }
+  
+  .h2supp1{
+    height: 10vh;
+    width: 50vw;
+    color: #5A7C2A;
+    font-size: 1.8em;
+    margin-top: 40px;
+  }
+  .suppléments1{
+    height: 30vh;
+    width: 35vw;
+    margin-top: -20px;
+    margin-left: 90px;
+  }
+  
+  .suppléments1 img{
+    height: 100px; 
+  }
+  
+  .optionsupp1{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 5px;  */
+    margin-top: -5vh;
+  }
+  .optionsupp1 span{
+    font-size: 1.5em;
+    color: #C2402D;
+  }
+  .optionsupp1 p{
+    height: 70px;
+    width: 70px;
+    font-size: 1.4em;
+    background-color:#C2402D;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid white
+  }
+
+  
+     
+/* SANDWIICHHHHHHHHHHHHHHHHHH*/
+.titrepanini, .titresupp {
+    flex: 1; /* Donne aux conteneurs une flexibilité pour utiliser l'espace disponible */
+    width: 100%; /* Assurez-vous que les conteneurs utilisent toute la largeur */
+}
+.backSandwich {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: url(img/lesandwich.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  
+  .titresandwich {
+    width: 50vw;
+    height: 100vh;
+    color: #5A7C2A;
+  }
+  
+  .h2sandwich {
+    height: 65vh;
+    width: 50vw;
+    margin-left: -3vw;
+    margin-top: 5vh;
+  }
+  .h2{
+    font-size: 1.8em;
+  }
+  .descriptionSandwich{
+    color: white;
+    font-size: 1.2em;
+    width: 40vw;
+    margin-left: 5vw;
+    margin-top: 5vh;
+  }
+  .prix-containerSandwich {
+    height: 35vh;
+    width: 50vw;
+    display: flex;
+    justify-content: flex-start; /* Alignement à gauche */
+    align-items: center;
+    margin-left: 20px; /* Ajustez la valeur pour votre besoin */
+  }
+  
+  .prixSandwich {
+    display: flex;
+    flex-direction: row;
+    gap: 50px; /* Espace entre les options */
+    align-items: center;
+    margin-left: 13vw;
+  }
+  
+  
+  .prixSandwich p {
+    height: 70px;
+    width: 70px;
+    font-size: 1.4em;
+    background-color: #5A7C2A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid white;
+  }
+  
+ 
+
+  .titresuppSandwich {
+    display: flex;
+    justify-content: space-around; /* Pour espacer les sections chaud et froid */
+    width:50vw;
+}
+
+.sectiontotal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw; 
+    margin-left: 20vw;
+}
+
+.h2chaud, .h2froid {
+    color: #5A7C2A;
+    font-size: 1.8em;
+    width: 100%; /* Assure que le titre s'étend sur toute la largeur de la section */
+    text-align: center;
+}
+
+.sandwichchaud, .sandwichfroid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sandwichchaud p, .sandwichfroid p {
+    font-size: 1.3em;
+    color: white;
+    padding: 5px 0; /* Ajoute un peu d'espacement vertical entre les éléments */
+}
+.sectionfroid{
+  margin-left: 105px;
+}
+.cotée2{
+  height: 50vh;
+  width: 50vw;
+}
+.titresuppSandwich, .cotée2 {
+  width: 100%; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.sectiontotal{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+.h2suppSandwich{
+  height: 10vh;
+    width: 50vw;
+    color: #5A7C2A;
+    font-size: 1.8em;
+    margin-top: 50px;
+  margin-top: -3px;
+}
+ .optionsuppSandwich{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .optionsuppSandwich span{
+    font-size: 1.5em;
+    color: #C2402D;
+  }
+  .optionsuppSandwich p{
+    height: 70px;
+    width: 70px;
+    font-size: 1.4em;
+    background-color:#C2402D;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid white
+  }
+
+  .supplémentsSandwich{
+    margin-left: -5px;
+    margin-top: -25px;
+    width: 40vw;
+  }
+
+  /* GALETTEEEEEEEEEEEE */
+.titrepanini, .titresupp {
+    flex: 1; /* Donne aux conteneurs une flexibilité pour utiliser l'espace disponible */
+    width: 100%; /* Assurez-vous que les conteneurs utilisent toute la largeur */
+}
+.backGalette {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: url(img/lagalette.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  
+  .titre1 {
+    width: 50vw;
+    height: 100vh;
+    color: #5A7C2A;
+  }
+  
+  .h2Premier {
+    height: 65vh;
+    width: 50vw;
+    margin-left: -3vw;
+    margin-top: 5vh;
+  }
+  .h2{
+    font-size: 1.8em;
+  }
+  .description1{
+    color: white;
+    font-size: 1.2em;
+    width: 40vw;
+    margin-left: 5vw;
+    margin-top: 5vh;
+  }
+  .prix-container1 {
+    height: 35vh;
+    width: 50vw;
+    display: flex;
+    justify-content: flex-start; /* Alignement à gauche */
+    align-items: center;
+    margin-left: 20px; /* Ajustez la valeur pour votre besoin */
+  }
+  
+  .prix1 {
+    display: flex;
+    flex-direction: row;
+    gap: 50px; /* Espace entre les options */
+    align-items: center;
+    margin-left: 13vw;
+  }
+  
+  .option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -12vh;
+    gap: 5px; /* Espacement entre le texte et le cercle */
+  }
+  
+  .option span {
+    font-size: 1.5em;
+    color: #5A7C2A; /* Ajustez la couleur pour correspondre au thème */
+  }
+  
+  .prix1 p {
+    height: 70px;
+    width: 70px;
+    font-size: 1.4em;
+    background-color: #5A7C2A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid white;
+  }
+  
+  
+  .titresupp1 {
+    width: 50vw;
+    height: 100vh;
+  }
+  .h2viande{
+    height: 10vh;
+    width: 50vw;
+    color: #5A7C2A;
+    font-size: 1.8em;
+    margin-top: 5vh;
+  }
+  .viandes{
+    height: 30vh;
+    width: 35vw;
+   
+  }
+  .viandes img{
+    height: 100px; 
+  }
+  
+  .h2supp1{
+    height: 10vh;
+    width: 50vw;
+    color: #5A7C2A;
+    font-size: 1.8em;
+    margin-top: 50px;
+  }
+  .suppléments1{
+    height: 30vh;
+    width: 35vw;
+    margin-top: -3vh;
+    
+  }
+  
+  .suppléments1 img{
+    height: 100px; 
+  }
+  
+  .optionsupp1{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 5px;  */
+    margin-top: -5vh;
+  }
+  .optionsupp1 span{
+    font-size: 1.5em;
+    color: #C2402D;
+  }
+  .optionsupp1 p{
+    height: 70px;
+    width: 70px;
+    font-size: 1.4em;
+    background-color:#C2402D;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid white
+  }
+
+   
+/* MENU ENFANT */
+
+.backEnfant {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: url(img/menuenfant.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  
+  .titre3 {
+    width: 50vw;
+    height: 100vh;
+    color: orange;
+  }
+  
+  .h2Second {
+    height: 65vh;
+    width: 50vw;
+    margin-left: -3vw;
+    margin-top: 5vh;
+  }
+  .h2{
+    font-size: 1.8em;
+  }
+  .description2{
+    color: white;
+    font-size: 1.2em;
+    width: 40vw;
+    margin-left: 5vw;
+    margin-top: 5vh;
+  }
+  .prix-container3 {
+    height: 35vh;
+    width: 50vw;
+    display: flex;
+    justify-content: flex-start; /* Alignement à gauche */
+    align-items: center;
+    margin-left: 20px; /* Ajustez la valeur pour votre besoin */
+  }
+  
+  .prix3 {
+    display: flex;
+    flex-direction: row;
+    gap: 50px; /* Espace entre les options */
+    align-items: center;
+    margin-left: 13vw;
+  }
+  
+  .option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -12vh;
+    gap: 5px; /* Espacement entre le texte et le cercle */
+  }
+  
+  .option span {
+    font-size: 1.5em;
+    color: #5A7C2A; /* Ajustez la couleur pour correspondre au thème */
+  }
+  
+  .prix3 p {
+    height: 70px;
+    width: 70px;
+    font-size: 1.4em;
+    background-color: #5A7C2A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid white;
+  }
+  
+  
+  .titresupp3 {
+    width: 50vw;
+    height: 100vh;
+   
+  }
+  
+  .h2supp3{
+    height: 20vh;
+    width: 50vw;
+    color: orange;
+    font-size: 1.8em;
+    margin-top: 5vh;
+  }
+  .suppléments3{
+    height: 45vh;
+    width: 35vw;
+    margin-top: 10vh;
+    margin-left: 7vw;
+  
+  }
+  
+  .suppléments3 img{
+    height: 100px;
+   
+  }
+  
+  .optionsupp3{
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; 
+    margin-top: -5vh;
+  }
+  .optionsupp3 span{
+    font-size: 1.5em;
+    color: #C2402D;
+  }
+  .optionsupp3 p{
+    height: 70px;
+    width: 70px;
+    font-size: 1.4em;
+    background-color:#C2402D;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid white
+  }
+
+  .item {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 100px;
+    overflow: hidden; /* Maintenu pour le zoom mais vérifiez son impact sur les labels */
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.item:hover img {
+    transform: scale(1.3);
+}
+
+.label {
+    position: absolute;
+    z-index: 10;
+    bottom: 10px;
+    left: 0;
+    right: 0; /* Assurez-vous que le label est centré horizontalement */
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Améliore la visibilité */
+    visibility: hidden;
+    font-size: 0.9em;
+    padding: 2px 0;
+}
+
+.item:hover .label {
+    visibility: visible;
+}
+
+
+
+/* RESPONSIVEEEEEEEEEEEEEEEEEEE */
+
+
+
+
+@media screen and (max-width: 767px){
+
+  .burger-menu {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+  }
+/* KEBAB */
+
+  .backKebab {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/backtelephone.png);
+    background-color: black;
+    display: flex;
+    flex-direction: column; /* Les enfants sont disposés en colonne */
+    align-items: center; /* Centre les enfants horizontalement */
+    padding: 0 20px; /* Ajout de padding pour ne pas que le contenu touche les bords */
+  }
+  
+
+  .titre2{
+    width: 100vw;
+    height: 40vh; /* Prend toute la largeur de la vue */
+    overflow: hidden; /* Évite le débordement hors de la vue */
+    
+  }
+  .titresupp2{
+    width: 100vw;
+    height: 60vh;
+  }
+  .h2Second{
+    height: 10vh;
+    width: 100vw;
+  }
+  .description2{
+    width: 95vw;
+    height: 5vh; /* Utilisation de la largeur complète de l'écran */
+  }
+  .prix-container2{
+    display: flex;
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: center; /* Centre les éléments verticalement */
+    height: 15vh; 
+    width: 100vw; 
+    margin-left: -40px;
+    margin-top: 120px;
+    /* margin: 120px 50px 50px 50px; */
+  }
+.option span{
+    font-size: 1em;
+}
+.prix2 p{
+  height: 60px;
+  width: 60px;
+  font-size: 1em;
+}
+.prix2{
+  height: 15vh;
+  width: 90vw;
+}
+  .h2 {
+    font-size: 1.2em;
+    height: 5vh; 
+    width: 100vw;
+  }
+
+ 
+  .h2supp2{
+    font-size: 1.1em;
+    height: 10vh;
+    width: 100vw;
+    margin-top: 40px;
+  }
+
+
+  .suppléments2 img {
+    height: 45px;
+    width: 45px; 
+  }
+  .suppléments2{
+    height: 15vh;
+    width: 90vw;
+    margin-top: -10px;
+  }
+.suppléments2 .item{
+  height: 65px;
+  width: 65px;
+}
+ 
+  .optionsupp2{
+    height: 10vh;
+    width: 90vw;
+    margin-top: 15px;
+    gap: 10px;
+    margin-left: 20px;
+  }
+  .optionsupp2 span {
+    font-size: 1.1em; 
+  }
+
+  .optionsupp2 p {
+    height: 50px;
+    width: 50px;
+    font-size: 1em; /* Taille de police pour le prix */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  /* PANINI  ET GALETTE*/
+ 
+
+  .backPanini {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/backtelephone.png);
+    background-color: black;
+    display: flex;
+    flex-direction: column; /* Les enfants sont disposés en colonne */
+    align-items: center; /* Centre les enfants horizontalement */
+    padding: 0 20px; /* Ajout de padding pour ne pas que le contenu touche les bords */
+  }
+
+  .backGalette {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/backtelephone.png);
+    background-color: black;
+    display: flex;
+    flex-direction: column; /* Les enfants sont disposés en colonne */
+    align-items: center; /* Centre les enfants horizontalement */
+    padding: 0 20px; /* Ajout de padding pour ne pas que le contenu touche les bords */
+  }
+  .titre1{
+    width: 100vw;
+    height: 30vh; /* Prend toute la largeur de la vue */
+    overflow: hidden; /* Évite le débordement hors de la vue */
+    
+  }
+  .h2Premier{
+    height: 5vh;
+    width: 100vw;
+    padding: 0%;
+  }
+
+  .h2Premier h2{
+    font-size: 1.9em;
+   
+  }
+  .h2 {
+    height: 10vh; 
+  }
+
+  .description1 {
+    width: 95vw;
+    height: 5vh; 
+  }
+  .prix-container1{
+    display: flex;
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: center; /* Centre les éléments verticalement */
+    height: 15vh; 
+    width: 100vw; 
+    margin-left: -40px;
+    margin-top: 130px;
+    /* margin: 120px 50px 50px 50px; */
+  
+  }
+
+  .prix1{
+    height: 10vh;
+    width: 90vw;
+  }
+  .prix1 p{
+    height: 60px;
+    width: 60px;
+    font-size: 1em;
+  }
+ 
+
+.option span{
+    font-size: 1em;
+}
+
+
+.titresupp1{
+  width: 100vw;
+  height: 70vh;
+}
+
+ 
+  .h2viande{
+    font-size: 1.1em;
+    height: 5vh;
+    width: 100vw;
+   margin-top: -110px;
+  }
+  .viandes{
+    height: 15vh;
+    width: 90vw;
+
+  }
+  .viandes .item{
+    height: 65px;
+    width: 65px;
+  }
+  .h2supp1{
+    font-size: 1.1em;
+    height: 5vh;
+    width: 100vw;
+  }
+
+  .suppléments1 img, .viandes img {
+    height: 45px;
+    width: 45px; 
+  }
+  .suppléments1{
+    height: 15vh;
+    width: 90vw;
+  margin-left: 35px;
+  }
+
+.suppléments1 .item{
+  height: 65px;
+  width: 65px;
+}
+  .optionsupp1{
+    height: 10vh;
+    width: 90vw;
+    margin-top: 15px;
+    gap: 10px;
+    margin-left: 20px;
+  }
+  .optionsupp1 span {
+    font-size: 1.1em; 
+  }
+  .optionsupp1 p {
+    height: 50px;
+    width: 50px;
+    font-size: 1em; /* Taille de police pour le prix */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .item img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.item:hover img {
+    transform: scale(1.3);
+}
+
+.label {
+    position: absolute;
+    z-index: 10;
+    bottom: 10px;
+    left: 0;
+    right: 0; /* Assurez-vous que le label est centré horizontalement */
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Améliore la visibilité */
+    visibility: hidden;
+    font-size: 0.9em;
+    padding: 2px 0;
+}
+/* SANDWICH */
+
+.backSandwich {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(img/backtelephone.png);
+  background-color: black;
+  display: flex;
+  flex-direction: column; /* Les enfants sont disposés en colonne */
+  align-items: center; /* Centre les enfants horizontalement */
+  padding: 0 20px; /* Ajout de padding pour ne pas que le contenu touche les bords */
+}
+
+.titresandwich{
+  width: 100vw;
+  height: 33vh; /* Prend toute la largeur de la vue */
+  overflow: hidden; /* Évite le débordement hors de la vue */
+  
+}
+.h2sandwich{
+  height: 5vh;
+  width: 100vw;
+  padding: 0%;
+}
+
+.h2sandwich h2{
+  font-size: 1.9em;
+ 
+}
+.h2 {
+  height: 10vh; 
+}
+
+.descriptionSandwich {
+  width: 95vw;
+  height: 5vh; 
+}
+.prix-containerSandwich{
+  display: flex;
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center; /* Centre les éléments verticalement */
+  height: 15vh; 
+  width: 100vw; 
+  margin-left: -40px;
+  margin-top: 130px;
+  /* margin: 120px 50px 50px 50px; */
+}
+
+.prixSandwich{
+  height: 10vh;
+  width: 90vw;
+}
+.prixSandwich p{
+  height: 60px;
+  width: 60px;
+  font-size: 1em;
+}
+
+
+.option span{
+  font-size: 1em;
+}
+
+
+.titresuppSandwich{
+width: 100vw;
+height: 70vh;
+
+}
+
+.sectiontotal{
+  width: 100vw;
+  height: 10vh;
+  font-size: 0.5em;
+  margin-right: -60px;
+}
+.cotée2{
+  width: 100vw;
+  height: 30vh;
+}
+.h2suppSandwich{
+  font-size: 1em;
+}
+.supplémentsSandwich img {
+  height: 45px;
+  width: 45px; 
+}
+.supplémentsSandwich{
+  height: 15vh;
+  width: 90vw;
+margin-left: 20px;
+}
+
+.supplémentsSandwich .item{
+height: 65px;
+width: 65px;
+}
+.optionsuppSandwich{
+  height: 10vh;
+  width: 90vw;
+  margin-top: 15px;
+  gap: 10px;
+  margin-left: 20px;
+}
+.optionsuppSandwich span {
+  font-size: 1.1em; 
+}
+.optionsuppSandwich p {
+  height: 50px;
+  width: 50px;
+  font-size: 1em; /* Taille de police pour le prix */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* MENU ENFANT */
+
+.backEnfant {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(img/backtelephone.png);
+  background-color: black;
+  display: flex;
+  flex-direction: column; /* Les enfants sont disposés en colonne */
+  align-items: center; /* Centre les enfants horizontalement */
+  padding: 0 20px; /* Ajout de padding pour ne pas que le contenu touche les bords */
+}
+.titre3{
+  width: 100vw;
+  height: 40vh; /* Prend toute la largeur de la vue */
+  overflow: hidden; /* Évite le débordement hors de la vue */
+  
+}
+.titresupp3{
+  width: 100vw;
+  height: 60vh;
+}
+.h2Second{
+  height: 10vh;
+  width: 100vw;
+}
+.description2{
+  width: 95vw;
+  height: 5vh; /* Utilisation de la largeur complète de l'écran */
+}
+.prix-container3{
+  display: flex;
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center; /* Centre les éléments verticalement */
+  height: 15vh; 
+  width: 100vw; 
+  margin-left: -40px;
+  margin-top: 110px;
+  /* margin: 120px 50px 50px 50px; */
+}
+.option span{
+  font-size: 1em;
+}
+.prix3 p{
+height: 60px;
+width: 60px;
+font-size: 1em;
+}
+.prix3{
+height: 15vh;
+width: 90vw;
+}
+.h2 {
+  font-size: 1.2em;
+  height: 5vh; 
+  width: 100vw;
+}
+
+.h2supp3{
+  font-size: 1.1em;
+  height: 10vh;
+  width: 100vw;
+}
+.suppléments3 img {
+  height: 45px;
+  width: 45px; 
+}
+.suppléments3{
+  height: 15vh;
+  width: 90vw;
+  margin-top: -10px;
+}
+.suppléments3 .item{
+height: 65px;
+width: 65px;
+}
+
+.optionsupp3{
+  height: 10vh;
+  width: 90vw;
+  margin-top: 15px;
+  gap: 10px;
+  margin-left: 20px;
+}
+.optionsupp3 span {
+  font-size: 1.1em; 
+}
+
+.optionsupp3 p {
+  height: 50px;
+  width: 50px;
+  font-size: 1em; /* Taille de police pour le prix */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.item:hover img {
+  transform: scale(1.3);
+}
+
+.label {
+  position: absolute;
+  z-index: 10;
+  bottom: 10px;
+  left: 0;
+  right: 0; /* Assurez-vous que le label est centré horizontalement */
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Améliore la visibilité */
+  visibility: hidden;
+  font-size: 0.9em;
+  padding: 2px 0;
+}
+}

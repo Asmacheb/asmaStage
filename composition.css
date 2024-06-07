@@ -1,0 +1,985 @@
+/* COMPOSITIONNNNNNNNNN*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Cette propriété s'assure que padding et border sont inclus dans la largeur/hauteur total(e) de l'élément */
+  }
+  html, body {
+    width: 100%;
+    height: 100%;
+
+  }
+  
+  .burger-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+  }
+  .navbar{
+    display: none;
+  }
+  
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #171816ae;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 7vh;
+  z-index: 1000;
+  
+}
+
+.burgerMenu {
+  display: none;
+}
+.navLogo{
+  display: none;
+}
+.navMenu{
+  display: none; 
+}
+
+/* Styles pour le menu responsive */
+@media screen and (max-width: 767px) {
+  .navLogo {
+      width: 40px;
+      height: 40px;
+      display: block;
+  }
+
+  .navLogo img {
+      width: 100%;
+      height: 100%;
+  }
+
+  .burgerMenu {
+      display: block;
+  }
+
+  .navMenu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 7vh;
+      left: 0;
+      background-color: #171816ae;
+      color: white;
+      list-style: none;
+  }
+
+  .navMenu.active {
+      display: flex;
+  }
+
+  .menuDeroulant {
+      display: none;
+      flex-direction: column;
+      list-style: none;
+      color: white;
+  }
+
+  .submenu:hover .menuDeroulant,
+  .submenu .menuDeroulant.active {
+      display: flex;
+  }
+
+  .navMenu li {
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      color: white;
+  }
+
+  .burger-menu img {
+      height: 40px;
+      width: 40px;
+  }
+
+  .navMenu a, .menuDeroulant a {
+      color: white; /* Assure que le texte des liens est en blanc */
+      text-decoration: none; /* Supprime la décoration des liens */
+  }
+
+  .navMenu a:hover, .menuDeroulant a:hover {
+      background-color: #f1f1f1;
+      color: black; /* Change la couleur du texte au survol pour une meilleure visibilité */
+  }
+}
+
+     
+/* TACOOOOOOOOSSSSSSSSS */
+.titretacos, .titresupp {
+    flex: 1; /* Donne aux conteneurs une flexibilité pour utiliser l'espace disponible */
+    width: 100%; /* Assurez-vous que les conteneurs utilisent toute la largeur */
+}
+.backTacos {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: url(img/pagetacos.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  
+  .titre1 {
+    width: 50vw;
+    height: 100vh;
+    color: #5A7C2A;
+  }
+  
+  .h2Premier {
+    height: 65vh;
+    width: 50vw;
+    margin-left: -3vw;
+    margin-top: 5vh;
+  }
+  .h2{
+    font-size: 1.8em;
+  }
+  .description1{
+    color: white;
+    font-size: 1.2em;
+    width: 40vw;
+    margin-left: 5vw;
+    margin-top: 3vh;
+  }
+  .prix-container1 {
+    height: 35vh;
+    width: 50vw;
+    display: flex;
+    justify-content: flex-start; /* Alignement à gauche */
+    align-items: center;
+    margin-left: -50px;  
+    margin-top: 40px;
+  }
+  
+  .prix1 {
+    display: flex;
+    flex-direction: row;
+    gap: 50px; /* Espace entre les options */
+    align-items: center;
+    margin-left: 13vw;
+  }
+  
+  .option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -12vh;
+    gap: 5px; /* Espacement entre le texte et le cercle */
+  }
+  
+  .option span {
+    font-size: 1.5em;
+    color: #5A7C2A; /* Ajustez la couleur pour correspondre au thème */
+  }
+  
+  .prix1 p {
+    height: 70px;
+    width: 70px;
+    font-size: 1.4em;
+    background-color: #5A7C2A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid white;
+  }
+  
+  
+  .titresupp1 {
+    width: 50vw;
+    height: 100vh;
+  }
+  .h2viande{
+    height: 10vh;
+    width: 50vw;
+    color: #5A7C2A;
+    font-size: 1.8em;
+    margin-top: 5vh;
+  }
+  .viandes{
+    height: 30vh;
+    width: 35vw;
+    margin-left: 7vw;
+  }
+  .viandes img{
+    height: 100px; 
+  }
+  
+  .h2supp1{
+    height: 10vh;
+    width: 50vw;
+    color: #5A7C2A;
+    font-size: 1.8em;
+    margin-top: 40px;
+  }
+  .suppléments1{
+    height: 30vh;
+    width: 35vw;
+    margin-top: -20px;
+    margin-left: 90px;
+  }
+  
+  .suppléments1 img{
+    height: 100px; 
+  }
+  
+  .optionsupp1{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 5px;  */
+    margin-top: -5vh;
+  }
+  .optionsupp1 span{
+    font-size: 1.5em;
+    color: #C2402D;
+  }
+  .optionsupp1 p{
+    height: 70px;
+    width: 70px;
+    font-size: 1.4em;
+    background-color:#C2402D;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid white
+  }
+
+
+     
+/* TACOOOOOOOOSSSSSSSSS BOOOOOOWLLLLLLL */
+.titretacos, .titresupp {
+    flex: 1; /* Donne aux conteneurs une flexibilité pour utiliser l'espace disponible */
+    width: 100%; /* Assurez-vous que les conteneurs utilisent toute la largeur */
+}
+.backTacosbowl {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: url(img/pagetacosbowl.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  
+     
+/* KAPSALOOONNNNNN */
+
+.backKapsalon {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: url(img/lekapsalon2.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  
+     
+/* ASSIETTEEEEEEEEEEE*/
+.titreassiette, .titresupp {
+  flex: 1; /* Donne aux conteneurs une flexibilité pour utiliser l'espace disponible */
+  width: 100%; /* Assurez-vous que les conteneurs utilisent toute la largeur */
+}
+
+
+.burger-menu-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.burger-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.backAssiette {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: url(img/lassiette.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  
+  .titreassiette {
+    width: 50vw;
+    height: 100vh;
+    color: #5A7C2A;
+  }
+  
+  .h2assiette {
+    height: 65vh;
+    width: 50vw;
+    margin-left: -3vw;
+    margin-top: 5vh;
+  }
+  .h2{
+    font-size: 1.8em;
+  }
+  .descriptionAssiettes{
+    color: white;
+    font-size: 1.2em;
+    width: 40vw;
+    margin-left: 5vw;
+    margin-top: 3vh;
+  }
+  .prix-containerAssiette {
+    height: 35vh;
+    width: 50vw;
+    display: flex;
+    justify-content: flex-start; /* Alignement à gauche */
+    align-items: center;
+    margin-left: -50px; 
+  }
+  
+  .prix {
+    display: flex;
+    flex-direction: row;
+    gap: 50px; /* Espace entre les options */
+    align-items: center;
+    margin-left: 8vw;
+  }
+  
+  .option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -12vh;
+    gap: 5px; /* Espacement entre le texte et le cercle */
+  }
+  
+  .option span {
+    font-size: 1.5em;
+    color: #5A7C2A; /* Ajustez la couleur pour correspondre au thème */
+  }
+  
+  .prix p {
+    height: 70px;
+    width: 70px;
+    font-size: 1.4em;
+    background-color: #5A7C2A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid white;
+  }
+  
+  
+  .titresupp {
+    width: 50vw;
+    height: 100vh;
+  }
+  .h2viande{
+    height: 10vh;
+    width: 50vw;
+    color: #5A7C2A;
+    font-size: 1.8em;
+    margin-top: 5vh;
+  }
+  .viandes{
+    height: 30vh;
+    width: 35vw;
+    margin-left: 7vw;
+  }
+  .viandes img{
+    height: 100px; 
+  }
+  
+  .h2suppAssiette{
+    height: 10vh;
+    width: 50vw;
+    color: #5A7C2A;
+    font-size: 1.8em;
+    margin-top: 40px;
+  }
+  .supplémentsassiette{
+    height: 30vh;
+    width: 35vw;
+    margin-top: -3vh;
+    margin-left: 7vw;
+  }
+  
+  .supplémentsassiette img{
+    height: 100px; 
+  }
+  
+  .optionsupp{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 5px;  */
+    margin-top: -5vh;
+  }
+  .optionsupp span{
+    font-size: 1.5em;
+    color: #C2402D;
+  }
+  .optionsupp p{
+    height: 70px;
+    width: 70px;
+    font-size: 1.4em;
+    background-color:#C2402D;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid white
+  }
+
+/* CARBONNADEEEEEEEE*/
+
+.backCarbonnade {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: url(img/lacarbonnade.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  
+  .titrecarbonnade {
+    width: 50vw;
+    height: 100vh;
+    color: #5A7C2A;
+  }
+  
+  .h2carbonnade {
+    height: 65vh;
+    width: 50vw;
+    margin-left: -3vw;
+    margin-top: 5vh;
+  }
+  .h2{
+    font-size: 1.8em;
+  }
+  .descriptionCarbonnade{
+    color: white;
+    font-size: 1.2em;
+    width: 40vw;
+    margin-left: 5vw;
+    margin-top: 5vh;
+  }
+  .prix-container {
+    height: 35vh;
+    width: 50vw;
+    display: flex;
+    justify-content: flex-start; /* Alignement à gauche */
+    align-items: center;
+    margin-left: 20px; /* Ajustez la valeur pour votre besoin */
+  }
+  
+  .prix {
+    display: flex;
+    flex-direction: row;
+    gap: 50px; /* Espace entre les options */
+    align-items: center;
+    margin-left: 13vw;
+  }
+  
+  .option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -12vh;
+    gap: 5px; /* Espacement entre le texte et le cercle */
+  }
+  
+  .option span {
+    font-size: 1.5em;
+    color: #5A7C2A; /* Ajustez la couleur pour correspondre au thème */
+  }
+  
+  .prix p {
+    height: 70px;
+    width: 70px;
+    font-size: 1.4em;
+    background-color: #5A7C2A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid white;
+  }
+  
+  
+  .titresupp {
+    width: 50vw;
+    height: 100vh;
+   
+  }
+  
+  .h2supp{
+    height: 20vh;
+    width: 50vw;
+    color: #5A7C2A;
+    font-size: 1.8em;
+    margin-top: 5vh;
+  }
+  .suppléments{
+    height: 45vh;
+    width: 35vw;
+    margin-top: 10vh;
+    margin-left: 7vw;
+  
+  }
+  
+  .suppléments img{
+    height: 100px;
+   
+  }
+  
+  .optionsupp{
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -5vh;
+  }
+  .optionsupp span{
+    font-size: 1.5em;
+    color: #C2402D;
+  }
+  .optionsupp p{
+    height: 70px;
+    width: 70px;
+    font-size: 1.4em;
+    background-color:#C2402D;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid white
+  }
+
+  .item {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 100px;
+    overflow: hidden; /* Maintenu pour le zoom mais vérifiez son impact sur les labels */
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.item:hover img {
+    transform: scale(1.3);
+}
+
+.label {
+    position: absolute;
+    z-index: 10;
+    bottom: 10px;
+    left: 0;
+    right: 0; /* Assurez-vous que le label est centré horizontalement */
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Améliore la visibilité */
+    visibility: hidden;
+    font-size: 0.9em;
+    padding: 2px 0;
+}
+
+.item:hover .label {
+    visibility: visible;
+}
+
+
+/* RESPONSIVEEEEEEEEEEEEEEEEEEE */
+
+
+/* TACOOOSSSS */
+@media screen and (max-width: 767px){
+
+  .backTacos {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/backtelephone.png);
+    background-color: black;
+    display: flex;
+    flex-direction: column; /* Les enfants sont disposés en colonne */
+    align-items: center; /* Centre les enfants horizontalement */
+    padding: 0 20px; /* Ajout de padding pour ne pas que le contenu touche les bords */
+  }
+
+  .titre1{
+    width: 100vw;
+    height: 40vh; /* Prend toute la largeur de la vue */
+    overflow: hidden; /* Évite le débordement hors de la vue */
+    
+  }
+  .h2Premier{
+    height: 5vh;
+    width: 100vw;
+
+  }
+/* 
+  .h2Premier h2{
+    font-size: 1.9em;
+   
+  } */
+  .h2 {
+    height: 10vh; 
+  }
+
+  .description1 {
+    width: 95vw;
+    height: 5vh; 
+  }
+  .prix-container1{
+    display: flex;
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: center; /* Centre les éléments verticalement */
+    height: 15vh; 
+    width: 100vw; 
+    margin-left: -40px;
+    margin-top: 120px;
+    /* margin: 120px 50px 50px 50px; */
+  
+  }
+
+  .prix1{
+    height: 10vh;
+    width: 90vw;
+  }
+  .prix1 p{
+    height: 60px;
+    width: 60px;
+    font-size: 1em;
+  }
+ 
+
+.option span{
+    font-size: 1em;
+}
+
+
+.titresupp1{
+  width: 100vw;
+  height: 60vh;
+}
+
+ 
+  .h2viande{
+    font-size: 1.1em;
+    height: 5vh;
+    width: 100vw;
+    margin-top: -20px;
+ 
+  }
+  .viandes{
+    height: 15vh;
+    width: 90vw;
+ 
+  }
+  .viandes .item{
+    height: 65px;
+    width: 65px;
+  }
+  .h2supp1{
+    font-size: 1.1em;
+    height: 5vh;
+    width: 100vw;
+
+  }
+
+  .suppléments1 img, .viandes img {
+    height: 45px;
+    width: 45px; 
+  }
+  .suppléments1{
+    height: 15vh;
+    width: 90vw;
+  margin-left: 20px;
+  }
+
+.suppléments1 .item{
+  height: 65px;
+  width: 65px;
+}
+  .optionsupp1{
+    height: 10vh;
+    width: 90vw;
+    margin-top: 15px;
+    gap: 10px;
+    margin-left: 20px;
+  }
+  .optionsupp1 span {
+    font-size: 1.1em; 
+  }
+  .optionsupp1 p {
+    height: 50px;
+    width: 50px;
+    font-size: 1em; /* Taille de police pour le prix */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .item img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.item:hover img {
+    transform: scale(1.3);
+}
+
+.label {
+    position: absolute;
+    z-index: 10;
+    bottom: 10px;
+    left: 0;
+    right: 0; /* Assurez-vous que le label est centré horizontalement */
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Améliore la visibilité */
+    visibility: hidden;
+    font-size: 0.9em;
+    padding: 2px 0;
+}
+}
+
+
+
+/* TACOSBOWLLLLLLLLLLLLLLL */
+@media screen and (max-width: 767px){
+  .burger-menu {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+  }
+
+  .backTacosbowl {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/backtelephone.png);
+    background-color: black;
+    display: flex;
+    flex-direction: column; /* Les enfants sont disposés en colonne */
+    align-items: center; /* Centre les enfants horizontalement */
+    padding: 0 20px; /* Ajout de padding pour ne pas que le contenu touche les bords */
+  }
+
+}
+
+
+
+
+/* KAPSAALONNNNNNNNNNNNN */
+@media screen and (max-width: 767px){
+  .burger-menu {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+  }
+
+  .backKapsalon {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/backtelephone.png);
+    background-color: black;
+    display: flex;
+    flex-direction: column; /* Les enfants sont disposés en colonne */
+    align-items: center; /* Centre les enfants horizontalement */
+    padding: 0 20px; /* Ajout de padding pour ne pas que le contenu touche les bords */
+  }
+
+}
+
+
+
+
+/* ASSIETTEEEEEEEEE */
+@media screen and (max-width: 767px){
+  .burger-menu {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+  }
+
+  .backAssiette {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/backtelephone.png);
+    background-color: black;
+    display: flex;
+    flex-direction: column; /* Les enfants sont disposés en colonne */
+    align-items: center; /* Centre les enfants horizontalement */
+    padding: 0 20px; /* Ajout de padding pour ne pas que le contenu touche les bords */
+  }
+
+ }
+
+
+/* CARNONNADEEE */
+@media screen and (max-width: 767px){
+  .burger-menu {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+  }
+
+  .backCarbonnade {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/backtelephone.png);
+    background-color: black;
+    display: flex;
+    flex-direction: column; /* Les enfants sont disposés en colonne */
+    align-items: center; /* Centre les enfants horizontalement */
+    padding: 0 20px; /* Ajout de padding pour ne pas que le contenu touche les bords */
+  }
+
+  .titrecarbonnade{
+    width: 100vw;
+    height: 40vh; /* Prend toute la largeur de la vue */
+    overflow: hidden; /* Évite le débordement hors de la vue */
+    
+  }
+  .titresuppCarbonnade{
+    width: 100vw;
+    height: 60vh;
+  }
+  .h2carbonnade{
+    height: 10vh;
+    width: 100vw;
+  }
+  .descriptionCarbonnade {
+    width: 95vw;
+    height: 5vh; /* Utilisation de la largeur complète de l'écran */
+  }
+.prix-containerCarbonnade{
+  height: 15vh;
+  width: 100vw;
+  margin-left: 90px;
+  margin-top: 110px;
+
+}
+.option span{
+    font-size: 1em;
+}
+.prix p{
+  height: 60px;
+  width: 60px;
+  font-size: 1em;
+}
+.prix{
+  height: 15vh;
+  width: 90vw;
+}
+  .h2 {
+    font-size: 1.2em;
+    height: 5vh; 
+    width: 100vw;
+  }
+
+ 
+  .h2supp{
+    font-size: 1.1em;
+    height: 10vh;
+    width: 100vw;
+    margin-top: 120px;
+ 
+  }
+
+
+  .suppléments img {
+    height: 45px;
+    width: 45px; 
+  }
+  .suppléments{
+    height: 15vh;
+    width: 90vw;
+    margin-top: -10px;
+  }
+.suppléments .item{
+  height: 65px;
+  width: 65px;
+}
+ 
+  .optionsupp{
+    height: 10vh;
+    width: 90vw;
+    margin-top: 15px;
+    gap: 10px;
+    margin-left: 20px;
+  }
+  .optionsupp span {
+    font-size: 1.1em; 
+  }
+
+  .optionsupp p {
+    height: 50px;
+    width: 50px;
+    font-size: 1em; /* Taille de police pour le prix */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.item:hover img {
+    transform: scale(1.3);
+}
+
+.label {
+    position: absolute;
+    z-index: 10;
+    bottom: 10px;
+    left: 0;
+    right: 0; /* Assurez-vous que le label est centré horizontalement */
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Améliore la visibilité */
+    visibility: hidden;
+    font-size: 0.9em;
+    padding: 2px 0;
+}
+}
