@@ -111,6 +111,10 @@
   }
 }
 
+ 
+.responsiveTacos,  .responsiveTacosbowl, .responsiveKapsalon, .responsiveAssiette, .responsiveCarbonnade{
+  display: none;
+}
      
 /* TACOOOOOOOOSSSSSSSSS */
 .titretacos, .titresupp {
@@ -150,7 +154,7 @@
     margin-left: 5vw;
     margin-top: 3vh;
   }
-  .prix-container1 {
+  .prix-container1, .prix-containerK, .prix-containerT {
     height: 35vh;
     width: 50vw;
     display: flex;
@@ -160,7 +164,7 @@
     margin-top: 40px;
   }
   
-  .prix1 {
+  .prix1, .prixK, .prixT{
     display: flex;
     flex-direction: row;
     gap: 50px; /* Espace entre les options */
@@ -191,9 +195,20 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border: 3px solid white;
+ 
   }
   
+  .prixK p, .prixT p{
+    height: 70px;
+    width: 70px;
+    font-size: 1.4em;
+    background-color: #5A7C2A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
   
   .titresupp1 {
     width: 50vw;
@@ -323,41 +338,41 @@
     text-align: center;
   }
   
-  .titreassiette {
+  /* .titreassiette {
     width: 50vw;
     height: 100vh;
     color: #5A7C2A;
   }
-  
-  .h2assiette {
+   */
+  /* .h2assiette {
     height: 65vh;
     width: 50vw;
     margin-left: -3vw;
     margin-top: 5vh;
-  }
+  } */
   .h2{
     font-size: 1.8em;
   }
-  .descriptionAssiettes{
+  /* .descriptionAssiettes{
     color: white;
     font-size: 1.2em;
     width: 40vw;
     margin-left: 5vw;
     margin-top: 3vh;
-  }
-  .prix-containerAssiette {
+  } */
+  /* .prix-containerAssiette {
     height: 35vh;
     width: 50vw;
     display: flex;
-    justify-content: flex-start; /* Alignement à gauche */
+    justify-content: flex-start; 
     align-items: center;
     margin-left: -50px; 
-  }
+  } */
   
   .prix {
     display: flex;
     flex-direction: row;
-    gap: 50px; /* Espace entre les options */
+    gap: 50px; 
     align-items: center;
     margin-left: 8vw;
   }
@@ -367,12 +382,12 @@
     flex-direction: column;
     align-items: center;
     margin-top: -12vh;
-    gap: 5px; /* Espacement entre le texte et le cercle */
+    gap: 5px; 
   }
   
   .option span {
     font-size: 1.5em;
-    color: #5A7C2A; /* Ajustez la couleur pour correspondre au thème */
+    color: #5A7C2A; 
   }
   
   .prix p {
@@ -385,7 +400,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border: 3px solid white;
+ 
   }
   
   
@@ -408,7 +423,7 @@
   .viandes img{
     height: 100px; 
   }
-  
+/*   
   .h2suppAssiette{
     height: 10vh;
     width: 50vw;
@@ -425,14 +440,14 @@
   
   .supplémentsassiette img{
     height: 100px; 
-  }
+  } */
   
   .optionsupp{
     height: 20vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* gap: 5px;  */
+  
     margin-top: -5vh;
   }
   .optionsupp span{
@@ -527,7 +542,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border: 3px solid white;
+ 
   }
   
   
@@ -619,12 +634,19 @@
 
 
 /* RESPONSIVEEEEEEEEEEEEEEEEEEE */
+/* TÉLÉPHONE */
 
-
-/* TACOOOSSSS */
+/* TACOOOSSSS  TACOSBOWL  KAPSALON */
 @media screen and (max-width: 767px){
+  .burger-menu {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+  }
 
-  .backTacos {
+  .backTacos, .backTacosbowl, .backKapsalon{
     height: 100vh;
     width: 100vw;
     background-image: url(img/backtelephone.png);
@@ -635,106 +657,126 @@
     padding: 0 20px; /* Ajout de padding pour ne pas que le contenu touche les bords */
   }
 
+ 
+  .responsiveTacos,  .responsiveTacosbowl, .responsiveKapsalon, .responsiveAssiette{
+    height: 10vh;
+    width: 100vw;
+   text-align: center;
+   margin-left: -20vw;
+   margin-top: -5vh;
+   display: block;
+   }
+
+    .responsiveTacos img,  .responsiveTacosbowl img, .responsiveKapsalon img, .responsiveAssiette img{
+      height: 200px;
+      width: 200px;
+   }
+
   .titre1{
     width: 100vw;
-    height: 40vh; /* Prend toute la largeur de la vue */
+    height: 45vh; /* Prend toute la largeur de la vue */
     overflow: hidden; /* Évite le débordement hors de la vue */
     
   }
   .h2Premier{
-    height: 5vh;
+    height: 10vh;
     width: 100vw;
 
   }
-/* 
+
   .h2Premier h2{
     font-size: 1.9em;
    
-  } */
+  }
   .h2 {
-    height: 10vh; 
+    height: 5vh; 
   }
 
   .description1 {
     width: 95vw;
-    height: 5vh; 
+    height: 5vh;
+    margin: auto;  
   }
-  .prix-container1{
+  .prix-container1 .prix1{
     display: flex;
     justify-content: center; /* Centre les éléments horizontalement */
     align-items: center; /* Centre les éléments verticalement */
     height: 15vh; 
     width: 100vw; 
-    margin-left: -40px;
-    margin-top: 120px;
-    /* margin: 120px 50px 50px 50px; */
-  
+    margin-left: 20vw;
+    margin-top:5vh;
   }
-
-  .prix1{
-    height: 10vh;
-    width: 90vw;
-  }
+ .prix-containerK, .prixK, .prix-containerT, .prixT{
+  display: flex;
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center; /* Centre les éléments verticalement */
+  height: 15vh; 
+  width: 100vw; 
+  margin-top:10vh;
+ }
   .prix1 p{
     height: 60px;
     width: 60px;
-    font-size: 1em;
+    font-size: 1.3em;
   }
  
 
 .option span{
     font-size: 1em;
+    display: flex;
 }
 
 
 .titresupp1{
   width: 100vw;
-  height: 60vh;
+  height: 55vh;
 }
 
  
   .h2viande{
-    font-size: 1.1em;
+    font-size: 1em;
     height: 5vh;
     width: 100vw;
-    margin-top: -20px;
- 
+    margin-top: -2vh;
   }
   .viandes{
     height: 15vh;
-    width: 90vw;
+    width: 100vw;
+    margin-left: -5px;
  
   }
   .viandes .item{
-    height: 65px;
-    width: 65px;
+    height: 50px;
+    width: 50px;
   }
   .h2supp1{
     font-size: 1.1em;
     height: 5vh;
     width: 100vw;
-
+    margin-top: -2vh;
   }
 
   .suppléments1 img, .viandes img {
-    height: 45px;
-    width: 45px; 
+    height: 50px;
+    width: 50px; 
   }
   .suppléments1{
     height: 15vh;
-    width: 90vw;
-  margin-left: 20px;
+    width: 100vw;
+   margin-left: -5px;
+   margin-top: 2vh;
+  
   }
 
 .suppléments1 .item{
-  height: 65px;
-  width: 65px;
+  height: 50px; 
+  width: 50px;
 }
   .optionsupp1{
     height: 10vh;
     width: 90vw;
-    margin-top: 15px;
-    gap: 10px;
+   margin-top: 5px;
+    gap: 5px;
     margin-left: 20px;
   }
   .optionsupp1 span {
@@ -771,58 +813,11 @@
     font-size: 0.9em;
     padding: 2px 0;
 }
-}
-
-
-
-/* TACOSBOWLLLLLLLLLLLLLLL */
-@media screen and (max-width: 767px){
-  .burger-menu {
-    display: block;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 100;
-  }
-
-  .backTacosbowl {
-    height: 100vh;
-    width: 100vw;
-    background-image: url(img/backtelephone.png);
-    background-color: black;
-    display: flex;
-    flex-direction: column; /* Les enfants sont disposés en colonne */
-    align-items: center; /* Centre les enfants horizontalement */
-    padding: 0 20px; /* Ajout de padding pour ne pas que le contenu touche les bords */
-  }
 
 }
 
 
 
-
-/* KAPSAALONNNNNNNNNNNNN */
-@media screen and (max-width: 767px){
-  .burger-menu {
-    display: block;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 100;
-  }
-
-  .backKapsalon {
-    height: 100vh;
-    width: 100vw;
-    background-image: url(img/backtelephone.png);
-    background-color: black;
-    display: flex;
-    flex-direction: column; /* Les enfants sont disposés en colonne */
-    align-items: center; /* Centre les enfants horizontalement */
-    padding: 0 20px; /* Ajout de padding pour ne pas que le contenu touche les bords */
-  }
-
-}
 
 
 
@@ -851,64 +846,72 @@
  }
 
 
+
+
 /* CARNONNADEEE */
 @media screen and (max-width: 767px){
-  .burger-menu {
-    display: block;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 100;
-  }
+ 
 
   .backCarbonnade {
     height: 100vh;
     width: 100vw;
     background-image: url(img/backtelephone.png);
-    background-color: black;
     display: flex;
     flex-direction: column; /* Les enfants sont disposés en colonne */
     align-items: center; /* Centre les enfants horizontalement */
     padding: 0 20px; /* Ajout de padding pour ne pas que le contenu touche les bords */
   }
-
-  .titrecarbonnade{
+ .responsiveCarbonnade{
+  display: block;
+  height: 10vh;
+  width: 100vw;
+ text-align: center;
+ margin-left: -20vw;
+ }
+ .responsiveCarbonnade img{
+  height: 200px;
+  width: 200px;
+ }
+  .titre1{
     width: 100vw;
-    height: 40vh; /* Prend toute la largeur de la vue */
-    overflow: hidden; /* Évite le débordement hors de la vue */
-    
+    height: 60vh; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;  
   }
   .titresuppCarbonnade{
     width: 100vw;
-    height: 60vh;
+    height: 40vh;
+    
   }
-  .h2carbonnade{
-    height: 10vh;
+  .h2Premier{
+    height: 15vh;
     width: 100vw;
   }
-  .descriptionCarbonnade {
-    width: 95vw;
-    height: 5vh; /* Utilisation de la largeur complète de l'écran */
+  .description1{
+    width: 80vw;
+    height: 5vh;
+    margin: auto;  
   }
-.prix-containerCarbonnade{
-  height: 15vh;
-  width: 100vw;
-  margin-left: 90px;
-  margin-top: 110px;
-
+.prix-container1 .prix{
+  display: flex;
+  text-align: center;
+  justify-content: center; 
+  align-items: center; 
+  height: 25vh; 
+  width: 100vw; 
+ margin-top: 30px;
+ margin-left: 110px;
 }
 .option span{
-    font-size: 1em;
+  font-size: 1.2em;
 }
 .prix p{
-  height: 60px;
-  width: 60px;
-  font-size: 1em;
+  height: 70px;
+  width: 70px;
+  font-size: 1.3em;
 }
-.prix{
-  height: 15vh;
-  width: 90vw;
-}
+
   .h2 {
     font-size: 1.2em;
     height: 5vh; 
@@ -920,8 +923,7 @@
     font-size: 1.1em;
     height: 10vh;
     width: 100vw;
-    margin-top: 120px;
- 
+    margin-top: -15px;
   }
 
 
@@ -932,7 +934,7 @@
   .suppléments{
     height: 15vh;
     width: 90vw;
-    margin-top: -10px;
+    margin-top: -30px;
   }
 .suppléments .item{
   height: 65px;
@@ -940,7 +942,7 @@
 }
  
   .optionsupp{
-    height: 10vh;
+    height: 15vh;
     width: 90vw;
     margin-top: 15px;
     gap: 10px;
@@ -948,6 +950,7 @@
   }
   .optionsupp span {
     font-size: 1.1em; 
+    margin-top: 15px;
   }
 
   .optionsupp p {

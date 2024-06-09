@@ -41,6 +41,7 @@ display: none;
 .navMenu{
 display: none; 
 }
+
 /* Styles pour le menu responsive */
 @media screen and (max-width: 767px) {
 .navLogo {

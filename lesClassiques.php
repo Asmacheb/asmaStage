@@ -19,6 +19,7 @@ $conn = getDatabaseConnection();
        <div class="h2"> <h2>KEBAB</h2></div>
        <div class="description2"> <p> Faluche, viande kebab, salade, tomate, sauce au choix.</p></div>
       </div>
+      <div class="responsiveKebab"><img src="img/imgkebab.png" alt="kebab"></div>
       <div class="prix-container2">
       <div class="prix2">
       <?php
@@ -99,6 +100,7 @@ $conn = getDatabaseConnection();
            <div class="h2"> <h2>GALETTE</h2></div>
            <div class="description1"> <p> Pain galette, viande au choix, salade, tomate, sauce au choix.</p></div>
           </div>
+          <div class="responsiveGalette"><img src="img/imggalette.png" alt="galette"></div>
           <div class="prix-container1">
           <div class="prix1">
           <?php
@@ -218,6 +220,7 @@ $conn = getDatabaseConnection();
            <div class="h2"> <h2>PANINI</h2></div>
            <div class="description1"> <p> Pain panini, viande au choix, fromage,  salade, tomate, sauce au choix.</p></div>
           </div>
+          <div class="responsivePanini"><img src="img/imgpanini.png" alt="panini"></div>
           <div class="prix-container1">
           <div class="prix1">
                     <?php
@@ -327,10 +330,9 @@ $conn = getDatabaseConnection();
             <p>1.50€</p>
         </div>
     </div>
-    </div>
-    
-    
-        </div>
+     </div>
+     </div>
+
     <!-- SANDWICH -->
     <div class="backSandwich">
         <div class="titresandwich">
@@ -338,6 +340,8 @@ $conn = getDatabaseConnection();
            <div class="h2"> <h2>SANDWICH</h2></div>
            <div class="descriptionSandwich"> <p> Pain baguette, viande au choix,  salade, tomate, sauce au choix.</p></div>
           </div>
+          <div class="flex">
+          <div class="responsiveSandwich"><img src="img/imgsandwich.png" alt="sandwich"></div>
           <div class="prix-containerSandwich">
           <div class="prixSandwich">
           <?php
@@ -366,7 +370,7 @@ $conn = getDatabaseConnection();
                 </div>
             </div>
         </div>
-        
+        </div>
         <div class="titresuppSandwich">
         <div class="sectiontotal">
             <div class="sectionchaud">
@@ -457,6 +461,7 @@ $conn = getDatabaseConnection();
            <div class="h2"> <h2>MENU ENFANT</h2></div>
            <div class="description2"> <p> Pain burger, un steack, cheddar, sauce au choix.</p></div>
           </div>
+          <div class="responsiveEnfant"><img src="img/imgmenuenfant.png" alt="menu enfant"></div>
           <div class="prix-container3">
           <div class="prix3">
           <?php

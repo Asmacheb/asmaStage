@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="accueil.css">
 </head>
 <body>
-<?php require_once 'menu.php'; ?> 
+
 <div class="backAcceuil">
   
     <div class="navbar">
@@ -31,7 +31,7 @@
                         <li class="submenu">
                             <a href="#" class="subdropbtn">Burgers</a>
                             <ul class="deroulant">
-                                <li><a href="lesBurgers.php?type=burger_simple">Burger Simple</a></li>
+                                <li><a href="lesBurgers.php#burger_simple">Burger Simple</a></li>
                                 <li><a href="#burger2">Fish Burger</a></li>
                                 <li><a href="#burger3">Smash Burger </a></li>
                                 <li><a href="#burger3">Chicken Burger </a></li>

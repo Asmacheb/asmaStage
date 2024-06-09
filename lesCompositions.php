@@ -19,6 +19,7 @@ $conn = getDatabaseConnection();
        <div class="h2"> <h2>TACOS</h2></div>
        <div class="description1"> <p>Wrap, viande au choix, sauce fromagère,  frites, sauce au choix.</p></div>
       </div>
+      <div class="responsiveTacos"><img src="img/imgtacos.png" alt="tacos"></div>
       <div class="prix-container1">
       <div class="prix1">
       <?php
@@ -139,18 +140,14 @@ $conn = getDatabaseConnection();
 
 <!-- TACOSBOWL -->
 <div class="backTacosbowl" id="Tacosbowl">
-    <div class="burgerMenu">
-        <button class="burger-menu" onclick="toggleMenu()">
-            <img src="img/menuvert.png" alt="Menu">
-        </button>
-    </div>
 <div class="titre1">
     <div class="h2Premier">
    <div class="h2"> <h2>TACOS BOWL</h2></div>
    <div class="description1"> <p>Frites, viande au choix, sauce fromagère, sauce au choix.</p></div>
   </div>
-  <div class="prix-container1">
-  <div class="prix">
+  <div class="responsiveTacosbowl"><img src="img/imgtacosbowl.png" alt="tacosbowl"></div>
+  <div class="prix-containerT">
+  <div class="prixT">
   <?php
                     try {
                         $stmt = $conn->prepare("
@@ -167,11 +164,11 @@ $conn = getDatabaseConnection();
                     }
                     ?>
                     <div class="option">
-                        <span>1 Viande</span>
+                        <span>1Viande</span>
                         <p><?php echo htmlspecialchars($row['prix_1viande']) . "€"; ?></p>
                     </div>
                     <div class="option">
-                        <span>2 Viandes</span>
+                        <span>2Viandes</span>
                         <p><?php echo htmlspecialchars($row['prix_2viandes']) . "€"; ?></p>
                     </div>
                    
@@ -265,17 +262,12 @@ $conn = getDatabaseConnection();
 <!-- ASSIETTES -->
 
 <div class="backAssiette" id="Assiettes">
-    <div class="burgerMenu">
-        <button class="burger-menu" onclick="toggleMenu()">
-            <img src="img/menuvert.png" alt="Menu">
-        </button>
-    </div>
-    
     <div class="titre1">
         <div class="h2Premier">
        <div class="h2"> <h2>L'ASSIETTE</h2></div>
        <div class="description1"> <p>Salade composée, viande au choix, frites, sauce au choix.</p></div>
       </div>
+      <div class="responsiveAssiette"><img src="img/imgassiette.png" alt="assiette"></div>
       <div class="prix-container1">
       <div class="prix1">
       <?php
@@ -395,18 +387,14 @@ $conn = getDatabaseConnection();
 <!-- KAPSALON -->
 
 <div class="backKapsalon" id="Kapsalon">
-    <div class="burgerMenu">
-        <button class="burger-menu" onclick="toggleMenu()">
-            <img src="img/menuvert.png" alt="Menu">
-        </button>
-    </div>
 <div class="titre1">
     <div class="h2Premier">
    <div class="h2"> <h2>KAPSALON</h2></div>
    <div class="description1"> <p>Frites, viande au choix, salade, sauce au choix, cheddar.</p></div>
   </div>
-  <div class="prix-container1">
-  <div class="prix">
+  <div class="responsiveKapsalon"><img src="img/imgkapsalon.png" alt="kapsalon"></div>
+  <div class="prix-containerK">
+  <div class="prixK">
   <?php
                     try {
                         $stmt = $conn->prepare("
@@ -423,11 +411,11 @@ $conn = getDatabaseConnection();
                     }
                     ?>
                     <div class="option">
-                        <span>1 Viande</span>
+                        <span>1Viande</span>
                         <p><?php echo htmlspecialchars($row['prix_1viande']) . "€"; ?></p>
                     </div>
                     <div class="option">
-                        <span>2 Viandes</span>
+                        <span>2Viandes</span>
                         <p><?php echo htmlspecialchars($row['prix_2viandes']) . "€"; ?></p>
                     </div>
                    
@@ -520,17 +508,12 @@ $conn = getDatabaseConnection();
 <!-- CARBONNADE -->
 
 <div class="backCarbonnade" id="Carbonnade">
-    <div class="burgerMenu">
-        <button class="burger-menu" onclick="toggleMenu()">
-            <img src="img/menuvert.png" alt="Menu">
-        </button>
-    </div>
-    
 <div class="titre1">
     <div class="h2Premier">
    <div class="h2"> <h2>CARBONNADE</h2></div>
    <div class="description1"> <p> Base frites, sauce carbonnade maison avec de la viande de boeuf.</p></div>
   </div>
+  <div class="responsiveCarbonnade"><img src="img/imgcarbonnade.png" alt="carbonnade"></div>
   <div class="prix-container1">
   <div class="prix">
   <?php

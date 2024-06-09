@@ -13,12 +13,13 @@ $conn = getDatabaseConnection();
 <body>
 <?php require_once 'menu.php'; ?> 
     <!-- BURGER SIMPLE -->
-    <div class="backSimple" id="burgersimple">
+    <div class="backSimple">
     <div class="titre2">
         <div class="h2Second">
-       <div class="h2"> <h2>BURGER SIMPLE</h2></div>
+       <div class="h2"> <h2 id="burger_simple">BURGER SIMPLE</h2></div>
        <div class="description2"> <p> Pain burger, un steack, salade, tomate, cheddar, sauce au choix.</p></div>
       </div>
+      <div class="responsiveSimple"><img src="img/imgsimple.png" alt="burger simple"></div>
       <div class="prix-container2">
       <div class="prix2">
       <?php
@@ -100,7 +101,8 @@ $conn = getDatabaseConnection();
             <div class="h2Second">
            <div class="h2"> <h2>FISH BURGER</h2></div>
            <div class="description2"> <p> Pain burger, poisson pané, salade, tomate, cheddar, sauce au choix.</p></div>
-          </div>
+           </div>
+           <div class="responsiveFish"><img src="img/imgfish.png" alt="fish burger"></div>
           <div class="prix-container2">
           <div class="prix2">
           <?php
@@ -181,7 +183,8 @@ $conn = getDatabaseConnection();
             <div class="h2Second">
            <div class="h2"> <h2>SMASH BURGER</h2></div>
            <div class="description2"> <p> Pain brioché, deux steacks ou un filet de poulet , salade, tomate, cheddar, sauce au choix.</p></div>
-          </div>
+           </div>
+           <div class="responsiveSmash"><img src="img/imgsmash.png" alt="smash burger"></div>
           <div class="prix-container2">
           <div class="prix2">
           <?php
@@ -262,6 +265,7 @@ $conn = getDatabaseConnection();
            <div class="h2"> <h2>CHICKEN BURGER</h2></div>
            <div class="description2"> <p> Pain burger, un steack, salade, tomate, cheddar, sauce au choix.</p></div>
           </div>
+          <div class="responsiveChicken"><img src="img/imgchicken.png" alt="chicken burger"></div>
           <div class="prix-container2">
           <div class="prix2">
           <?php
@@ -343,6 +347,7 @@ $conn = getDatabaseConnection();
            <div class="h2"> <h2>ROYAL BURGER</h2></div>
            <div class="description2"> <p> Pain burger, un steack, salade, tomate, cheddar, sauce au choix.</p></div>
           </div>
+          <div class="responsiveRoyal"><img src="img/imgroyal.png" alt="burger royal"></div>
           <div class="prix-container2">
           <div class="prix2">
           <?php

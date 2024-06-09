@@ -2,27 +2,22 @@
 // MENU BURGER
 
 
-// Fonction pour ouvrir/fermer le menu
 function toggleMenu() {
     var menu = document.querySelector('.navMenu');
     menu.classList.toggle('active');
 }
 
-// Fonction pour fermer le menu lorsque un élément est cliqué
-function closeMenuOnClick() {
-    var menuItems = document.querySelectorAll('.menuDeroulant a');
-    menuItems.forEach(function(item) {
-        item.addEventListener('click', function() {
+document.addEventListener('DOMContentLoaded', function() {
+    var menuLinks = document.querySelectorAll('.navMenu a');
+    menuLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
             var menu = document.querySelector('.navMenu');
             menu.classList.remove('active');
         });
     });
-}
-
-// Ajout des écouteurs d'événements
-document.addEventListener('DOMContentLoaded', function() {
-    closeMenuOnClick();
 });
+
+
   
 //   MAP
 
