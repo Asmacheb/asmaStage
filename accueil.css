@@ -26,6 +26,9 @@ body {
     background-repeat: no-repeat;
     text-align: center; 
   }
+  .footer{
+    color: white;
+  }
 
   .navbar {
     display: flex;
@@ -56,10 +59,10 @@ body {
   text-align: center;
 } */
 
-.navbar a:hover {
+/* .navbar a:hover {
   background-color: #ddd;
   color: black;
-}
+} */
 
 .sousmenu {
   position: relative;
@@ -67,8 +70,7 @@ body {
 }
 
 .Le {
-  /* background-color:#5A7C2A; */
-
+ 
   padding: 14px 20px;
   font-size: 16px;
   border: none;
@@ -89,6 +91,10 @@ background-color: rgba(0, 0, 0, 0.767);
 .menuDeroulant .submenu {
   position: relative;
 }
+.Le:hover{
+  background-color: white;
+  color: black;
+}
 
 .menuDeroulant li{
   color: white;
@@ -100,6 +106,7 @@ background-color: rgba(0, 0, 0, 0.767);
 
 .menuDeroulant a:hover {
   background-color: #f1f1f1;
+  color: black;
 }
 
 .deroulant{
@@ -117,6 +124,7 @@ background-color: rgba(0, 0, 0, 0.767);
 
 .deroulant a:hover {
   background-color: white;
+  color: black;
 }
 
 .sousmenu:hover .menuDeroulant {
@@ -156,13 +164,20 @@ background-color: rgba(0, 0, 0, 0.767);
     height: 40px;
     border-radius: 50%;
 }
-  .navLogo {
+  /* .navLogo {
     flex-grow: 0; 
   }
-  
+   */
   .navLogo img {
     max-width: 80px; 
     height: auto;
+    cursor: pointer;
+  }
+  .navLogo :hover{
+    transform: scale(1.08);
+  }
+  .avatar :hover{
+    transform: scale(1.08); 
   }
   
   .titre {
@@ -376,9 +391,10 @@ background-color: rgba(0, 0, 0, 0.767);
   body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
   }
 
-  .burger-menu-container {
+  /* .burger-menu-container {
     position: fixed;
     top: 10px;
     right: 10px;
@@ -394,8 +410,8 @@ background-color: rgba(0, 0, 0, 0.767);
 
   .burger-menu img {
     height: 40px;
-    width: 40px;
-  }
+    width: 40px; */
+  /* } */
 
   .backAcceuil {
     height: 100vh;
@@ -406,86 +422,76 @@ background-color: rgba(0, 0, 0, 0.767);
     background-repeat: no-repeat;
     text-align: center;
   }
-
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: #171816ae;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 7vh;
-    z-index: 1000;
-  }
-
-  .navMenu {
-    display: none;
+  .navLogo {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+.navbar{
+  display: block;
+}
+.navLogo img {
+    width: 50px;
+    height: 50px;
+}
+.burgerMenu {
+    display: block;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.navMenu {
+   
     flex-direction: column;
     width: 100%;
     position: absolute;
     top: 7vh;
     left: 0;
-    background-color: #171816ae;
+    background-color: #171816ba;
     color: white;
     list-style: none;
-  }
-
-  .navMenu.active {
+}
+.navMenu.active {
     display: flex;
-  }
-
-  .navMenu li {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-  }
-
-  .navMenu a {
-    color: white;
-    text-decoration: none;
-  }
-
-  .navMenu a:hover {
-    background-color: #f1f1f1;
-    color: black;
-  }
-
-  .menuDeroulant {
+}
+.menuDeroulant {
     display: none;
     flex-direction: column;
     list-style: none;
     color: white;
-  }
-
-  .submenu:hover .menuDeroulant,
-  .submenu .menuDeroulant.active {
+}
+.submenu:hover .menuDeroulant,
+.submenu .menuDeroulant.active {
     display: flex;
-  }
-
-  .navLogo {
-    width: 40px;
-    height: 40px;
-    display: block;
-  }
-
-  .navLogo img {
+}
+.navMenu li {
     width: 100%;
-    height: 100%;
-  }
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.burger-menu img {
+    height: 45px;
+    width: 45px;
+}
+.burger-menu {
+  display: block;
+}
+.navMenu a, .menuDeroulant a {
+    color: white; /* Assure que le texte des liens est en blanc */
+    text-decoration: none; /* Supprime la décoration des liens */
+}
+.navMenu .submenu > a{
+color: #5A7C2A;
 
-  .avatar {
-    display: flex;
-    align-items: center;
-    margin-right: 25px;
-  }
-
-  .avatar img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
-
+}
+.navMenu a:hover, .menuDeroulant a:hover {
+    background-color: #f1f1f1;
+    color: black; /* Change la couleur du texte au survol pour une meilleure visibilité */
+}
+.avatar{
+  display: none;
+}
   .titre {
     display: flex;
     justify-content: center;
@@ -499,16 +505,19 @@ background-color: rgba(0, 0, 0, 0.767);
     color: white;
     letter-spacing: 2px;
   }
-
+.navMenu, .navContacts{
+  display: none;
+}
   /* PAGE2 et PAGE3 */
-  .page2, .page3 {
+  .page2 {
     min-height: 100vh;
     width: 100vw;
     background-image: url(img/backfood.png);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
+
   }
 
   .menu-section, .menu-section2 {
@@ -533,7 +542,7 @@ background-color: rgba(0, 0, 0, 0.767);
   }
 
   .burgers img, .classiques img, .compositions img, .petitefaim img {
-    height: 150px;
+    height: 80px;
     width: auto;
     box-shadow: 4px 4px 8px rgba(225, 219, 219, 0.844);
     transition: box-shadow 0.3s ease;

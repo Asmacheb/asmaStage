@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<div class="backAcceuil">
+<div class="backAcceuil" id="home">
   
     <div class="navbar">
       <div class="burgerMenu">
@@ -24,49 +24,49 @@
     </div>
         <ul class="navMenu">
             <li class="sousmenu">
-                <ul class="navMenu">
+            <ul class="navMenu">
                 <a href="#menus" class="Le">Menus</a>
             </ul>
                 <ul class="menuDeroulant">
                         <li class="submenu">
-                            <a href="#" class="subdropbtn">Burgers</a>
+                            <a href="lesBurgers.php" class="subdropbtn">Burgers</a>
                             <ul class="deroulant">
-                                <li><a href="lesBurgers.php#burger_simple">Burger Simple</a></li>
-                                <li><a href="#burger2">Fish Burger</a></li>
-                                <li><a href="#burger3">Smash Burger </a></li>
-                                <li><a href="#burger3">Chicken Burger </a></li>
-                                <li><a href="#burger3">Royal Burger </a></li>
+                                <li><a href="lesBurgers.php#burgersimple">Burger Simple</a></li>
+                                <li><a href="lesBurgers.php#fishburger">Fish Burger</a></li>
+                                <li><a href="lesBurgers.php#smashburger">Smash Burger </a></li>
+                                <li><a href="lesBurgers.php#chickenburger">Chicken Burger </a></li>
+                                <li><a href="lesBurgers.php#royalburger">Royal Burger </a></li>
                             </ul>
                         </li>
                        
                     <li class="submenu">
-                        <a href="#" >Classiques</a>
+                        <a href="lesClassiques.php" >Classiques</a>
                         <ul class="deroulant">
-                            <li><a href="#Kebab">Kebab</a></li>
-                            <li><a href="#Galette">Galette</a></li>
-                            <li><a href="#Panini">Panini</a></li>
-                            <li><a href="#Sandwich">Sandwich</a></li>
-                            <li><a href="#Menuenfant">Menu enfant</a></li>
+                            <li><a href="lesClassiques.php#kebab">Kebab</a></li>
+                            <li><a href="lesClassiques.php#galette">Galette</a></li>
+                            <li><a href="lesClassiques.php#panini">Panini</a></li>
+                            <li><a href="lesClassiques.php#sandwich">Sandwich</a></li>
+                            <li><a href="lesClassiques.php#enfant">Menu enfant</a></li>
                         </ul>
                     </li>
                     <li class="submenu">
-                        <a href="#">Compositions</a>
+                        <a href="lesCompositions.php">Compositions</a>
                         <ul class="deroulant">
-                            <li><a href="#composition1">Tacos</a></li>
-                            <li><a href="#composition2">Tacosbowl</a></li>
-                            <li><a href="#composition3">Assiettes</a></li>
-                            <li><a href="#composition3">Kapsalon</a></li>
-                            <li><a href="#composition3">Carbonnade</a></li>
+                            <li><a href="lesCompositions.php#tacos">Tacos</a></li>
+                            <li><a href="lesCompositions.php#tacosbowl">Tacosbowl</a></li>
+                            <li><a href="lesCompositions.php#assiette">Assiettes</a></li>
+                            <li><a href="lesCompositions.php#kapsalon">Kapsalon</a></li>
+                            <li><a href="lesCompositions.php#carbonnade">Carbonnade</a></li>
                         </ul>
                     </li>
                     <li class="submenu">
-                        <a href="#">Petites Faims</a>
+                        <a href="lesPetiteFaims.php">Petites Faims</a>
                         <ul class="deroulant">
-                            <li><a href="#petitefaim1">Nuggets</a></li>
-                            <li><a href="#petitefaim2">Stick Mozza</a></li>
-                            <li><a href="#petitefaim3">Oignons ring</a></li>
-                            <li><a href="#petitefaim3">Chili cheese</a></li>
-                            <li><a href="#petitefaim3">Salade</a></li>
+                            <li><a href="lesPetiteFaims#nuggets">Nuggets</a></li>
+                            <li><a href="lesPetiteFaims#mozza">Stick Mozza</a></li>
+                            <li><a href="lesPetiteFaims#oignons">Oignons ring</a></li>
+                            <li><a href="lesPetiteFaims#chili">Chili cheese</a></li>
+                            <li><a href="lesPetiteFaims#salade">Salade</a></li>
 
                         </ul>
                     </li>
@@ -77,10 +77,10 @@
           <img src="img/logosnack.png" alt="Logo"></a>
         </div>
         <ul class="navContacts">
-            <li><a href="#contacts "   class="Le">Contacts</a></li>
+            <li><a href="#contact"   class="Le">Contacts</a></li>
         </ul>
        <div class="avatar">
-        <img src="img/avatar-de-connexion.png" alt="">
+        <a href="connexion.php"><img src="img/user.png" alt=""></a>
        </div>
     </div>
 <div class="titre">
@@ -91,24 +91,24 @@
 <!-- PAGE2 -->
 <div class="page2">
   <div class="menu-section">
-    <h2 class="menu-title">LES BURGERS</h2>
+   <a href="lesBurgers.php"><h2 class="menu-title">LES BURGERS</h2></a>
     <div class="burgers">
-      <div><a href="simple.html"><img src="img/lesimple.png" alt="Le Burger simple"></a></div>
-      <div><a href="fish.html"><img src="img/lefish.png" alt="Le Fish Burger"></a></div>
-      <div><a href="smash.html"><img src="img/lesmash.png" alt="Le Smash Burger"></a></div>
-      <div><a href="chicken.html"><img src="img/lechicken.png" alt="Le Chicken Burger"></a></div>
-      <div><a href="royal.html"><img src="img/leroyal.png" alt="Le Royal Burger"></a></div>
+      <div><a href="lesBurgers.php#burgersimple"><img src="img/lesimple.png" alt="Le Burger simple"></a></div>
+      <div><a href="lesBurgers.php#fishburger"><img src="img/lefish.png" alt="Le Fish Burger"></a></div>
+      <div><a href="lesBurgers.php#smashburger"><img src="img/lesmash.png" alt="Le Smash Burger"></a></div>
+      <div><a href="lesBurgers.php#chickenburger"><img src="img/lechicken.png" alt="Le Chicken Burger"></a></div>
+      <div><a href="lesBurgers.php#royalburger"><img src="img/leroyal.png" alt="Le Royal Burger"></a></div>
     </div>
   </div>
   
   <div class="menu-section">
     <h2 class="menu-title"> LES CLASSIQUES</h2>
     <div class="classiques">
-      <a href="kebab.html"><img src="img/kebab.png" alt="Kebab"></a>
-      <a href="galette.html"><img src="img/galette.png" alt="Galette"></a>
-      <a href="panini.html"><img src="img/panini.png" alt="Panini"></a>
-      <a href="sandwich.html"><img src="img/sandwich.png" alt="Sandwich"></a>
-      <a href="menuenfant.html"><img src="img/enfants.png" alt="Menu Enfants"></a>
+      <a href="lesClassiques.php#kebab"><img src="img/kebab.png" alt="Kebab"></a>
+      <a href="lesClassiques.php#galette"><img src="img/galette.png" alt="Galette"></a>
+      <a href="lesClassiques.php#panini"><img src="img/panini.png" alt="Panini"></a>
+      <a href="lesClassiques.php#sandwich"><img src="img/sandwich.png" alt="Sandwich"></a>
+      <a href="lesClassiques.php#enfant"><img src="img/enfants.png" alt="Menu Enfants"></a>
     </div>
   </div>
 </div>
@@ -122,27 +122,27 @@
   <div class="menu-section2">
     <h2 class="menu-title2">LES COMPOSITIONS</h2>
     <div class="compositions">
-      <a href="#Tacos"><img src="img/tacos.png" alt="Tacos"></a>
-      <a href="#Tacosbowl"><img src="img/tacosbowl.png" alt="Tacos Bowl"></a>
-      <a href="#Assiette"><img src="img/assiette.png" alt="Assiette"></a>
-      <a href="#Kapsalon"><img src="img/kapsalon.png" alt="Kapsalon"></a>
-      <a href="#Carbonnade"><img src="img/carbonnade.png" alt="Carbonnade"></a>
+      <a href="lesCompositions.php#tacos"><img src="img/tacos.png" alt="Tacos"></a>
+      <a href="lesCompositions.php#tacosbowl"><img src="img/tacosbowl.png" alt="Tacos Bowl"></a>
+      <a href="lesCompositions.php#assiette"><img src="img/assiette.png" alt="Assiette"></a>
+      <a href="lesCompositions.php#kapsalon"><img src="img/kapsalon.png" alt="Kapsalon"></a>
+      <a href="lesCompositions.php#carbonnade"><img src="img/carbonnade.png" alt="Carbonnade"></a>
     </div>
   </div>
   
   <div class="menu-section2">
     <h2 class="menu-title2"> LES PETITES FAIMS</h2>
     <div class="petitefaim">
-     <a href="nuggets.html"> <div><img src="img/nuggets.png" alt=""></div></a>
-     <a href="stickmozza.html"><div><img src="img/stickmozza.png" alt=""></div></a>
-     <a href="oignonsrings.html"><div><img src="img/oignonsring.png" alt=""></div></a>
-     <a href="chilicheese.html"><div><img src="img/chilicheese.png" alt=""></div></a>
-     <a href="salade.html"><div><img src="img/salade.png" alt=""></div></a>
+     <a href="lesPetiteFaims.php#nuggets"> <div><img src="img/nuggets.png" alt=""></div></a>
+     <a href="lesPetiteFaims.php#mozza"><div><img src="img/stickmozza.png" alt=""></div></a>
+     <a href="lesPetiteFaims.php#oignons"><div><img src="img/oignonsring.png" alt=""></div></a>
+     <a href="lesPetiteFaims.php#chili"><div><img src="img/chilicheese.png" alt=""></div></a>
+     <a href="lesPetiteFaims.php#salade"><div><img src="img/salade.png" alt=""></div></a>
     </div>
   </div>
 </div>
 <!-- PAGE4 -->
-<div class="contact">
+<div class="contact" id="contact">
    <div class="gauche">
      <div class="map" id="map"><!-- Intégrer une carte Google Maps ici --></div>
   </div>
@@ -159,6 +159,10 @@
    <div class="logo"><img src="img/facebook-2.png" alt=""></div>
   </div>
 </div>
+<!-- <div class="footer">
+<p>© 2024 Snack Loos - Tous droits réservés</p>
+<p>Conception et dévloppement par Chebaiki Asma</p>
+</div> -->
 <script src="script.js"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
 integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="

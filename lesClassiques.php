@@ -13,7 +13,7 @@ $conn = getDatabaseConnection();
 <body>
 <?php require_once 'menu.php'; ?> 
 <!-- KEBAB -->
-    <div class="backKebab">
+    <div class="backKebab" id="kebab">
     <div class="titre2">
         <div class="h2Second">
        <div class="h2"> <h2>KEBAB</h2></div>
@@ -94,7 +94,7 @@ $conn = getDatabaseConnection();
     </div>
 
     <!-- GALETTE -->
-    <div class="backGalette"> 
+    <div class="backGalette" id="galette"> 
         <div class="titre1">
             <div class="h2Premier">
            <div class="h2"> <h2>GALETTE</h2></div>
@@ -214,7 +214,7 @@ $conn = getDatabaseConnection();
     
         </div>
     <!-- PANINI -->
-    <div class="backPanini">
+    <div class="backPanini" id="panini">
         <div class="titre1">
             <div class="h2Premier">
            <div class="h2"> <h2>PANINI</h2></div>
@@ -334,7 +334,7 @@ $conn = getDatabaseConnection();
      </div>
 
     <!-- SANDWICH -->
-    <div class="backSandwich">
+    <div class="backSandwich" id="sandwich">
         <div class="titresandwich">
             <div class="h2sandwich">
            <div class="h2"> <h2>SANDWICH</h2></div>
@@ -455,7 +455,7 @@ $conn = getDatabaseConnection();
     
         </div>
     <!-- MENU ENFANT -->
-    <div class="backEnfant">
+    <div class="backEnfant" id="enfant">
         <div class="titre3">
             <div class="h2Second">
            <div class="h2"> <h2>MENU ENFANT</h2></div>

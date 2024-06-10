@@ -13,7 +13,7 @@ $conn = getDatabaseConnection();
 <body>
 <?php require_once 'menu.php'; ?> 
     <!-- BURGER SIMPLE -->
-    <div class="backSimple">
+    <div class="backSimple" id="burgersimple">
     <div class="titre2">
         <div class="h2Second">
        <div class="h2"> <h2 id="burger_simple">BURGER SIMPLE</h2></div>
@@ -96,7 +96,7 @@ $conn = getDatabaseConnection();
 
     <!-- BURGER FISH -->
 
-    <div class="backFish">
+    <div class="backFish" id="fishburger">
         <div class="titre2">
             <div class="h2Second">
            <div class="h2"> <h2>FISH BURGER</h2></div>
@@ -178,7 +178,7 @@ $conn = getDatabaseConnection();
     
         </div>
     <!-- BURGER SMASH -->
-    <div class="backSmash">
+    <div class="backSmash" id="smashburger">
         <div class="titre2">
             <div class="h2Second">
            <div class="h2"> <h2>SMASH BURGER</h2></div>
@@ -259,7 +259,7 @@ $conn = getDatabaseConnection();
     
         </div>
     <!-- BURGER CHICKEN -->
-    <div class="backChicken">
+    <div class="backChicken" id="chickenburger">
         <div class="titre2">
             <div class="h2Second">
            <div class="h2"> <h2>CHICKEN BURGER</h2></div>
@@ -341,7 +341,7 @@ $conn = getDatabaseConnection();
     
         </div>
     <!-- BURGER ROYAL -->
-    <div class="backRoyal">
+    <div class="backRoyal" id="royalburger">
         <div class="titre2">
             <div class="h2Second">
            <div class="h2"> <h2>ROYAL BURGER</h2></div>
@@ -420,9 +420,8 @@ $conn = getDatabaseConnection();
         </div>
     </div>
     </div>
-    
-    
         </div>
+        
 </body>
 </html>
 

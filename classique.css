@@ -10,60 +10,115 @@
     
   }
   
-   
-  .burger-menu {
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: none;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #171816ae;
+    padding: 10px;
+    position: fixed;  
+    top: 0;  
+    width: 100vw;  
+    height: 6vh; 
+    z-index: 1000;  
   }
-  .navbar{
-    display: none;
-  }
-  .responsiveKebab, .responsivePanini, .responsiveGalette, .responsiveSandwich, .responsiveEnfant{
-display: none;
-  }
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  background-color: #171816ae;
-  padding: 10px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 7vh;
-  z-index: 1000;
   
-}
-/* MENU BURGER  */
-.burgerMenu {
-  display: none;
-}
-.navLogo{
-  display: none;
-}
-.navMenu{
-  display: none; 
-}
-  /* Styles pour le menu responsive */
+  .logoHome{
+    margin-left: 15px;
+  }
+  .navLogo{
+    display: none;
+  }
+  .logoHome img{
+    width: 30px;
+    height: 30px;
+  }
+  .logoHome:hover{
+    transform: scale(1.08); 
+  }
+  .burgerMenu {
+    display: none; /* Cache le burger menu sur grand écran */
+  }
+  .deroulant{
+    text-decoration: none;
+  }
+  .navMenu {
+    flex-direction: row;
+    width: auto;
+    position: static;
+    background-color: transparent;
+    display: flex; /* Affiche le menu horizontalement */
+  }
+  .submenu{
+    list-style: none;
+  }
+  .navMenu li {
+    width: auto;
+    padding: 10px 15px;
+    position: relative; /* Ajouté pour permettre le positionnement relatif du sous-menu */
+  }
+  
+  .menuDeroulant {
+    display: none;
+    position: absolute;
+    background-color: #171816ba;
+    padding: 10px;
+    border-radius: 5px;
+    top: 100%; /* Positionne le sous-menu directement en dessous de son parent */
+    left: 0;
+    list-style: none; /* Enlève les puces des listes */
+    padding: 0; /* Enlève le padding par défaut */
+    margin: 0; /* Enlève la marge par défaut */
+  }
+  
+  .menuDeroulant li {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    list-style: none;
+  }
+  
+  .submenu:hover .menuDeroulant {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navMenu .submenu > a {
+    color: white;
+  }
+  
+  .navMenu a, .menuDeroulant a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navMenu a:hover, .menuDeroulant a:hover {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+/* Styles pour le menu responsive */
 @media screen and (max-width: 767px) {
   .navLogo {
       width: 40px;
       height: 40px;
       display: block;
   }
-
+  .navbar{
+    display: block;
+  }
   .navLogo img {
       width: 100%;
       height: 100%;
   }
-
   .burgerMenu {
       display: block;
+      position: absolute;
+      top:0;
+      right: 0;
   }
-
   .navMenu {
-      display: none;
+     
       flex-direction: column;
       width: 100%;
       position: absolute;
@@ -73,40 +128,39 @@ display: none;
       color: white;
       list-style: none;
   }
-
   .navMenu.active {
       display: flex;
   }
-
   .menuDeroulant {
       display: none;
       flex-direction: column;
       list-style: none;
       color: white;
   }
-
   .submenu:hover .menuDeroulant,
   .submenu .menuDeroulant.active {
       display: flex;
   }
-
   .navMenu li {
       width: 100%;
       text-align: center;
       padding: 10px;
       color: white;
   }
-
   .burger-menu img {
       height: 40px;
       width: 40px;
   }
-
+  .burger-menu {
+    display: block;
+  }
   .navMenu a, .menuDeroulant a {
       color: white; /* Assure que le texte des liens est en blanc */
       text-decoration: none; /* Supprime la décoration des liens */
   }
-
+  .navMenu .submenu > a{
+ color: red;
+  }
   .navMenu a:hover, .menuDeroulant a:hover {
       background-color: #f1f1f1;
       color: black; /* Change la couleur du texte au survol pour une meilleure visibilité */
@@ -893,9 +947,9 @@ display: none;
 
   }
   html, body {
-    width: 100%;
-    height: 100%;
-    
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
   }
   
 
@@ -961,7 +1015,7 @@ display: none;
     align-items: center; 
     height: 20vh; 
     width: 100vw; 
-    margin-left: -30px;
+    margin-top:-5vh;
   }
 .option span{
     font-size: 1em;
@@ -969,7 +1023,7 @@ display: none;
 .prix2 p{
   height: 80px;
   width: 80px;
-  font-size: 1em;
+  font-size: 1.3em;
   
 }
 .prix2{
@@ -1369,7 +1423,7 @@ width: 65px;
   height: 20vh; 
   width: 100vw; 
   margin-top: 40px;
-  margin-left: 5vw;
+  margin-left: 12vw;
 }
 
 .option span{
@@ -1429,7 +1483,7 @@ width: 65px;
 .optionsupp3 p {
   height: 50px;
   width: 50px;
-  font-size: 1em; /* Taille de police pour le prix */
+  font-size: 1em; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1450,10 +1504,10 @@ width: 65px;
   z-index: 10;
   bottom: 10px;
   left: 0;
-  right: 0; /* Assurez-vous que le label est centré horizontalement */
+  right: 0; 
   text-align: center;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5); /* Améliore la visibilité */
+  background-color: rgba(0, 0, 0, 0.5); 
   visibility: hidden;
   font-size: 0.9em;
   padding: 2px 0;
@@ -1477,7 +1531,23 @@ width: 65px;
     height: 100%;
     
   }
-  
+
+  .responsiveKebab, .responsivePanini, .responsiveGalette, .responsiveSandwich, .responsiveEnfant{
+    display: block;
+      }
+
+      .responsiveKebab img, .responsivePanini img, .responsiveGalette img, .responsiveEnfant img{
+        height: 300px;
+        width: 300px;
+              } 
+  .responsivePanini, .responsiveGalette, .responsiveSandwich {
+          
+              height: 25vh;
+                width: 100vw;
+               text-align: center;
+              margin-left: -30vw;
+              }
+              
   /* Kebab */
   
 
@@ -1537,12 +1607,6 @@ width: 65px;
     width: 100vw;
 
   }
-
-/* 
-  .option {
- 
-    height: 20vh;
-  } */
 
   .option span {
     font-size: 1.7em;
@@ -1650,7 +1714,7 @@ width: 65px;
 
   /* Galette et panini */
 
-  .backGalette .backPanini{
+  .backGalette, .backPanini{
     height: 100vh;
     width: 100vw;
     background-image: url(img/backtablette.png);
@@ -1692,21 +1756,26 @@ width: 65px;
   .description1 {
     width: 95vw;
     height: 5vh;
-    margin: auto;  
+    margin: auto;
+    margin-left: 35px;
+    text-align: center;
+  }
+  .description1 p {
+    font-size: 1.4em;
   }
   .prix-container1 .prix1{
     display: flex;
-    justify-content: center; /* Centre les éléments horizontalement */
-    align-items: center; /* Centre les éléments verticalement */
+    justify-content: center; 
+    align-items: center; 
     height: 10vh; 
     width: 100vw; 
-    margin-left: 20vw;
+    margin-left: 40vw;
   }
 
   .prix1 p{
-    height: 70px;
-    width: 70px;
-    font-size: 1.3em;
+    height: 90px;
+    width: 90px;
+    font-size: 1.9em;
   }
  
 
@@ -1722,7 +1791,7 @@ width: 65px;
 
  
   .h2viande{
-    font-size: 1em;
+    font-size: 1.6em;
     height: 5vh;
     width: 100vw;
     margin-top: -2vh;
@@ -1734,19 +1803,19 @@ width: 65px;
  
   }
   .viandes .item{
-    height: 50px;
-    width: 50px;
+    height: 90px;
+    width: 90px;
   }
   .h2supp1{
-    font-size: 1.1em;
+    font-size: 1.6em;
     height: 5vh;
     width: 100vw;
     margin-top: -2vh;
   }
 
   .suppléments1 img, .viandes img {
-    height: 50px;
-    width: 50px; 
+    height: 70px;
+    width: 70px; 
   }
   .suppléments1{
     height: 15vh;
@@ -1757,8 +1826,8 @@ width: 65px;
   }
 
 .suppléments1 .item{
-  height: 50px;
-  width: 50px;
+  height: 90px;
+  width: 90px;
 }
   .optionsupp1{
     height: 10vh;
@@ -1768,12 +1837,12 @@ margin-top: 5px;
     margin-left: 20px;
   }
   .optionsupp1 span {
-    font-size: 1.1em; 
+    font-size: 1.5em; 
   }
   .optionsupp1 p {
     height: 70px;
     width: 70px;
-    font-size: 1em; /* Taille de police pour le prix */
+    font-size: 1.5em; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1793,10 +1862,10 @@ margin-top: 5px;
     z-index: 10;
     bottom: 10px;
     left: 0;
-    right: 0; /* Assurez-vous que le label est centré horizontalement */
+    right: 0; 
     text-align: center;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5); /* Améliore la visibilité */
+    background-color: rgba(0, 0, 0, 0.5); 
     visibility: hidden;
     font-size: 0.9em;
     padding: 2px 0;
@@ -1816,20 +1885,28 @@ margin-top: 5px;
 }
 .responsiveSandwich{
   height: 10vh;
-width: 50vw;
+    width: 50vw;
 text-align: center;
 
 }
+
+.responsiveSandwich img{
+  height: 270px;
+  width: 270px;
+}
 .titresandwich{
   width: 100vw;
-  height: 33vh; /* Prend toute la largeur de la vue */
-  overflow: hidden; /* Évite le débordement hors de la vue */
+  height: 33vh; 
+  overflow: hidden; /
   
 }
 .flex{
   display: flex;
   flex-direction: row;
   margin-top: 5vh;
+  margin-left: 20vw;
+  width: 100vw;
+  height: 10vh;
 }
 
 .h2sandwich{
@@ -1851,6 +1928,9 @@ text-align: center;
   height: 5vh; 
   margin: auto;
 }
+.descriptionSandwich p{
+font-size: 1.5em;
+}
 .prix-containerSandwich .prixSandwich{
   display: flex;
   justify-content: center; /* Centre les éléments horizontalement */
@@ -1864,12 +1944,12 @@ text-align: center;
 
 
 .prixSandwich p{
-  height: 60px;
-  width: 60px;
-  font-size: 1em;
+  height: 90px;
+  width: 90px;
+  font-size: 1.9em;
 }
 .sandwichchaud p, .sandwichfroid p {
-  font-size: 1.9em;
+  font-size: 3em;
   color: white;
   padding: 2px 0;
 }
@@ -1889,7 +1969,7 @@ height: 70vh;
   width: 100vw;
   height: 10vh;
   font-size: 0.5em;
-  margin-left: 40vw;
+  margin-left: 10vw;
 }
 .sectionfroid{
   margin-left: 40px;
@@ -1899,11 +1979,11 @@ height: 70vh;
   height: 30vh;
 }
 .h2suppSandwich{
-  font-size: 1em;
+  font-size: 1.7em;
 }
 .supplémentsSandwich img {
-  height: 45px;
-  width: 45px; 
+  height: 70px;
+  width: 70px; 
 }
 .supplémentsSandwich{
   height: 15vh;
@@ -1912,8 +1992,8 @@ margin-left: 20px;
 }
 
 .supplémentsSandwich .item{
-height: 65px;
-width: 65px;
+  height: 90px;
+  width: 90px; 
 }
 .optionsuppSandwich{
   height: 10vh;
@@ -1923,12 +2003,12 @@ width: 65px;
   margin-left: 20px;
 }
 .optionsuppSandwich span {
-  font-size: 1.1em; 
+  font-size: 1.5em; 
 }
 .optionsuppSandwich p {
-  height: 50px;
-  width: 50px;
-  font-size: 1em; /* Taille de police pour le prix */
+  height: 70px;
+  width: 70px;
+  font-size: 1.5em; /* Taille de police pour le prix */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1949,8 +2029,17 @@ width: 65px;
   padding: 0 20px; /* Ajout de padding pour ne pas que le contenu touche les bords */
 }
 
-.responsiveEnfant img{
-  margin-left: -40vw;
+.responsiveEnfant{
+  display: block;
+height: 25vh;
+  width: 100vw;
+ text-align: center;
+margin-left: -30vw;
+}
+
+.responsiveEnfant img {
+  height: 300px;
+  width: 300px;
 }
 
 .titre3{
@@ -1981,18 +2070,18 @@ width: 65px;
   align-items: center; 
   height: 20vh; 
   width: 100vw; 
-  margin-top: 40px;
-  margin-left: 5vw;
+  margin-top: 30px;
+  margin-left: 35vw;
 }
 
 .option span{
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 .prix3 p{
-  height: 70px;
-  width: 70px;
-  font-size: 1.3em;
+  height: 90px;
+  width: 90px;
+  font-size: 1.9em;
 }
 
 .prix3{
@@ -2007,15 +2096,15 @@ width: 90vw;
 }
 
 .h2supp3{
-  font-size: 1.1em;
+  font-size: 1.7em;
     height: 10vh;
     width: 100vw;
   margin-top: -15px;
 }
 
 .suppléments3 img {
-  height: 45px;
-  width: 45px; 
+  height: 90px;
+  width: 90px; 
 }
 .suppléments3{
   height: 15vh;
@@ -2023,8 +2112,8 @@ width: 90vw;
   margin-top: -30px;
 }
 .suppléments3 .item{
-height: 65px;
-width: 65px;
+  height: 90px;
+  width: 90px; 
 }
 
 .optionsupp3{
@@ -2035,14 +2124,14 @@ width: 65px;
   margin-left: 20px;
 }
 .optionsupp3 span {
-  font-size: 1.1em; 
+  font-size: 1.5em; 
   margin-top:15px;
 }
 
 .optionsupp3 p {
-  height: 50px;
-  width: 50px;
-  font-size: 1em; /* Taille de police pour le prix */
+  height: 70px;
+  width: 70px;
+  font-size: 1.2em; /* Taille de police pour le prix */
   display: flex;
   justify-content: center;
   align-items: center;

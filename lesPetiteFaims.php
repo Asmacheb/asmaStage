@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Petites faims</title>
     <link rel="stylesheet" type="text/css" href="petitefaim.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
         <div class="titre4">
           <div class="h2Quatre"><h2>LES NUGGETS</h2></div>
         </div> 
-        
+        <div class="responsiveNuggets"><img src="img/imgnuggets.png" alt="nuggets"></div>
         <div class="lesPrix">
             <div class="prix-container4">
             <div class="optionPetite">
@@ -37,7 +37,7 @@
         <div class="titre4">
           <div class="h2Quatre"><h2>STICK MOZZA</h2></div>
         </div> 
-        
+        <div class="responsiveMozza"><img src="img/imgmozza.png" alt="stick mozza"></div>
         <div class="lesPrix">
             <div class="prix-container4">
             <div class="optionPetite">
@@ -60,7 +60,7 @@
         <div class="titre4">
           <div class="h2Quatre"><h2>OIGNONS RINGS</h2></div>
         </div> 
-        
+        <div class="responsiveOignons"><img src="img/imgoignons.png" alt="oignons rings"></div>
         <div class="lesPrix">
             <div class="prix-container4">
             <div class="optionPetite">
@@ -83,7 +83,7 @@
         <div class="titre4">
           <div class="h2Quatre"><h2>CHILI CHEESE</h2></div>
         </div> 
-        
+        <div class="responsiveChili"><img src="img/imgchili.png" alt="chili cheese"></div>
         <div class="lesPrix">
             <div class="prix-container4">
             <div class="optionPetite">
@@ -108,6 +108,7 @@
            <div class="h2"> <h2>SALADE COMPOSÉ</h2></div>
            <div class="description2"> <p> Laitue, maïs, tomate, olives vertes, oignons, oignons fries.</p></div>
           </div>
+          <div class="responsiveSalade"><img src="img/imgsalade.png" alt="salade"></div>
           <div class="prix-container2">
                 <div class="prix2">
                     <div class="option">

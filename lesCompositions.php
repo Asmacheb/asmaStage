@@ -38,15 +38,15 @@ $conn = getDatabaseConnection();
                     }
                     ?>
                     <div class="option">
-                        <span>1 Viande</span>
+                        <span>1Viande</span>
                         <p><?php echo htmlspecialchars($row['prix_1viande']) . "€"; ?></p>
                     </div>
                     <div class="option">
-                        <span>2 Viandes</span>
+                        <span>2Viandes</span>
                         <p><?php echo htmlspecialchars($row['prix_2viandes']) . "€"; ?></p>
                     </div>
                     <div class="option">
-                        <span>3 Viandes</span>
+                        <span>3Viandes</span>
                         <p><?php echo htmlspecialchars($row['prix_3viandes']) . "€"; ?></p>
                     </div>
                 </div>
@@ -139,7 +139,7 @@ $conn = getDatabaseConnection();
     </div>
 
 <!-- TACOSBOWL -->
-<div class="backTacosbowl" id="Tacosbowl">
+<div class="backTacosbowl" id="tacosbowl">
 <div class="titre1">
     <div class="h2Premier">
    <div class="h2"> <h2>TACOS BOWL</h2></div>
@@ -261,7 +261,7 @@ $conn = getDatabaseConnection();
 </div>
 <!-- ASSIETTES -->
 
-<div class="backAssiette" id="Assiettes">
+<div class="backAssiette" id="assiette">
     <div class="titre1">
         <div class="h2Premier">
        <div class="h2"> <h2>L'ASSIETTE</h2></div>
@@ -286,15 +286,15 @@ $conn = getDatabaseConnection();
                     }
                     ?>
                     <div class="option">
-                        <span>1 Viande</span>
+                        <span>1Viande</span>
                         <p><?php echo htmlspecialchars($row['prix_1viande']) . "€"; ?></p>
                     </div>
                     <div class="option">
-                        <span>2 Viandes</span>
+                        <span>2Viandes</span>
                         <p><?php echo htmlspecialchars($row['prix_2viandes']) . "€"; ?></p>
                     </div>
                     <div class="option">
-                        <span>3 Viandes</span>
+                        <span>3Viandes</span>
                         <p><?php echo htmlspecialchars($row['prix_3viandes']) . "€"; ?></p>
                     </div>
                 </div>
@@ -386,7 +386,7 @@ $conn = getDatabaseConnection();
     </div>
 <!-- KAPSALON -->
 
-<div class="backKapsalon" id="Kapsalon">
+<div class="backKapsalon" id="kapsalon">
 <div class="titre1">
     <div class="h2Premier">
    <div class="h2"> <h2>KAPSALON</h2></div>
@@ -507,7 +507,7 @@ $conn = getDatabaseConnection();
 </div>
 <!-- CARBONNADE -->
 
-<div class="backCarbonnade" id="Carbonnade">
+<div class="backCarbonnade" id="carbonnade">
 <div class="titre1">
     <div class="h2Premier">
    <div class="h2"> <h2>CARBONNADE</h2></div>

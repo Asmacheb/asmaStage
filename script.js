@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    
+    if(!L)return
     var map = L.map('map').setView([51.505, -0.09], 13);
 
     

@@ -36,20 +36,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Se connecter</title>
+    <link rel="stylesheet" type="text/css" href="connexion.css">
 </head>
 <body>
-    <h2>Se connecter</h2>
+<div class="logoHome"><a href="Accueil.php#home"><img src="img/logoHome.png" alt="Logo"></a></div>
+    <div class="connect">
+    <h2>CONNEXION</h2>
     <?php
     if (!empty($error_message)) {
         echo "<p style='color:red;'>$error_message</p>";
     }
     ?>
+    <div class="formulaire">
     <form method="post" action="connexion.php">
-        <label for="identifiant">Identifiant:</label>
+        <label for="identifiant">Identifiant</label>
         <input type="text" id="identifiant" name="identifiant" required><br><br>
-        <label for="password">Mot de passe:</label>
+        <label for="password">Mot de passe</label>
         <input type="password" id="password" name="password" required><br><br>
         <button type="submit">Se connecter</button>
     </form>
+    </div>
+    </div>
 </body>
 </html>
