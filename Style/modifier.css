@@ -87,7 +87,7 @@ hr {
 
 body {
     
-    background-image: url(img/backfood2.png);
+    background-image: url(../img/backfood2.png);
     display: flex;
     flex-direction: column;
     align-items: center;

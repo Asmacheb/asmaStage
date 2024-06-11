@@ -2,6 +2,21 @@
 // MENU BURGER
 
 
+// function toggleMenu() {
+//     var menu = document.querySelector('.navMenu');
+//     menu.classList.toggle('active');
+// }
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     var menuLinks = document.querySelectorAll('.navMenu a');
+//     menuLinks.forEach(function(link) {
+//         link.addEventListener('click', function() {
+//             var menu = document.querySelector('.navMenu');
+//             menu.classList.remove('active');
+//         });
+//     });
+// });
+
 function toggleMenu() {
     var menu = document.querySelector('.navMenu');
     menu.classList.toggle('active');
@@ -15,8 +30,23 @@ document.addEventListener('DOMContentLoaded', function() {
             menu.classList.remove('active');
         });
     });
-});
 
+    var subMenuLinks = document.querySelectorAll('.submenu > a');
+    subMenuLinks.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            var subMenu = this.nextElementSibling;
+            if (subMenu.classList.contains('active')) {
+                subMenu.classList.remove('active');
+            } else {
+                document.querySelectorAll('.menuDeroulant').forEach(function(menu) {
+                    menu.classList.remove('active');
+                });
+                subMenu.classList.add('active');
+            }
+        });
+    });
+});
 
   
 //   MAP

@@ -1,5 +1,5 @@
 <?php
-require_once 'database.php';
+require_once '../Admin/database.php';
 $conn = getDatabaseConnection();
 ?>
 <!DOCTYPE html>
@@ -8,10 +8,10 @@ $conn = getDatabaseConnection();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compositions</title>
-    <link rel="stylesheet" type="text/css" href="composition.css">
+    <link rel="stylesheet" type="text/css" href="../Style/composition.css">
 </head>
-<body>
-<?php require_once 'menu.php'; ?> 
+<body id="lesCompositions">
+<?php require_once '../menu.php'; ?> 
     <!-- TACOS -->
     <div class="backTacos" id="tacos">
     <div class="titre1">

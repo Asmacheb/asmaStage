@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petites faims</title>
-    <link rel="stylesheet" type="text/css" href="petitefaim.css">
+    <link rel="stylesheet" type="text/css" href="../Style/petitefaim.css">
 </head>
 <body>
     <?php require_once 'menu.php'; ?> 

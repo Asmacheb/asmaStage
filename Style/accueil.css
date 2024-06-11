@@ -20,7 +20,7 @@ body {
   
   .backAcceuil {
     height: 100vh;
-    background-image: url('img/1snack.png');
+    background-image: url('../img/1snack.png');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -201,7 +201,7 @@ background-color: rgba(0, 0, 0, 0.767);
     min-height: 100vh;
     width: 100vw;
     /* background-color: black; */
-    background-image: url(img/backfood.png);
+    background-image: url(../img/backfood.png);
     display: flex;
     flex-direction: column; /* organise les enfants en colonnes */
     align-items: center; /* centre horizontalement */
@@ -223,18 +223,18 @@ background-color: rgba(0, 0, 0, 0.767);
   
   
   .burgers {
-    height: 50vh; /* La hauteur s'ajuste au contenu */
-    width: auto; /* La largeur s'ajuste au contenu */
+    height: 50vh; 
+    width: auto; 
     display: flex;
-    gap: 2px; /* Espace entre les images */
-    justify-content: center; /* Centre les images dans le conteneur .burgers */
+    gap: 2px; 
+    justify-content: center;
   }
   
   .burgers img {
-    height: 30vh; /* Réglé pour correspondre à la hauteur désirée */
-    width: auto; /* Gardez l'aspect ratio */
-    box-shadow: 4px 4px 8px rgba(225, 219, 219, 0.844); /* Ombre pour les images */
-    transition: box-shadow 0.3s ease; /* Transition douce pour l'effet */
+    height: 30vh; 
+    width: auto; 
+    box-shadow: 4px 4px 8px rgba(225, 219, 219, 0.844); 
+    transition: box-shadow 0.3s ease;
     border-radius: 10%;
   }
   .burgers img:hover{
@@ -244,18 +244,18 @@ background-color: rgba(0, 0, 0, 0.767);
     border-radius: 10%;
   }
   .classiques {
-    height: 50vh; /* La hauteur s'ajuste au contenu */
-    width: auto; /* La largeur s'ajuste au contenu */
+    height: 50vh; 
+    width: auto; 
     display: flex;
-    gap: 2px; /* Espace entre les images */
-    justify-content: center; /* Centre les images dans le conteneur .burgers */
+    gap: 2px; 
+    justify-content: center; 
   }
   
   .classiques img {
-    height: 30vh; /* Réglé pour correspondre à la hauteur désirée */
-    width: auto; /* Gardez l'aspect ratio */
-    box-shadow: 4px 4px 8px rgba(225, 219, 219, 0.844); /* Ombre pour les images */
-    transition: box-shadow 0.3s ease; /* Transition douce pour l'effet */
+    height: 30vh; 
+    width: auto; 
+    box-shadow: 4px 4px 8px rgba(225, 219, 219, 0.844); 
+    transition: box-shadow 0.3s ease; 
     border-radius: 10%;
   }
   .classiques img:hover{
@@ -271,7 +271,7 @@ background-color: rgba(0, 0, 0, 0.767);
     min-height: 100vh;
     width: 100vw;
     /* background-color:black; */
-    background-image: url(img/backfood2.png);
+    background-image: url(../img/backfood2.png);
     display: flex;
     flex-direction: column; /* organise les enfants en colonnes */
     align-items: center; /* centre horizontalement */
@@ -383,7 +383,86 @@ background-color: rgba(0, 0, 0, 0.767);
 
 }
 
-  
+   /* RESPONSIVE */
+/* TÉLÉPHONE */
+@media screen and (max-width: 767px) {
+  .navLogo {
+      width: 40px;
+      height: 40px;
+      display: block;
+  }
+  .navbar{
+    height: 50px;
+  }
+  .navLogo img {
+      width: 100%;
+      height: 100%;
+  }
+
+  .burgerMenu {
+      display: block;
+  }
+
+  .navMenu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 5vh;
+      left: 0;
+      background-color: #171816ae;
+      color: white;
+      list-style: none;
+      z-index: 999; /* Assurez-vous que le menu est au-dessus des autres éléments */
+  }
+
+  .navMenu.active {
+      display: flex;
+  }
+
+  .menuDeroulant {
+      display: none;
+      flex-direction: column;
+      list-style: none;
+      color: white;
+      background-color: #171816ae; /* Ajoutez une couleur de fond pour les sous-menus */
+  }
+
+  .submenu .menuDeroulant {
+      position: static; /* Assurez-vous que les sous-menus sont positionnés statiquement */
+  }
+
+  .submenu:hover .menuDeroulant,
+  .submenu .menuDeroulant.active {
+      display: flex;
+  }
+
+  .navMenu li {
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      color: white;
+  }
+.logoHome{
+  display: none;
+}
+  .burger-menu img {
+      height: 40px;
+      width: 40px;
+  }
+
+  .navMenu a, .menuDeroulant a {
+      color: white;
+      text-decoration: none;
+      padding: 10px; /* Ajoutez du padding pour les liens du menu */
+  }
+
+  .navMenu a:hover, .menuDeroulant a:hover {
+      background-color: #f1f1f1;
+      color: black;
+  }
+}
+
 
   /* RESPONSIVE */
 /* TÉLÉPHONE */
@@ -416,79 +495,13 @@ background-color: rgba(0, 0, 0, 0.767);
   .backAcceuil {
     height: 100vh;
     width: 100vw;
-    background-image: url('img/1back.png');
+    background-image: url('../img/1back.png');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
   }
-  .navLogo {
-    width: 40px;
-    height: 40px;
-    display: block;
-}
-.navbar{
-  display: block;
-}
-.navLogo img {
-    width: 50px;
-    height: 50px;
-}
-.burgerMenu {
-    display: block;
-    position: absolute;
-    top:0;
-    right: 0;
-}
-.navMenu {
-   
-    flex-direction: column;
-    width: 100%;
-    position: absolute;
-    top: 7vh;
-    left: 0;
-    background-color: #171816ba;
-    color: white;
-    list-style: none;
-}
-.navMenu.active {
-    display: flex;
-}
-.menuDeroulant {
-    display: none;
-    flex-direction: column;
-    list-style: none;
-    color: white;
-}
-.submenu:hover .menuDeroulant,
-.submenu .menuDeroulant.active {
-    display: flex;
-}
-.navMenu li {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    color: white;
-}
-.burger-menu img {
-    height: 45px;
-    width: 45px;
-}
-.burger-menu {
-  display: block;
-}
-.navMenu a, .menuDeroulant a {
-    color: white; /* Assure que le texte des liens est en blanc */
-    text-decoration: none; /* Supprime la décoration des liens */
-}
-.navMenu .submenu > a{
-color: #5A7C2A;
 
-}
-.navMenu a:hover, .menuDeroulant a:hover {
-    background-color: #f1f1f1;
-    color: black; /* Change la couleur du texte au survol pour une meilleure visibilité */
-}
 .avatar{
   display: none;
 }
@@ -501,35 +514,50 @@ color: #5A7C2A;
   }
 
   .titre h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     color: white;
     letter-spacing: 2px;
+    margin-top: 5vh;
   }
-.navMenu, .navContacts{
+ .navContacts{
   display: none;
 }
+
   /* PAGE2 et PAGE3 */
   .page2 {
     min-height: 100vh;
     width: 100vw;
-    background-image: url(img/backfood.png);
+    background-image: url(../img/backfood.png);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+   
 
+  }
+  .page3 {
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url(../img/backfood2.png);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
   }
 
   .menu-section, .menu-section2 {
-    width: 100%;
+    width: 48%;
     text-align: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 10px; */
+ 
   }
 
   .menu-title, .menu-title2 {
     color: white;
     margin-bottom: 30px;
-    font-size: 1.5em;
+    font-size: 1.1em;
+    width: 100%;
   }
 
   .burgers, .classiques, .compositions, .petitefaim {
@@ -538,11 +566,11 @@ color: #5A7C2A;
     align-items: center;
     gap: 20px;
     height: auto;
-    width: 90vw;
+    width: 50vw;
   }
 
   .burgers img, .classiques img, .compositions img, .petitefaim img {
-    height: 80px;
+    height: 120px;
     width: auto;
     box-shadow: 4px 4px 8px rgba(225, 219, 219, 0.844);
     transition: box-shadow 0.3s ease;
@@ -575,8 +603,9 @@ color: #5A7C2A;
   }
 
   #map {
-    width: 90%;
-    height: 300px;
+    width: 80vw;
+    height: 250px;
+    margin-left: -5vw;
   }
 
   .reseaux {
@@ -596,5 +625,231 @@ color: #5A7C2A;
     margin-bottom: 20px;
     font-size: 1.2em;
     color: white;
+    width: 60vw;
   }
+}
+
+
+/* FORMAT TABLETTE */
+@media screen and (min-width: 768px) and (max-width: 1180px){
+  .navLogo {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+.navbar{
+  height: 50px;
+}
+.navLogo img {
+    width: 100%;
+    height: 100%;
+}
+
+.burgerMenu {
+    display: block;
+}
+
+.navMenu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 5vh;
+    left: 0;
+    background-color: #171816ae;
+    color: white;
+    list-style: none;
+    z-index: 999; /* Assurez-vous que le menu est au-dessus des autres éléments */
+}
+
+.navMenu.active {
+    display: flex;
+}
+
+.menuDeroulant {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    color: white;
+    background-color: #171816ae; /* Ajoutez une couleur de fond pour les sous-menus */
+}
+
+.submenu .menuDeroulant {
+    position: static; /* Assurez-vous que les sous-menus sont positionnés statiquement */
+}
+
+.submenu:hover .menuDeroulant,
+.submenu .menuDeroulant.active {
+    display: flex;
+}
+
+.navMenu li {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.logoHome{
+display: none;
+}
+.burger-menu img {
+    height: 40px;
+    width: 40px;
+}
+
+.navMenu a, .menuDeroulant a {
+    color: white;
+    text-decoration: none;
+    padding: 10px; /* Ajoutez du padding pour les liens du menu */
+}
+
+.navMenu a:hover, .menuDeroulant a:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+
+.backAcceuil {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../img/accueil-tablette.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.avatar{
+display: none;
+}
+.titre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100vw;
+}
+
+.titre h1 {
+  font-size: 2.5em;
+  color: white;
+  letter-spacing: 2px;
+  margin-top: 5vh;
+}
+.navContacts{
+display: none;
+}
+
+/* PAGE2 et PAGE3 */
+.page2 {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url(../img/backfood.png);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+ 
+
+}
+.page3 {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url(../img/backfood2.png);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+.menu-section, .menu-section2 {
+  width: 48%;
+  text-align: center;
+  /* margin-bottom: 10px; */
+
+}
+
+.menu-title, .menu-title2 {
+  color: white;
+  margin-bottom: 30px;
+  font-size: 1.5em;
+  width: 100%;
+}
+
+.burgers, .classiques, .compositions, .petitefaim {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  height: auto;
+  width: 50vw;
+}
+
+.burgers img, .classiques img, .compositions img, .petitefaim img {
+  height: 170px;
+  width: auto;
+  box-shadow: 4px 4px 8px rgba(225, 219, 219, 0.844);
+  transition: box-shadow 0.3s ease;
+  border-radius: 10%;
+}
+
+.burgers img:hover, .classiques img:hover, .compositions img:hover, .petitefaim img:hover {
+  box-shadow: 0px 20px 80px rgba(237, 232, 232, 0.979);
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.254);
+  border-radius: 10%;
+}
+
+/* PAGE4 */
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: black;
+}
+
+.droite, .gauche {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#map {
+  width: 80vw;
+  height: 250px;
+  margin-left: -5vw;
+}
+
+.reseaux {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.reseaux img {
+  height: 30px;
+  width: 30px;
+}
+
+.contact-info {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: white;
+  width: 60vw;
+}
 }

@@ -98,79 +98,85 @@ html, body {
   color: black;
 }
 
-/* Styles pour le menu responsive */
+/* RESPONSIVE */
+/* TÉLÉPHONE */
 @media screen and (max-width: 767px) {
-    .navLogo {
-        width: 40px;
-        height: 40px;
-        display: block;
-    }
-    .navbar{
+  .navLogo {
+      width: 40px;
+      height: 40px;
       display: block;
-    }
-    .navLogo img {
-        width: 100%;
-        height: 100%;
-    }
-    .burgerMenu {
-        display: block;
-        position: absolute;
-        top:0;
-        right: 0;
-    }
-    .navMenu {
-       
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 7vh;
-        left: 0;
-        background-color: #171816ba;
-        color: white;
-        list-style: none;
-    }
-    .navMenu.active {
-        display: flex;
-    }
-    .menuDeroulant {
-        display: none;
-        flex-direction: column;
-        list-style: none;
-        color: white;
-    }
-    .submenu:hover .menuDeroulant,
-    .submenu .menuDeroulant.active {
-        display: flex;
-    }
-    .navMenu li {
-        width: 100%;
-        text-align: center;
-        padding: 10px;
-        color: white;
-    }
-    .burger-menu img {
-        height: 40px;
-        width: 40px;
-    }
-    .burger-menu {
-      display: block;
-    }
-    .navMenu a, .menuDeroulant a {
-        color: white; /* Assure que le texte des liens est en blanc */
-        text-decoration: none; /* Supprime la décoration des liens */
-    }
-    .navMenu .submenu > a{
-   color: white;
-   font-weight: bold;
- 
-   
-    }
-    .navMenu a:hover, .menuDeroulant a:hover {
-        background-color: #f1f1f1;
-        color: black; /* Change la couleur du texte au survol pour une meilleure visibilité */
-    }
+  }
+.navbar{
+  height: 50px;
 }
+  .navLogo img {
+      width: 100%;
+      height: 100%;
+  }
 
+  .burgerMenu {
+      display: block;
+  }
+
+  .navMenu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 5vh;
+      left: 0;
+      background-color: #171816ae;
+      color: white;
+      list-style: none;
+      z-index: 999; /* Assurez-vous que le menu est au-dessus des autres éléments */
+  }
+
+  .navMenu.active {
+      display: flex;
+  }
+
+  .menuDeroulant {
+      display: none;
+      flex-direction: column;
+      list-style: none;
+      color: white;
+      /* background-color: #171816ae;  */
+  }
+
+  .submenu .menuDeroulant {
+      position: static; /* Assurez-vous que les sous-menus sont positionnés statiquement */
+  }
+
+  .submenu:hover .menuDeroulant,
+  .submenu .menuDeroulant.active {
+      display: flex;
+  }
+
+  .navMenu li {
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      color: white;
+  }
+.logoHome{
+  display: none;
+}
+  .burger-menu img {
+      height: 40px;
+      width: 40px;
+  }
+
+  .navMenu a, .menuDeroulant a {
+      color: white;
+      text-decoration: none;
+      padding: 10px; /* Ajoutez du padding pour les liens du menu */
+  }
+
+  .navMenu a:hover, .menuDeroulant a:hover {
+      background-color: #f1f1f1;
+      color: black;
+  }
+}
     
 /* SMASH BURGEEERRRRRRRRRR */
 
@@ -178,7 +184,7 @@ html, body {
     height: 100vh;
     width: 100vw;
     display: flex;
-    background-image: url(img/burgersmash.png);
+    background-image: url(../img/burgersmash.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -311,7 +317,7 @@ html, body {
     height: 100vh;
     width: 100vw;
     display: flex;
-    background-image: url(img/burgersimpe.png);
+    background-image: url(../img/burgersimpe.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -328,7 +334,7 @@ html, body {
     height: 100vh;
     width: 100vw;
     display: flex;
-    background-image: url(img/burgerroyal.png);
+    background-image: url(../img/burgerroyal.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -344,7 +350,7 @@ html, body {
     height: 100vh;
     width: 100vw;
     display: flex;
-    background-image: url(img/chickenburger.png);
+    background-image: url(../img/chickenburger.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -363,7 +369,7 @@ html, body {
     height: 100vh;
     width: 100vw;
     display: flex;
-    background-image: url(img/fishburger.png);
+    background-image: url(../img/fishburger.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -419,7 +425,7 @@ html, body {
   .backSimple {
     height: 100vh;
     width: 100vw;
-    background-image: url(img/backtelephone.png);
+    background-image: url(../img/backtelephone.png);
   
     display: flex;
     flex-direction: column; /* Les enfants sont disposés en colonne */
@@ -431,7 +437,6 @@ html, body {
     height: 100vh;
     width: 100vw;
     background-image: url(img/backtelephone.png);
-    background-color: black;
     display: flex;
     flex-direction: column; /* Les enfants sont disposés en colonne */
     align-items: center; /* Centre les enfants horizontalement */
@@ -441,7 +446,7 @@ html, body {
   .backFish {
     height: 100vh;
     width: 100vw;
-    background-image: url(img/backtelephone.png);
+    background-image: url(../img/backtelephone.png);
     background-color: black;
     display: flex;
     flex-direction: column; /* Les enfants sont disposés en colonne */
@@ -452,8 +457,7 @@ html, body {
   .backChicken {
     height: 100vh;
     width: 100vw;
-    background-image: url(img/backtelephone.png);
-    background-color: black;
+    background-image: url(../img/backtelephone.png);
     display: flex;
     flex-direction: column; /* Les enfants sont disposés en colonne */
     align-items: center; /* Centre les enfants horizontalement */
@@ -463,7 +467,7 @@ html, body {
   .backRoyal {
     height: 100vh;
     width: 100vw;
-    background-image: url(img/backtelephone.png);
+    background-image: url(../img/backtelephone.png);
     background-color: black;
     display: flex;
     flex-direction: column; /* Les enfants sont disposés en colonne */
@@ -612,7 +616,7 @@ html, body {
   .backSimple, .backSmash, .backFish, .backChicken, .backRoyal {
     height: 100vh;
     width: 100vw;
-    background-image: url(img/backtablette.png);
+    background-image: url(../img/backtablette.png);
     display: flex;
     flex-direction: column;
     align-items: center;

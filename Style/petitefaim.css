@@ -108,92 +108,91 @@ html, body {
   background-color: #f1f1f1;
   color: black;
 }
-
-
-/* RESPONSIVE BURGER */
+/* RESPONSIVE */
+/* TÉLÉPHONE */
 @media screen and (max-width: 767px) {
-  .navLogo{
-    display: none;
-  }
-  .logoHome {
+  .navLogo {
       width: 40px;
       height: 40px;
       display: block;
   }
-  .logoHome:hover{
-    transform: scale(1.08); 
+.navbar{
+  height: 50px;
+}
+  .navLogo img {
+      width: 100%;
+      height: 100%;
   }
-  .navbar{
-    display: block;
-  }
-  .logoHome img {
-      width: 50px;
-      height: 50px;
-  }
+
   .burgerMenu {
       display: block;
-      position: absolute;
-      top:0;
-      right: 0;
   }
+
   .navMenu {
-     
+      display: none;
       flex-direction: column;
       width: 100%;
       position: absolute;
-      top: 7vh;
+      top: 5vh;
       left: 0;
-      background-color: #171816ba;
+      background-color: #171816ae;
       color: white;
       list-style: none;
+      z-index: 999; /* Assurez-vous que le menu est au-dessus des autres éléments */
   }
+
   .navMenu.active {
       display: flex;
   }
+
   .menuDeroulant {
       display: none;
       flex-direction: column;
       list-style: none;
       color: white;
+      /* background-color: #171816ae;  */
   }
+
+  .submenu .menuDeroulant {
+      position: static; /* Assurez-vous que les sous-menus sont positionnés statiquement */
+  }
+
   .submenu:hover .menuDeroulant,
   .submenu .menuDeroulant.active {
       display: flex;
   }
+
   .navMenu li {
       width: 100%;
       text-align: center;
       padding: 10px;
       color: white;
   }
+.logoHome{
+  display: none;
+}
   .burger-menu img {
-      height: 45px;
-      width: 45px;
+      height: 40px;
+      width: 40px;
   }
-  .burger-menu {
-    display: block;
-  }
+
   .navMenu a, .menuDeroulant a {
-      color: white; /* Assure que le texte des liens est en blanc */
-      text-decoration: none; /* Supprime la décoration des liens */
+      color: white;
+      text-decoration: none;
+      padding: 10px; /* Ajoutez du padding pour les liens du menu */
   }
-  .navMenu .submenu > a{
- color: #5A7C2A;
- 
-  }
+
   .navMenu a:hover, .menuDeroulant a:hover {
       background-color: #f1f1f1;
-      color: black; /* Change la couleur du texte au survol pour une meilleure visibilité */
+      color: black;
   }
 }
-
-
 /* OIGNONSR RINGS */
 .backOignons {
     height: 100vh;
     width: 100vw;
     display: flex;
-    background-image: url(img/suppoignonsring.png);
+    background-image: url(../img/suppoignonsring.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -272,7 +271,7 @@ html, body {
     height: 100vh;
     width: 100vw;
     display: flex;
-    background-image: url(img/lesnuggets.png);
+    background-image: url(../img/lesnuggets.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -286,7 +285,7 @@ html, body {
     height: 100vh;
     width: 100vw;
     display: flex;
-    background-image: url(img/suppchilicheese.png);
+    background-image: url(../img/suppchilicheese.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -300,7 +299,7 @@ html, body {
     height: 100vh;
     width: 100vw;
     display: flex;
-    background-image: url(img/suppmozza.png);
+    background-image: url(../img/suppmozza.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -374,7 +373,7 @@ html, body {
     height: 100vh;
     width: 100vw;
     display: flex;
-    background-image: url(img/lasalade.png);
+    background-image: url(../img/lasalade.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -545,7 +544,7 @@ html, body {
   .backNuggets {
     height: 100vh;
     width: 100vw;
-    background-image: url(img/backtelephone.png);
+    background-image: url(../img/backtelephone.png);
     background-color: black;
     display: flex;
     flex-direction: column; /* Les enfants sont disposés en colonne */
@@ -555,7 +554,7 @@ html, body {
   .backMozza {
     height: 100vh;
     width: 100vw;
-    background-image: url(img/backtelephone.png);
+    background-image: url(../img/backtelephone.png);
     display: flex;
     flex-direction: column; /* Les enfants sont disposés en colonne */
     align-items: center; /* Centre les enfants horizontalement */
@@ -564,7 +563,7 @@ html, body {
   .backOignons {
     height: 100vh;
     width: 100vw;
-    background-image: url(img/backtelephone.png);
+    background-image: url(../img/backtelephone.png);
     display: flex;
     flex-direction: column; /* Les enfants sont disposés en colonne */
     align-items: center; /* Centre les enfants horizontalement */
@@ -573,7 +572,7 @@ html, body {
   .backChili {
     height: 100vh;
     width: 100vw;
-    background-image: url(img/backtelephone.png);
+    background-image: url(../img/backtelephone.png);
     display: flex;
     flex-direction: column; /* Les enfants sont disposés en colonne */
     align-items: center; /* Centre les enfants horizontalement */
@@ -666,7 +665,7 @@ html, body {
   .backSalade {
     height: 100vh;
     width: 100vw;
-    background-image: url(img/backtelephone.png);
+    background-image: url(../img/backtelephone.png);
     display: flex;
     flex-direction: column; /* Les enfants sont disposés en colonne */
     align-items: center; /* Centre les enfants horizontalement */
@@ -765,7 +764,7 @@ html, body {
  /* FORMAT TABLETTE */
 @media screen and (min-width: 768px) and (max-width: 1024px){
   .backNuggets, .backMozza, .backChili, .backOignons, .backSalade{
-    background-image: url(img/backtablette.png);
+    background-image: url(../img/backtablette.png);
   }
   .responsiveNuggets img, .responsiveMozza img, .responsiveChili img, .responsiveOignons img, .responsiveSalade img{
     height: 550px;
