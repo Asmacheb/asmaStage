@@ -7,13 +7,13 @@
     <link rel="stylesheet" type="text/css" href="../Style/petitefaim.css">
 </head>
 <body>
-    <?php require_once 'menu.php'; ?> 
+    <?php require_once '../menu.php'; ?> 
 <!-- NUGGETS -->
     <div class="backNuggets">
         <div class="titre4">
           <div class="h2Quatre"><h2>LES NUGGETS</h2></div>
         </div> 
-        <div class="responsiveNuggets"><img src="img/imgnuggets.png" alt="nuggets"></div>
+        <div class="responsiveNuggets"><img src="../img/imgnuggets.png" alt="nuggets"></div>
         <div class="lesPrix">
             <div class="prix-container4">
             <div class="optionPetite">
@@ -37,7 +37,7 @@
         <div class="titre4">
           <div class="h2Quatre"><h2>STICK MOZZA</h2></div>
         </div> 
-        <div class="responsiveMozza"><img src="img/imgmozza.png" alt="stick mozza"></div>
+        <div class="responsiveMozza"><img src="../img/imgmozza.png" alt="stick mozza"></div>
         <div class="lesPrix">
             <div class="prix-container4">
             <div class="optionPetite">
@@ -60,7 +60,7 @@
         <div class="titre4">
           <div class="h2Quatre"><h2>OIGNONS RINGS</h2></div>
         </div> 
-        <div class="responsiveOignons"><img src="img/imgoignons.png" alt="oignons rings"></div>
+        <div class="responsiveOignons"><img src="../img/imgoignons.png" alt="oignons rings"></div>
         <div class="lesPrix">
             <div class="prix-container4">
             <div class="optionPetite">
@@ -83,7 +83,7 @@
         <div class="titre4">
           <div class="h2Quatre"><h2>CHILI CHEESE</h2></div>
         </div> 
-        <div class="responsiveChili"><img src="img/imgchili.png" alt="chili cheese"></div>
+        <div class="responsiveChili"><img src="../img/imgchili.png" alt="chili cheese"></div>
         <div class="lesPrix">
             <div class="prix-container4">
             <div class="optionPetite">
@@ -108,7 +108,7 @@
            <div class="h2"> <h2>SALADE COMPOSÉ</h2></div>
            <div class="description2"> <p> Laitue, maïs, tomate, olives vertes, oignons, oignons fries.</p></div>
           </div>
-          <div class="responsiveSalade"><img src="img/imgsalade.png" alt="salade"></div>
+          <div class="responsiveSalade"><img src="../img/imgsalade.png" alt="salade"></div>
           <div class="prix-container2">
                 <div class="prix2">
                     <div class="option">
@@ -126,27 +126,27 @@
        <div class="h2supp2"><h2>COMPOSITIONS</h2></div>
         <div class="suppléments2">
             <div class="item">
-            <img src="img/laitue.png" alt="Laitue">
+            <img src="../img/laitue.png" alt="Laitue">
             <span class="label">Laitue</span>
         </div>
             <div class="item">
-            <img src="img/maïs2.png" alt="Maïs">
+            <img src="../img/maïs2.png" alt="Maïs">
             <span class="label">Maïs</span>
         </div>
             <div class="item">
-            <img src="img/tomate.png" alt="Tomate">
+            <img src="../img/tomate.png" alt="Tomate">
             <span class="label">Tomate</span>
         </div>
             <div class="item">
-            <img src="img/oliveverte.png" alt="Olive verte">
+            <img src="../img/oliveverte.png" alt="Olive verte">
             <span class="label">Olive verte</span>
         </div>
             <div class="item">
-            <img src="img/oignons.png" alt="Oignons">
+            <img src="../img/oignons.png" alt="Oignons">
             <span class="label">Oignons</span>
         </div>
             <div class="item">
-            <img src="img/oignonsfrie.png" alt="Oignons fries">
+            <img src="../img/oignonsfrie.png" alt="Oignons fries">
             <span class="label">Oignons fries</span>
         </div>
         

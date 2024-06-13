@@ -9,7 +9,6 @@ if (!isset($_SESSION['id_user'])) {
 require_once 'database.php';
 $conn = getDatabaseConnection();
 
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $id_prix = $_POST['id_prix'];
     $prix_seul = isset($_POST['prix_seul']) ? $_POST['prix_seul'] : null;
@@ -45,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modifier les Prix</title>
-    <link rel="stylesheet" type="text/css" href="modifier.css">
+    <link rel="stylesheet" type="text/css" href="../Style/modifier.css">
 </head>
 <body>
 <a href="deconnexion.php" class="deconnexion-btn">Déconnexion</a>

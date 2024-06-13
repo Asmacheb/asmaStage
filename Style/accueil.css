@@ -41,28 +41,11 @@ body {
     height:7vh;
     z-index: 1000;  
 }
-/* .navMenu, .navContacts {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  color: white;
-} */
+
 
 .navMenu li, .navContacts li {
   display: inline-block;
 }
-
-/* .navbar a {
-  color: white;
-  padding: 14px 20px;
-  text-decoration: none;
-  text-align: center;
-} */
-
-/* .navbar a:hover {
-  background-color: #ddd;
-  color: black;
-} */
 
 .sousmenu {
   position: relative;
@@ -164,10 +147,7 @@ background-color: rgba(0, 0, 0, 0.767);
     height: 40px;
     border-radius: 50%;
 }
-  /* .navLogo {
-    flex-grow: 0; 
-  }
-   */
+  
   .navLogo img {
     max-width: 80px; 
     height: auto;
@@ -212,16 +192,25 @@ background-color: rgba(0, 0, 0, 0.767);
     width: 100%; /* Utilisez toute la largeur de .page2 */
     text-align: center; /* Centre les titres */
     margin-bottom: 20px; /* Espace entre les sections */
+   
   }
-  
+
+ .menu-section a{
+  text-decoration: none;
+  cursor: pointer;
+  list-style-type: none;
+ } 
   .menu-title {
     color: white;/* Couleur du titre */
     margin-bottom: 65px;
     font-size: 2.5em ;
+    text-decoration: none;
+    cursor: pointer;
+    list-style-type: none;
    
   }
   
-  
+
   .burgers {
     height: 50vh; 
     width: auto; 
@@ -392,7 +381,12 @@ background-color: rgba(0, 0, 0, 0.767);
       display: block;
   }
   .navbar{
-    height: 50px;
+    height: 40px;
+    width: 100vw;
+    display: flex;
+   
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
   .navLogo img {
       width: 100%;
@@ -402,6 +396,15 @@ background-color: rgba(0, 0, 0, 0.767);
   .burgerMenu {
       display: block;
   }
+  .burger-menu{
+    display: block;
+    margin-right: 10px;
+  }
+   .burger-menu img {
+        height: 40px;
+        width: 40px;
+    }
+  
 
   .navMenu {
       display: none;
@@ -417,7 +420,7 @@ background-color: rgba(0, 0, 0, 0.767);
   }
 
   .navMenu.active {
-      display: flex;
+      display: block
   }
 
   .menuDeroulant {
@@ -433,7 +436,8 @@ background-color: rgba(0, 0, 0, 0.767);
   }
 
   .submenu:hover .menuDeroulant,
-  .submenu .menuDeroulant.active {
+  .submenu .menuDeroulant.active,
+  .navMenu.active .menuDeroulant  {
       display: flex;
   }
 
@@ -446,10 +450,6 @@ background-color: rgba(0, 0, 0, 0.767);
 .logoHome{
   display: none;
 }
-  .burger-menu img {
-      height: 40px;
-      width: 40px;
-  }
 
   .navMenu a, .menuDeroulant a {
       color: white;
@@ -472,25 +472,6 @@ background-color: rgba(0, 0, 0, 0.767);
     padding: 0;
     overflow-x: hidden;
   }
-
-  /* .burger-menu-container {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 1000;
-  }
-  
-  .burger-menu {
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: block;
-  }
-
-  .burger-menu img {
-    height: 40px;
-    width: 40px; */
-  /* } */
 
   .backAcceuil {
     height: 100vh;
@@ -659,7 +640,7 @@ background-color: rgba(0, 0, 0, 0.767);
     background-color: #171816ae;
     color: white;
     list-style: none;
-    z-index: 999; /* Assurez-vous que le menu est au-dessus des autres éléments */
+    z-index: 999; 
 }
 
 .navMenu.active {
@@ -679,7 +660,8 @@ background-color: rgba(0, 0, 0, 0.767);
 }
 
 .submenu:hover .menuDeroulant,
-.submenu .menuDeroulant.active {
+.submenu .menuDeroulant.active,
+.navMenu.active .menuDeroulant {
     display: flex;
 }
 
@@ -696,7 +678,9 @@ display: none;
     height: 40px;
     width: 40px;
 }
-
+.burger-menu{
+  display: block;
+}
 .navMenu a, .menuDeroulant a {
     color: white;
     text-decoration: none;

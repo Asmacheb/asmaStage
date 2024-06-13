@@ -34,7 +34,7 @@ html, body {
 }
 
 .burgerMenu {
-  display: none; /* Cache le burger menu sur grand écran */
+  display: none; 
 }
 .deroulant{
   text-decoration: none;

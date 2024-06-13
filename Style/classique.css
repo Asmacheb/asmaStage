@@ -9,7 +9,7 @@
     height: 100%;
     
   }
-  
+ 
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -186,7 +186,7 @@
     height: 100vh;
     width: 100vw;
     display: flex;
-    background-image: url(img/lekebab.png);
+    background-image: url(../img/lekebab.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -320,7 +320,7 @@
     height: 100vh;
     width: 100vw;
     display: flex;
-    background-image: url(img/lepanini.png);
+    background-image: url(../img/lepanini.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -331,7 +331,7 @@
     height: 100vh;
     width: 100vw;
     display: flex;
-    background-image: url(img/lepanini.png);
+    background-image: url(../img/lepanini.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -479,7 +479,7 @@
     height: 100vh;
     width: 100vw;
     display: flex;
-    background-image: url(img/lesandwich.png);
+    background-image: url(../img/lesandwich.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -641,7 +641,7 @@
     height: 100vh;
     width: 100vw;
     display: flex;
-    background-image: url(img/lagalette.png);
+    background-image: url(../img/lagalette.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -784,7 +784,7 @@
     height: 100vh;
     width: 100vw;
     display: flex;
-    background-image: url(img/menuenfant.png);
+    background-image: url(../img/menuenfant.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -948,7 +948,6 @@
 
 /* RESPONSIVEEEEEEEEEEEEEEEEEEE */
 
-
 /* TELEPHONE */
 
 @media screen and (max-width: 767px){
@@ -986,7 +985,7 @@
   .backKebab {
     height: 100vh;
     width: 100vw;
-    background-image: url(img/backtelephone.png);
+    background-image: url(../img/backtelephone.png);
     background-color: black;
     display: flex;
     flex-direction: column; /* Les enfants sont disposés en colonne */
@@ -1101,7 +1100,7 @@
   .backPanini {
     height: 100vh;
     width: 100vw;
-    background-image: url(img/backtelephone.png);
+    background-image: url(../img/backtelephone.png);
     background-color: black;
     display: flex;
     flex-direction: column; /* Les enfants sont disposés en colonne */
@@ -1119,7 +1118,7 @@
   .backGalette {
     height: 100vh;
     width: 100vw;
-    background-image: url(img/backtelephone.png);
+    background-image: url(../img/backtelephone.png);
     display: flex;
     flex-direction: column; /* Les enfants sont disposés en colonne */
     align-items: center; /* Centre les enfants horizontalement */
@@ -1263,7 +1262,7 @@ margin-top: 5px;
 .backSandwich {
   height: 100vh;
   width: 100vw;
-  background-image: url(img/backtelephone.png);
+  background-image: url(../img/backtelephone.png);
   background-color: black;
   display: flex;
   flex-direction: column; /* Les enfants sont disposés en colonne */
@@ -1394,7 +1393,7 @@ width: 65px;
 .backEnfant {
   height: 100vh;
   width: 100vw;
-  background-image: url(img/backtelephone.png);
+  background-image: url(../img/backtelephone.png);
   background-color: black;
   display: flex;
   flex-direction: column; /* Les enfants sont disposés en colonne */
@@ -1527,10 +1526,27 @@ width: 65px;
 }
 
 
-
+/* Format Ordinateur */
+@media screen and (min-width: 1000px) {
+  .responsiveKebab{
+    display: none;
+      }
+ .responsivePanini{
+        display: none;
+          }
+          .responsiveGalette{
+            display: none;
+              }
+              .responsiveSandwich{
+                display: none;
+                  }
+                  .responsiveEnfant{
+                    display: none;
+                      }         
+}
 
 /* FORMAT TABLETTE */
-@media screen and (min-width: 768px) and (max-width: 1180px){
+@media screen and (min-width: 768px) and (max-width: 1024px){
   
   * {
     margin: 0;

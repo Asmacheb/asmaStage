@@ -15,10 +15,4 @@ function getDatabaseConnection() {
         return null;
     }
 }
-
-// Test de connexion
-// $conn = getDatabaseConnection();
-// if ($conn) {
-//     echo "Connection successful!";
-// }
 ?>

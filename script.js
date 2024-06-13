@@ -18,24 +18,24 @@
 // });
 
 function toggleMenu() {
-    var menu = document.querySelector('.navMenu');
+    const menu = document.querySelector('.navMenu');
     menu.classList.toggle('active');
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    var menuLinks = document.querySelectorAll('.navMenu a');
+    const menuLinks = document.querySelectorAll('.navMenu a');
     menuLinks.forEach(function(link) {
         link.addEventListener('click', function() {
-            var menu = document.querySelector('.navMenu');
+            const menu = document.querySelector('.navMenu');
             menu.classList.remove('active');
         });
     });
 
-    var subMenuLinks = document.querySelectorAll('.submenu > a');
+    const subMenuLinks = document.querySelectorAll('.submenu > a');
     subMenuLinks.forEach(function(link) {
         link.addEventListener('click', function(event) {
             event.preventDefault();
-            var subMenu = this.nextElementSibling;
+            const subMenu = this.nextElementSibling;
             if (subMenu.classList.contains('active')) {
                 subMenu.classList.remove('active');
             } else {
@@ -51,10 +51,9 @@ document.addEventListener('DOMContentLoaded', function() {
   
 //   MAP
 
-
 document.addEventListener('DOMContentLoaded', (event) => {
     if(!L)return
-    var map = L.map('map').setView([51.505, -0.09], 13);
+    const map = L.map('map').setView([51.505, -0.09], 13);
 
     
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {

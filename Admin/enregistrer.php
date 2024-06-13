@@ -18,18 +18,18 @@
 </html>
 
 <?php
-require_once 'database.php';
+require_once '../Admin/database.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn = getDatabaseConnection();
     $identifiant = $_POST['identifiant'];
-    $password = password_hash($_POST['password'], PASSWORD_BCRYPT); // Hacher le mot de passe
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT); 
 
     try {
         $stmt = $conn->prepare("INSERT INTO User (identifiant, password) VALUES (?, ?)");
         $stmt->execute([$identifiant, $password]);
         echo "Compte créé avec succès.";
-        // Rediriger vers la page de connexion après la création du compte
+       
         header("Location: connexion.php");
         exit();
     } catch (PDOException $e) {

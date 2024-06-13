@@ -19,7 +19,7 @@ $conn = getDatabaseConnection();
        <div class="h2"> <h2>TACOS</h2></div>
        <div class="description1"> <p>Wrap, viande au choix, sauce fromagère,  frites, sauce au choix.</p></div>
       </div>
-      <div class="responsiveTacos"><img src="img/imgtacos.png" alt="tacos"></div>
+      <div class="responsiveTacos"><img src="../img/imgtacos.png" alt="tacos"></div>
       <div class="prix-container1">
       <div class="prix1">
       <?php
@@ -56,35 +56,35 @@ $conn = getDatabaseConnection();
     <div class="h2viande"><h2>VIANDE AUX CHOIX</h2></div>
     <div class="viandes">
         <div class="item">
-            <img src="img/viandekebab.png" alt="">
+            <img src="../img/viandekebab.png" alt="">
             <span class="label">Kebab</span>
             </div>
             <div class="item">
-            <img src="img/viandekefta.png" alt="">
+            <img src="../img/viandekefta.png" alt="">
             <span class="label">Kefta</span>
             </div>
             <div class="item">
-            <img src="img/viandedinde.png" alt="">
+            <img src="../img/viandedinde.png" alt="">
             <span class="label">Dinde marinée</span>
             </div>
             <div class="item">
-            <img src="img/viandeboeuf.png" alt="">
+            <img src="../img/viandeboeuf.png" alt="">
             <span class="label">Boeuf marinée</span>
             </div>
             <div class="item">
-            <img src="img/viandemerguez.png" alt="">
+            <img src="../img/viandemerguez.png" alt="">
             <span class="label">Merguez</span>
             </div>
             <div class="item">
-            <img src="img/viandenuggets.png" alt="">
+            <img src="../img/viandenuggets.png" alt="">
             <span class="label">Nuggets</span>
             </div>
             <div class="item">
-            <img src="img/viandecordonbleu.png" alt="">
+            <img src="../img/viandecordonbleu.png" alt="">
             <span class="label">Cordon Bleu</span>
             </div>
             <div class="item">
-            <img src="img/viandetenders.png" alt="">
+            <img src="../img/viandetenders.png" alt="">
             <span class="label">Tenders</span>
             </div>
         
@@ -95,35 +95,35 @@ $conn = getDatabaseConnection();
    <div class="h2supp1"><h2>SUPPLÉMENTS</h2></div>
     <div class="suppléments1">
         <div class="item">
-            <img src="img/chevre.png" alt="fromage chèvre">
+            <img src="../img/chevre.png" alt="fromage chèvre">
             <span class="label">Chèvre</span>
             </div>
             <div class="item">
-            <img src="img/pdt.png" alt="galette de pomme de terre">
+            <img src="../img/pdt.png" alt="galette de pomme de terre">
             <span class="label">Galette Pdt</span>
             </div>
             <div class="item">
-            <img src="img/jambon.png" alt="Jambon de dinde">
+            <img src="../img/jambon.png" alt="Jambon de dinde">
             <span class="label">Jamdon dinde</span>
             </div>
             <div class="item">
-            <img src="img/oeuf.png" alt="oeuf">
+            <img src="../img/oeuf.png" alt="oeuf">
             <span class="label">Oeuf</span>
             </div>
             <div class="item">
-            <img src="img/cheddar.png" alt="cheddar">
+            <img src="../img/cheddar.png" alt="cheddar">
             <span class="label">Cheddar</span>
             </div>
             <div class="item">
-            <img src="img/raclette.png" alt="fromage raclette">
+            <img src="../img/raclette.png" alt="fromage raclette">
             <span class="label">Raclette</span>
             </div>
             <div class="item">
-            <img src="img/salami.png" alt="salami">
+            <img src="../img/salami.png" alt="salami">
             <span class="label">Salami</span>
             </div>
             <div class="item">
-            <img src="img/ring.png" alt="Oignons rings">
+            <img src="../img/ring.png" alt="Oignons rings">
             <span class="label">Oignons rings</span>
             </div>
             
@@ -145,7 +145,7 @@ $conn = getDatabaseConnection();
    <div class="h2"> <h2>TACOS BOWL</h2></div>
    <div class="description1"> <p>Frites, viande au choix, sauce fromagère, sauce au choix.</p></div>
   </div>
-  <div class="responsiveTacosbowl"><img src="img/imgtacosbowl.png" alt="tacosbowl"></div>
+  <div class="responsiveTacosbowl"><img src="../img/imgtacosbowl.png" alt="tacosbowl"></div>
   <div class="prix-containerT">
   <div class="prixT">
   <?php
@@ -179,35 +179,35 @@ $conn = getDatabaseConnection();
 <div class="h2viande"><h2>VIANDE AUX CHOIX</h2></div>
 <div class="viandes">
     <div class="item">
-        <img src="img/viandekebab.png" alt="kebab">
+        <img src="../img/viandekebab.png" alt="kebab">
         <span class="label">Kebab</span>
         </div>
         <div class="item">
-        <img src="img/viandekefta.png" alt="viande hachés">
+        <img src="../img/viandekefta.png" alt="viande hachés">
         <span class="label">Viande Hachés</span>
         </div>
         <div class="item">
-        <img src="img/viandedinde.png" alt="Dinde">
+        <img src="../img/viandedinde.png" alt="Dinde">
         <span class="label">Dinde marinée</span>
         </div>
         <div class="item">
-        <img src="img/viandeboeuf.png" alt="Boeuf">
+        <img src="../img/viandeboeuf.png" alt="Boeuf">
         <span class="label">Boeuf marinée</span>
         </div>
         <div class="item">
-        <img src="img/viandemerguez.png" alt="Merguez">
+        <img src="../img/viandemerguez.png" alt="Merguez">
         <span class="label">Merguez</span>
         </div>
         <div class="item">
-        <img src="img/viandenuggets.png" alt="Nuggets">
+        <img src="../img/viandenuggets.png" alt="Nuggets">
         <span class="label">Nuggets</span>
         </div>
         <div class="item">
-        <img src="img/viandecordonbleu.png" alt="Cordon bleu">
+        <img src="../img/viandecordonbleu.png" alt="Cordon bleu">
         <span class="label">Cordon Bleu</span>
         </div>
         <div class="item">
-        <img src="img/viandetenders.png" alt="Tenders">
+        <img src="../img/viandetenders.png" alt="Tenders">
         <span class="label">Tenders</span>
         </div>
 </div>
@@ -217,35 +217,35 @@ $conn = getDatabaseConnection();
 <div class="h2supp1"><h2>SUPPLÉMENTS</h2></div>
 <div class="suppléments1">
     <div class="item">
-        <img src="img/chevre.png" alt="Fromage de Chèvre">
+        <img src="../img/chevre.png" alt="Fromage de Chèvre">
         <span class="label">Chèvre</span>
         </div>
         <div class="item">
-        <img src="img/pdt.png" alt="Galette de pomme de terre">
+        <img src="../img/pdt.png" alt="Galette de pomme de terre">
         <span class="label">Galette Pdt</span>
         </div>
         <div class="item">
-        <img src="img/jambon.png" alt="Jamdon dinde">
+        <img src="../img/jambon.png" alt="Jamdon dinde">
         <span class="label">Jamdon dinde</span>
         </div>
         <div class="item">
-        <img src="img/oeuf.png" alt="Oeuf">
+        <img src="../img/oeuf.png" alt="Oeuf">
         <span class="label">Oeuf</span>
         </div>
         <div class="item">
-        <img src="img/cheddar.png" alt="Cheddar">
+        <img src="../img/cheddar.png" alt="Cheddar">
         <span class="label">Cheddar</span>
         </div>
         <div class="item">
-        <img src="img/raclette.png" alt=" Fromage de Raclette">
+        <img src="../img/raclette.png" alt=" Fromage de Raclette">
         <span class="label">Raclette</span>
         </div>
         <div class="item">
-        <img src="img/salami.png" alt="Salami">
+        <img src="../img/salami.png" alt="Salami">
         <span class="label">Salami</span>
         </div>
         <div class="item">
-        <img src="img/ring.png" alt="Oignons rings">
+        <img src="../img/ring.png" alt="Oignons rings">
         <span class="label">Oignons rings</span>
         </div>
         
@@ -267,7 +267,7 @@ $conn = getDatabaseConnection();
        <div class="h2"> <h2>L'ASSIETTE</h2></div>
        <div class="description1"> <p>Salade composée, viande au choix, frites, sauce au choix.</p></div>
       </div>
-      <div class="responsiveAssiette"><img src="img/imgassiette.png" alt="assiette"></div>
+      <div class="responsiveAssiette"><img src="../img/imgassiette.png" alt="assiette"></div>
       <div class="prix-container1">
       <div class="prix1">
       <?php
@@ -304,35 +304,35 @@ $conn = getDatabaseConnection();
     <div class="h2viande"><h2>VIANDE AUX CHOIX</h2></div>
     <div class="viandes">
         <div class="item">
-        <img src="img/viandekebab.png" alt="kebab">
+        <img src="../img/viandekebab.png" alt="kebab">
         <span class="label">Kebab</span>
         </div>
         <div class="item">
-        <img src="img/viandekefta.png" alt="viande hachés">
+        <img src="../img/viandekefta.png" alt="viande hachés">
         <span class="label">Viande Hachés</span>
         </div>
         <div class="item">
-        <img src="img/viandedinde.png" alt="Dinde">
+        <img src="../img/viandedinde.png" alt="Dinde">
         <span class="label">Dinde marinée</span>
         </div>
         <div class="item">
-        <img src="img/viandeboeuf.png" alt="Boeuf">
+        <img src="../img/viandeboeuf.png" alt="Boeuf">
         <span class="label">Boeuf marinée</span>
         </div>
         <div class="item">
-        <img src="img/viandemerguez.png" alt="Merguez">
+        <img src="../img/viandemerguez.png" alt="Merguez">
         <span class="label">Merguez</span>
         </div>
         <div class="item">
-        <img src="img/viandenuggets.png" alt="Nuggets">
+        <img src="../img/viandenuggets.png" alt="Nuggets">
         <span class="label">Nuggets</span>
         </div>
         <div class="item">
-        <img src="img/viandecordonbleu.png" alt="Cordon bleu">
+        <img src="../img/viandecordonbleu.png" alt="Cordon bleu">
         <span class="label">Cordon Bleu</span>
         </div>
         <div class="item">
-        <img src="img/viandetenders.png" alt="Tenders">
+        <img src="../img/viandetenders.png" alt="Tenders">
         <span class="label">Tenders</span>
         </div>
     </div>
@@ -342,31 +342,31 @@ $conn = getDatabaseConnection();
    <div class="h2supp1"><h2>SUPPLÉMENTS</h2></div>
     <div class="suppléments1">
         <div class="item">
-        <img src="img/chevre.png" alt="fromage chèvre">
+        <img src="../img/chevre.png" alt="fromage chèvre">
         <span class="label">Chèvre</span>
         </div>
         <div class="item">
-        <img src="img/pdt.png" alt="galette de pomme de terre">
+        <img src="../img/pdt.png" alt="galette de pomme de terre">
         <span class="label">Galette Pdt</span>
         </div>
         <div class="item">
-        <img src="img/jambon.png" alt="Jambon de dinde">
+        <img src="../img/jambon.png" alt="Jambon de dinde">
         <span class="label">Jamdon dinde</span>
         </div>
         <div class="item">
-        <img src="img/oeuf.png" alt="oeuf">
+        <img src="../img/oeuf.png" alt="oeuf">
         <span class="label">Oeuf</span>
         </div>
         <div class="item">
-        <img src="img/cheddar.png" alt="cheddar">
+        <img src="../img/cheddar.png" alt="cheddar">
         <span class="label">Cheddar</span>
         </div>
         <div class="item">
-        <img src="img/raclette.png" alt="fromage raclette">
+        <img src="../img/raclette.png" alt="fromage raclette">
         <span class="label">Raclette</span>
         </div>
         <div class="item">
-        <img src="img/salami.png" alt="salami">
+        <img src="../img/salami.png" alt="salami">
         <span class="label">Salami</span>
         </div>
         <div class="item">
@@ -392,7 +392,7 @@ $conn = getDatabaseConnection();
    <div class="h2"> <h2>KAPSALON</h2></div>
    <div class="description1"> <p>Frites, viande au choix, salade, sauce au choix, cheddar.</p></div>
   </div>
-  <div class="responsiveKapsalon"><img src="img/imgkapsalon.png" alt="kapsalon"></div>
+  <div class="responsiveKapsalon"><img src="../img/imgkapsalon.png" alt="kapsalon"></div>
   <div class="prix-containerK">
   <div class="prixK">
   <?php
@@ -426,35 +426,35 @@ $conn = getDatabaseConnection();
 <div class="h2viande"><h2>VIANDE AUX CHOIX</h2></div>
 <div class="viandes">
     <div class="item">
-        <img src="img/viandekebab.png" alt="kebab">
+        <img src="../img/viandekebab.png" alt="kebab">
         <span class="label">Kebab</span>
         </div>
         <div class="item">
-        <img src="img/viandekefta.png" alt="viande hachés">
+        <img src="../img/viandekefta.png" alt="viande hachés">
         <span class="label">Viande Hachés</span>
         </div>
         <div class="item">
-        <img src="img/viandedinde.png" alt="Dinde">
+        <img src="../img/viandedinde.png" alt="Dinde">
         <span class="label">Dinde marinée</span>
         </div>
         <div class="item">
-        <img src="img/viandeboeuf.png" alt="Boeuf">
+        <img src="../img/viandeboeuf.png" alt="Boeuf">
         <span class="label">Boeuf marinée</span>
         </div>
         <div class="item">
-        <img src="img/viandemerguez.png" alt="Merguez">
+        <img src="../img/viandemerguez.png" alt="Merguez">
         <span class="label">Merguez</span>
         </div>
         <div class="item">
-        <img src="img/viandenuggets.png" alt="Nuggets">
+        <img src="../img/viandenuggets.png" alt="Nuggets">
         <span class="label">Nuggets</span>
         </div>
         <div class="item">
-        <img src="img/viandecordonbleu.png" alt="Cordon bleu">
+        <img src="../img/viandecordonbleu.png" alt="Cordon bleu">
         <span class="label">Cordon Bleu</span>
         </div>
         <div class="item">
-        <img src="img/viandetenders.png" alt="Tenders">
+        <img src="../img/viandetenders.png" alt="Tenders">
         <span class="label">Tenders</span>
         </div>
 </div>
@@ -464,7 +464,7 @@ $conn = getDatabaseConnection();
 <div class="h2supp1"><h2>SUPPLÉMENTS</h2></div>
 <div class="suppléments1">
     <div class="item">
-        <img src="img/chevre.png" alt="Fromage de Chèvre">
+        <img src="../img/chevre.png" alt="Fromage de Chèvre">
         <span class="label">Chèvre</span>
         </div>
         <div class="item">
@@ -472,27 +472,27 @@ $conn = getDatabaseConnection();
         <span class="label">Galette Pdt</span>
         </div>
         <div class="item">
-        <img src="img/jambon.png" alt="Jamdon dinde">
+        <img src="i../mg/jambon.png" alt="Jamdon dinde">
         <span class="label">Jamdon dinde</span>
         </div>
         <div class="item">
-        <img src="img/oeuf.png" alt="Oeuf">
+        <img src="../img/oeuf.png" alt="Oeuf">
         <span class="label">Oeuf</span>
         </div>
         <div class="item">
-        <img src="img/cheddar.png" alt="Cheddar">
+        <img src="../img/cheddar.png" alt="Cheddar">
         <span class="label">Cheddar</span>
         </div>
         <div class="item">
-        <img src="img/raclette.png" alt=" Fromage de Raclette">
+        <img src="../img/raclette.png" alt=" Fromage de Raclette">
         <span class="label">Raclette</span>
         </div>
         <div class="item">
-        <img src="img/salami.png" alt="Salami">
+        <img src="../img/salami.png" alt="Salami">
         <span class="label">Salami</span>
         </div>
         <div class="item">
-        <img src="img/ring.png" alt="Oignons rings">
+        <img src="../img/ring.png" alt="Oignons rings">
         <span class="label">Oignons rings</span>
         </div>
 </div>
@@ -513,7 +513,7 @@ $conn = getDatabaseConnection();
    <div class="h2"> <h2>CARBONNADE</h2></div>
    <div class="description1"> <p> Base frites, sauce carbonnade maison avec de la viande de boeuf.</p></div>
   </div>
-  <div class="responsiveCarbonnade"><img src="img/imgcarbonnade.png" alt="carbonnade"></div>
+  <div class="responsiveCarbonnade"><img src="../img/imgcarbonnade.png" alt="carbonnade"></div>
   <div class="prix-container1">
   <div class="prix">
   <?php
@@ -546,35 +546,35 @@ $conn = getDatabaseConnection();
 <div class="h2supp"><h2>SUPPLÉMENTS</h2></div>
 <div class="suppléments">
     <div class="item">
-        <img src="img/chevre.png" alt=" fromage de Chèvre">
+        <img src="../img/chevre.png" alt=" fromage de Chèvre">
         <span class="label">Chèvre</span>
         </div>
         <div class="item">
-        <img src="img/pdt.png" alt="Galette de pomme de terre">
+        <img src="../img/pdt.png" alt="Galette de pomme de terre">
         <span class="label">Galette Pdt</span>
         </div>
         <div class="item">
-        <img src="img/jambon.png" alt="Jamdon dinde">
+        <img src="../img/jambon.png" alt="Jamdon dinde">
         <span class="label">Jamdon dinde</span>
         </div>
         <div class="item">
-        <img src="img/oeuf.png" alt="Oeuf">
+        <img src="../img/oeuf.png" alt="Oeuf">
         <span class="label">Oeuf</span>
         </div>
         <div class="item">
-        <img src="img/cheddar.png" alt="Cheddar">
+        <img src="../img/cheddar.png" alt="Cheddar">
         <span class="label">Cheddar</span>
         </div>
         <div class="item">
-        <img src="img/raclette.png" alt="Raclette">
+        <img src="../img/raclette.png" alt="Raclette">
         <span class="label">Raclette</span>
         </div>
         <div class="item">
-        <img src="img/salami.png" alt="Salami">
+        <img src="../img/salami.png" alt="Salami">
         <span class="label">Salami</span>
         </div>
         <div class="item">
-        <img src="img/ring.png" alt="Oignons rings">
+        <img src="../img/ring.png" alt="Oignons rings">
         <span class="label">Oignons rings</span>
         </div>
         

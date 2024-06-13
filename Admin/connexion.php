@@ -2,31 +2,42 @@
 require_once 'database.php';
 session_start();
 
-// Initialiser le message d'erreur
 $error_message = '';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $conn = getDatabaseConnection();
-    $identifiant = $_POST['identifiant'];
-    $password = $_POST['password'];
+    $recaptcha_secret = '6Lfs0_cpAAAAADeJaSUqP_5BI-gWiG7j284kvXyG';
+    $recaptcha_response = $_POST['g-recaptcha-response'];
 
-    try {
-        $stmt = $conn->prepare("SELECT * FROM User WHERE identifiant = ?");
-        $stmt->execute([$identifiant]);
-        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+    // Vérifiez la réponse reCAPTCHA
+    $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+    $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response);
+    $recaptcha = json_decode($recaptcha);
 
-        if ($user && password_verify($password, $user['password'])) {
-            $_SESSION['id_user'] = $user['id_user'];
-            header("Location: modifier.php");
-            exit();
-        } else {
-            $error_message = "Identifiant ou mot de passe incorrect.";
+    if ($recaptcha->success) {
+        $conn = getDatabaseConnection();
+        $identifiant = $_POST['identifiant'];
+        $password = $_POST['password'];
+
+        try {
+            $stmt = $conn->prepare("SELECT * FROM User WHERE identifiant = ?");
+            $stmt->execute([$identifiant]);
+            $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+            if ($user && password_verify($password, $user['password'])) {
+                $_SESSION['id_user'] = $user['id_user'];
+                header("Location: modifier.php");
+                exit();
+            } else {
+                $error_message = "Identifiant ou mot de passe incorrect.";
+            }
+        } catch (PDOException $e) {
+            $error_message = "Erreur : " . $e->getMessage();
         }
-    } catch (PDOException $e) {
-        $error_message = "Erreur : " . $e->getMessage();
-    }
 
-    $conn = null;
+        $conn = null;
+    } else {
+        $error_message = "Erreur reCAPTCHA. Veuillez réessayer.";
+    }
 }
 ?>
 
@@ -36,10 +47,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Se connecter</title>
-    <link rel="stylesheet" type="text/css" href="connexion.css">
+    <link rel="stylesheet" type="text/css" href="../Style/connexion.css">
 </head>
 <body>
-<div class="logoHome"><a href="Accueil.php#home"><img src="img/logoHome.png" alt="Logo"></a></div>
+<div class="logoHome"><a href="Accueil.php#home"><img src="../img/logoHome.png" alt="Logo"></a></div>
     <div class="connect">
     <h2>CONNEXION</h2>
     <?php
@@ -53,9 +64,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="text" id="identifiant" name="identifiant" required><br><br>
         <label for="password">Mot de passe</label>
         <input type="password" id="password" name="password" required><br><br>
+        <div class="containerCaptacha">
+            <div class="g-recaptcha" data-sitekey="6Lfs0_cpAAAAAGAIuD5-uWJUmk-NFSVlM0q_gsuD"></div>
+        </div>  
         <button type="submit">Se connecter</button>
     </form>
     </div>
     </div>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>
