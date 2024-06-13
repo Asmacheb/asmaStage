@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" type="text/css" href="../Style/connexion.css">
 </head>
 <body>
-<div class="logoHome"><a href="Accueil.php#home"><img src="../img/logoHome.png" alt="Logo"></a></div>
+<div class="logoHome"><a href="./index.php#home"><img src="../img/logoHome.png" alt="Logo"></a></div>
     <div class="connect">
     <h2>CONNEXION</h2>
     <?php

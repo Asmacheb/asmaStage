@@ -1534,14 +1534,14 @@ width: 65px;
  .responsivePanini{
         display: none;
           }
-          .responsiveGalette{
-            display: none;
+.responsiveGalette{
+  display: none;
               }
-              .responsiveSandwich{
-                display: none;
+.responsiveSandwich{
+  display: none;
                   }
-                  .responsiveEnfant{
-                    display: none;
+.responsiveEnfant{
+  display: none;
                       }         
 }
 

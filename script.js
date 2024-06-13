@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', (event) => {
     if(!L)return
-    const map = L.map('map').setView([51.505, -0.09], 13);
+    const map = L.map('map').setView([51.505, -0.09], 15);
 
     
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {

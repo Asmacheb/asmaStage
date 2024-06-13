@@ -16,7 +16,6 @@
 <body>
 
 <div class="backAcceuil" id="home">
-
     <div class="navbar">
       <div class="burgerMenu">
         <button class="burger-menu" onclick="toggleMenu()">
@@ -81,7 +80,7 @@
             <li><a href="#contact" class="Le">Contacts</a></li>
         </ul>
        <div class="avatar">
-        <a href="connexion.php"><img src="./img/user.png" alt=""></a>
+        <a href="./Admin/connexion.php"><img src="./img/user.png" alt=""></a>
        </div>
     </div>
 <div class="titre">
@@ -94,7 +93,7 @@
   <div class="menu-section">
    <a href="../Page/lesBurgers.php"><h2 class="menu-title">LES BURGERS</h2></a>
     <div class="burgers">
-    <a href="./Page/lesBurgers.php#burgersimple"><img src="img/lesimple.png" alt="Le Burger simple"></a>
+    <a href="../Page/lesBurgers.php#burgersimple"><img src="img/lesimple.png" alt="Le Burger simple"></a>
     <a href="../Page/lesBurgers.php#fishburger"><img src="img/lefish.png" alt="Le Fish Burger"></a>
     <a href="../Page/lesBurgers.php#smashburger"><img src="img/lesmash.png" alt="Le Smash Burger"></a>
     <a href="../Page/lesBurgers.php#chickenburger"><img src="img/lechicken.png" alt="Le Chicken Burger"></a>
@@ -160,14 +159,15 @@
    <div class="logo"><img src="img/facebook-2.png" alt=""></div>
   </div>
 </div>
-<!-- <div class="footer">
-<p>© 2024 Snack Loos - Tous droits réservés</p>
-<p>Conception et dévloppement par Chebaiki Asma</p>
-</div> -->
+</div>
+<footer><p>© 2024 Snack Loos - Tous droits réservés - Conception et dévloppement par Chebaiki Asma</p>
+</footer>
+
 <script src="./script.js"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
 integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
 crossorigin=""></script>
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
 </body>
 </html>

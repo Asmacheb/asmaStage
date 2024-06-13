@@ -91,7 +91,10 @@ button:hover {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-}/* Responsivité pour les petits écrans */
+
+}
+
+/* Responsivité pour les petits écrans */
 @media screen and (max-width: 767px) {
     .connect {
         width: 70vw;

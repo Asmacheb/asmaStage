@@ -3,6 +3,15 @@ body {
     padding: 0;
   }
 
+footer{
+  color: white!important;
+  right: 0;
+  height: 10vh;
+  width: 100vw;
+  background-color: black;
+  text-align: center;
+
+}
   .burger-menu-container {
     position: fixed;
     top: 10px;
@@ -30,136 +39,7 @@ body {
     color: white;
   }
 
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: #171816ae;
-    padding: 10px;
-    position: fixed;  
-    top: 0;  
-    width: 100vw;  
-    height:7vh;
-    z-index: 1000;  
-}
 
-
-.navMenu li, .navContacts li {
-  display: inline-block;
-}
-
-.sousmenu {
-  position: relative;
-  display: inline-block;
-}
-
-.Le {
- 
-  padding: 14px 20px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.menuDeroulant {
-  display: none;
-  position: absolute;
-background-color: rgba(0, 0, 0, 0.767);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.767);
-  z-index: 1;
-  color: white;
-}
-
-.menuDeroulant .submenu {
-  position: relative;
-}
-.Le:hover{
-  background-color: white;
-  color: black;
-}
-
-.menuDeroulant li{
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  list-style-type: none;
-}
-
-.menuDeroulant a:hover {
-  background-color: #f1f1f1;
-  color: black;
-}
-
-.deroulant{
-  list-style: none;
-  display: none;
-  position: absolute;
-  left: 100%;
-  width: 20px;
-  top: 0;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.767);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.767);
-}
-
-.deroulant a:hover {
-  background-color: white;
-  color: black;
-}
-
-.sousmenu:hover .menuDeroulant {
-  display: block;
-}
-
-.submenu:hover .deroulant {
-  display: block;
-}
-
-  
-  .navbar {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    padding: 1em;
-  }
-  
-  .navMenu, .navContacts {
-    flex: 1;
-    text-align: center; 
-  }
-  
-  .navMenu a, .navContacts a {
-    color:white; 
-    text-decoration: none;
-    font-size: 24px;
-  }
-  .avatar {
-    display: flex;
-    align-items: center;
-    margin-right: 25px;
-}
-
-.avatar img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-  
-  .navLogo img {
-    max-width: 80px; 
-    height: auto;
-    cursor: pointer;
-  }
-  .navLogo :hover{
-    transform: scale(1.08);
-  }
-  .avatar :hover{
-    transform: scale(1.08); 
-  }
-  
   .titre {
     display: flex;
     justify-content: center;
@@ -183,15 +63,15 @@ background-color: rgba(0, 0, 0, 0.767);
     /* background-color: black; */
     background-image: url(../img/backfood.png);
     display: flex;
-    flex-direction: column; /* organise les enfants en colonnes */
-    align-items: center; /* centre horizontalement */
+    flex-direction: column; 
+    align-items: center; 
     justify-content: space-around
   
   }
   .menu-section {
-    width: 100%; /* Utilisez toute la largeur de .page2 */
-    text-align: center; /* Centre les titres */
-    margin-bottom: 20px; /* Espace entre les sections */
+    width: 100%; 
+    text-align: center; 
+    margin-bottom: 20px;
    
   }
 
@@ -201,7 +81,7 @@ background-color: rgba(0, 0, 0, 0.767);
   list-style-type: none;
  } 
   .menu-title {
-    color: white;/* Couleur du titre */
+    color: white;
     margin-bottom: 65px;
     font-size: 2.5em ;
     text-decoration: none;
@@ -329,13 +209,12 @@ background-color: rgba(0, 0, 0, 0.767);
     display: flex;
     width: 100%;
     height: 100vh;
-  /* background-color: rgb(37, 37, 37); */
   background-color: black;
    
 }
 
 .droite, .gauche {
-    flex: 1; /* Divise en colonnes égales */
+    flex: 1; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -343,7 +222,7 @@ background-color: rgba(0, 0, 0, 0.767);
 }
 
 #map {
-    width: 90%; /* Ajustez la taille de la carte selon vos besoins */
+    width: 90%; 
     height: 80%;
   
 }
@@ -368,99 +247,6 @@ background-color: rgba(0, 0, 0, 0.767);
     width: 40vw;
     color: white;
     
-
-
-}
-
-   /* RESPONSIVE */
-/* TÉLÉPHONE */
-@media screen and (max-width: 767px) {
-  .navLogo {
-      width: 40px;
-      height: 40px;
-      display: block;
-  }
-  .navbar{
-    height: 40px;
-    width: 100vw;
-    display: flex;
-   
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
-  .navLogo img {
-      width: 100%;
-      height: 100%;
-  }
-
-  .burgerMenu {
-      display: block;
-  }
-  .burger-menu{
-    display: block;
-    margin-right: 10px;
-  }
-   .burger-menu img {
-        height: 40px;
-        width: 40px;
-    }
-  
-
-  .navMenu {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      position: absolute;
-      top: 5vh;
-      left: 0;
-      background-color: #171816ae;
-      color: white;
-      list-style: none;
-      z-index: 999; /* Assurez-vous que le menu est au-dessus des autres éléments */
-  }
-
-  .navMenu.active {
-      display: block
-  }
-
-  .menuDeroulant {
-      display: none;
-      flex-direction: column;
-      list-style: none;
-      color: white;
-      background-color: #171816ae; /* Ajoutez une couleur de fond pour les sous-menus */
-  }
-
-  .submenu .menuDeroulant {
-      position: static; /* Assurez-vous que les sous-menus sont positionnés statiquement */
-  }
-
-  .submenu:hover .menuDeroulant,
-  .submenu .menuDeroulant.active,
-  .navMenu.active .menuDeroulant  {
-      display: flex;
-  }
-
-  .navMenu li {
-      width: 100%;
-      text-align: center;
-      padding: 10px;
-      color: white;
-  }
-.logoHome{
-  display: none;
-}
-
-  .navMenu a, .menuDeroulant a {
-      color: white;
-      text-decoration: none;
-      padding: 10px; /* Ajoutez du padding pour les liens du menu */
-  }
-
-  .navMenu a:hover, .menuDeroulant a:hover {
-      background-color: #f1f1f1;
-      color: black;
-  }
 }
 
 
@@ -611,95 +397,15 @@ background-color: rgba(0, 0, 0, 0.767);
 }
 
 
+
 /* FORMAT TABLETTE */
 @media screen and (min-width: 768px) and (max-width: 1180px){
-  .navLogo {
-    width: 40px;
-    height: 40px;
-    display: block;
-}
-.navbar{
-  height: 50px;
-}
-.navLogo img {
-    width: 100%;
-    height: 100%;
-}
-
-.burgerMenu {
-    display: block;
-}
-
-.navMenu {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    position: absolute;
-    top: 5vh;
-    left: 0;
-    background-color: #171816ae;
-    color: white;
-    list-style: none;
-    z-index: 999; 
-}
-
-.navMenu.active {
-    display: flex;
-}
-
-.menuDeroulant {
-    display: none;
-    flex-direction: column;
-    list-style: none;
-    color: white;
-    background-color: #171816ae; /* Ajoutez une couleur de fond pour les sous-menus */
-}
-
-.submenu .menuDeroulant {
-    position: static; /* Assurez-vous que les sous-menus sont positionnés statiquement */
-}
-
-.submenu:hover .menuDeroulant,
-.submenu .menuDeroulant.active,
-.navMenu.active .menuDeroulant {
-    display: flex;
-}
-
-.navMenu li {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    color: white;
-}
-.logoHome{
-display: none;
-}
-.burger-menu img {
-    height: 40px;
-    width: 40px;
-}
-.burger-menu{
-  display: block;
-}
-.navMenu a, .menuDeroulant a {
-    color: white;
-    text-decoration: none;
-    padding: 10px; /* Ajoutez du padding pour les liens du menu */
-}
-
-.navMenu a:hover, .menuDeroulant a:hover {
-    background-color: #f1f1f1;
-    color: black;
-}
-
-
+  
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
-
-
 
 .backAcceuil {
   height: 100vh;
@@ -835,5 +541,323 @@ display: none;
   font-size: 1.2em;
   color: white;
   width: 60vw;
+}
+}
+
+
+
+
+
+
+/* CODE POUR LE MENU */
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #171816ae;
+  padding: 10px;
+  position: fixed;  
+  top: 0;  
+  width: 100vw;  
+  height:7vh;
+  z-index: 1000;  
+}
+
+
+.navMenu li, .navContacts li {
+display: inline-block;
+}
+
+.sousmenu {
+position: relative;
+display: inline-block;
+}
+
+.Le {
+
+padding: 14px 20px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+text-decoration: none;
+}
+
+.menuDeroulant {
+display: none;
+position: absolute;
+background-color: rgba(0, 0, 0, 0.767);
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.767);
+z-index: 1;
+color: white;
+}
+
+.menuDeroulant .submenu {
+position: relative;
+}
+.Le:hover{
+background-color: white;
+color: black;
+}
+
+.menuDeroulant li{
+color: white;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+list-style-type: none;
+}
+
+.menuDeroulant a:hover {
+background-color: #f1f1f1;
+color: black;
+}
+
+.deroulant{
+list-style: none;
+display: none;
+position: absolute;
+left: 100%;
+width: 20px;
+top: 0;
+color: white;
+background-color: rgba(0, 0, 0, 0.767);
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.767);
+}
+
+.deroulant a:hover {
+background-color: white;
+color: black;
+}
+
+.sousmenu:hover .menuDeroulant {
+display: block;
+}
+
+.submenu:hover .deroulant {
+display: block;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 1em;
+}
+
+.navMenu, .navContacts {
+  flex: 1;
+  text-align: center; 
+}
+
+.navMenu a, .navContacts a {
+  color:white; 
+  text-decoration: none;
+  font-size: 24px;
+}
+.avatar {
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.navLogo img {
+  max-width: 80px; 
+  height: auto;
+  cursor: pointer;
+}
+.navLogo :hover{
+  transform: scale(1.08);
+}
+.avatar :hover{
+  transform: scale(1.08); 
+}
+
+
+
+
+   /* RESPONSIVE BURGER */
+/* TÉLÉPHONE */
+@media screen and (max-width: 767px) {
+  .navLogo {
+      width: 40px;
+      height: 40px;
+      display: block;
+  }
+  .navbar{
+    height: 40px;
+    width: 100vw;
+    display: flex;
+   
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .navLogo img {
+      width: 100%;
+      height: 100%;
+  }
+
+  .burgerMenu {
+      display: block;
+  }
+  .burger-menu{
+    display: block;
+    margin-right: 10px;
+  }
+   .burger-menu img {
+        height: 40px;
+        width: 40px;
+    }
+  
+
+  .navMenu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 5vh;
+      left: 0;
+      background-color: #171816ae;
+      color: white;
+      list-style: none;
+      z-index: 999; /* Assurez-vous que le menu est au-dessus des autres éléments */
+  }
+
+  .navMenu.active {
+      display: block
+  }
+
+  .menuDeroulant, .deroulant {
+      display: none;
+      flex-direction: column;
+      list-style: none;
+      color: white;
+      background-color: #171816ae; /* Ajoutez une couleur de fond pour les sous-menus */
+  }
+
+  .sousmenu .menuDeroulant {
+      position: static; /* Assurez-vous que les sous-menus sont positionnés statiquement */
+  }
+  .submenu .deroulant {
+    position: static; /* Assurez-vous que les sous-menus sont positionnés statiquement */
+}
+  .sousmenu:hover .menuDeroulant,
+  .sousmenu .menuDeroulant.active,
+  .navMenu.active .menuDeroulant  {
+      display: flex;
+  }
+ .submenu:hover .deroulant,
+  .submenu .deroulant.active {
+      display: flex;
+  }
+  .navMenu li {
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      color: white;
+  }
+.logoHome{
+  display: none;
+}
+
+  .navMenu a, .menuDeroulant a {
+      color: white;
+      text-decoration: none;
+      padding: 10px; /* Ajoutez du padding pour les liens du menu */
+  }
+
+  .navMenu a:hover, .menuDeroulant a:hover {
+      background-color: #f1f1f1;
+      color: black;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1180px){
+  .navLogo {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+.navbar{
+  height: 50px;
+}
+.navLogo img {
+    width: 100%;
+    height: 100%;
+}
+
+.burgerMenu {
+    display: block;
+}
+
+.navMenu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 5vh;
+    left: 0;
+    background-color: #171816ae;
+    color: white;
+    list-style: none;
+    z-index: 999; 
+}
+
+.navMenu.active {
+    display: flex;
+}
+
+.menuDeroulant {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    color: white;
+    background-color: #171816ae; /* Ajoutez une couleur de fond pour les sous-menus */
+}
+
+.sousmenu .menuDeroulant {
+    position: static; /* Assurez-vous que les sous-menus sont positionnés statiquement */
+}
+
+.sousmenu:hover .menuDeroulant,
+.sousmenu .menuDeroulant.active,
+.navMenu.active .menuDeroulant {
+    display: flex;
+}
+
+.navMenu li {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.logoHome{
+display: none;
+}
+.burger-menu img {
+    height: 40px;
+    width: 40px;
+}
+.burger-menu{
+  display: block;
+}
+.navMenu a, .menuDeroulant a {
+    color: white;
+    text-decoration: none;
+    padding: 10px; /* Ajoutez du padding pour les liens du menu */
+}
+
+.navMenu a:hover, .menuDeroulant a:hover {
+    background-color: #f1f1f1;
+    color: black;
 }
 }

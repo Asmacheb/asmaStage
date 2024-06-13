@@ -62,7 +62,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     JOIN Prix ON Coûter.id_prix = Prix.id_prix 
                     WHERE Food.id_food BETWEEN 1 AND 5
                 ");
-                while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                $burgers = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                foreach ($burgers as $row) {
                     echo "<form method='post' action='modifier.php'>";
                     echo "<div class='burger-entry'>";
                     echo "<h4>" . htmlspecialchars($row['nom_food']) . "</h4>";
@@ -90,7 +91,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     JOIN Prix ON Coûter.id_prix = Prix.id_prix 
                     WHERE Food.id_food BETWEEN 6 AND 10
                 ");
-                while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                $classiques = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                foreach ($classiques as $row) {
                     echo "<form method='post' action='modifier.php'>";
                     echo "<div class='burger-entry'>";
                     echo "<h4>" . htmlspecialchars($row['nom_food']) . "</h4>";
@@ -116,9 +118,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     FROM Food 
                     JOIN Coûter ON Food.id_food = Coûter.id_food 
                     JOIN Prix ON Coûter.id_prix = Prix.id_prix 
-                    WHERE Food.id_food BETWEEN 11 AND 15
+                    WHERE Food.id_food BETWEEN 11 AND 14
                 ");
-                while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                $compositions = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                foreach ($compositions as $row) {
                     echo "<form method='post' action='modifier.php'>";
                     echo "<div class='burger-entry'>";
                     echo "<h4>" . htmlspecialchars($row['nom_food']) . "</h4>";
@@ -126,6 +129,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     echo "<label>Prix 1 Viande: <input type='text' name='prix_1viande' value='" . htmlspecialchars($row['prix_1viande']) . "'></label>";
                     echo "<label>Prix 2 Viandes: <input type='text' name='prix_2viandes' value='" . htmlspecialchars($row['prix_2viandes']) . "'></label>";
                     echo "<label>Prix 3 Viandes: <input type='text' name='prix_3viandes' value='" . htmlspecialchars($row['prix_3viandes']) . "'></label>";
+                    echo "<button type='submit'>Modifier</button>";
+                    echo "</div><hr>";
+                    echo "</form>";
+                }
+            } catch (PDOException $e) {
+                echo "Erreur : " . $e->getMessage();
+            }
+            ?>
+            <?php
+            try {
+                $stmt = $conn->query("
+                    SELECT Food.id_food, Food.nom_food, Prix.id_prix, Prix.prix_seul, Prix.prix_menu 
+                    FROM Food 
+                    JOIN Coûter ON Food.id_food = Coûter.id_food 
+                    JOIN Prix ON Coûter.id_prix = Prix.id_prix 
+                    WHERE Food.id_food = 15
+                ");
+                $carbonnade = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                foreach ($carbonnade as $row) {
+                    echo "<form method='post' action='modifier.php'>";
+                    echo "<div class='burger-entry'>";
+                    echo "<h4>" . htmlspecialchars($row['nom_food']) . "</h4>";
+                    echo "<input type='hidden' name='id_prix' value='" . htmlspecialchars($row['id_prix']) . "'>";
+                    echo "<label>Prix Seul: <input type='text' name='prix_seul' value='" . htmlspecialchars($row['prix_seul']) . "'></label>";
+                    echo "<label>Prix Menu: <input type='text' name='prix_menu' value='" . htmlspecialchars($row['prix_menu']) . "'></label>";
                     echo "<button type='submit'>Modifier</button>";
                     echo "</div><hr>";
                     echo "</form>";
