@@ -1,17 +1,19 @@
 body {
     margin: 0;
     padding: 0;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
-footer{
-  color: white!important;
-  right: 0;
-  height: 10vh;
-  width: 100vw;
-  background-color: black;
-  text-align: center;
-
+  footer {
+    color: rgb(0, 0, 0)!important;
+    height: 3vh;
+    width: 100vw;
+    text-align: center;
+    margin-top: auto;
+    font-size: 1em;
 }
+
   .burger-menu-container {
     position: fixed;
     top: 10px;
@@ -35,10 +37,6 @@ footer{
     background-repeat: no-repeat;
     text-align: center; 
   }
-  .footer{
-    color: white;
-  }
-
 
   .titre {
     display: flex;
@@ -46,6 +44,9 @@ footer{
     align-items: center;
   height: 70vh;
   width: 100vw;
+  font-weight: 300;
+   font-family: "Titan One", sans-serif;
+    font-style: normal;
   
   }
   
@@ -60,7 +61,6 @@ footer{
   .page2 {
     min-height: 100vh;
     width: 100vw;
-    /* background-color: black; */
     background-image: url(../img/backfood.png);
     display: flex;
     flex-direction: column; 
@@ -139,66 +139,67 @@ footer{
   .page3 {
     min-height: 100vh;
     width: 100vw;
-    /* background-color:black; */
     background-image: url(../img/backfood2.png);
     display: flex;
-    flex-direction: column; /* organise les enfants en colonnes */
-    align-items: center; /* centre horizontalement */
+    flex-direction: column; 
+    align-items: center; 
     justify-content: space-around;
   
    
   }
   .menu-section2 {
-    width: 100%; /* Utilisez toute la largeur de .page2 */
-    text-align: center; /* Centre les titres */
-    margin-bottom: 20px; /* Espace entre les sections */
+    width: 100%; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    list-style-type: none;
   }
   
   .menu-title2 {
-    color: white;/* Couleur du titre */
+    color: white;
     margin-bottom: 65px;
     font-size: 2.5em ; 
+    list-style-type: none;
   }
   
   
   .compositions {
-    height: 50vh; /* La hauteur s'ajuste au contenu */
-    width: auto; /* La largeur s'ajuste au contenu */
+    height: 50vh; 
+    width: auto; 
     display: flex;
-    gap: 2px; /* Espace entre les images */
-    justify-content: center; /* Centre les images dans le conteneur .burgers */
+    gap: 2px;
+    justify-content: center; 
   }
   
   .compositions img {
-    height: 30vh; /* Réglé pour correspondre à la hauteur désirée */
-    width: auto; /* Gardez l'aspect ratio */
-    box-shadow: 4px 4px 8px rgba(225, 219, 219, 0.844); /* Ombre pour les images */
-    transition: box-shadow 0.3s ease; /* Transition douce pour l'effet */
+    height: 30vh; 
+    width: auto; 
+    box-shadow: 4px 4px 8px rgba(225, 219, 219, 0.844); 
+    transition: box-shadow 0.3s ease; 
     border-radius: 10%;
   }
   .compositions img:hover{
-    box-shadow: 0px 20px 80px rgba(237, 232, 232, 0.979); /* Ombre augmentée au survol */
+    box-shadow: 0px 20px 80px rgba(237, 232, 232, 0.979); 
     transform:  scale(1.1); 
     background-color: rgba(255, 255, 255, 0.427);
     border-radius: 10%;
   }
   .petitefaim {
-    height: 50vh; /* La hauteur s'ajuste au contenu */
-    width: auto; /* La largeur s'ajuste au contenu */
+    height: 50vh; 
+    width: auto; 
     display: flex;
-    gap: 2px; /* Espace entre les images */
-    justify-content: center; /* Centre les images dans le conteneur .burgers */
+    gap: 2px;
+    justify-content: center; 
   }
   
   .petitefaim img {
-    height: 30vh; /* Réglé pour correspondre à la hauteur désirée */
-    width: auto; /* Gardez l'aspect ratio */
-    box-shadow: 4px 4px 8px rgba(225, 219, 219, 0.844); /* Ombre pour les images */
-    transition: box-shadow 0.3s ease; /* Transition douce pour l'effet */
+    height: 30vh; 
+    width: auto; 
+    box-shadow: 4px 4px 8px rgba(225, 219, 219, 0.844); 
+    transition: box-shadow 0.3s ease;
     border-radius: 10%;
   }
   .petitefaim img:hover{
-    box-shadow: 0px 20px 80px rgba(237, 232, 232, 0.979); /* Ombre augmentée au survol */
+    box-shadow: 0px 20px 80px rgba(237, 232, 232, 0.979); 
     transform:  scale(1.1); 
     background-color: rgba(255, 255, 255, 0.427);
     border-radius: 10%;
@@ -210,7 +211,7 @@ footer{
     width: 100%;
     height: 100vh;
   background-color: black;
-   
+   overflow-y: hidden;
 }
 
 .droite, .gauche {
@@ -226,15 +227,83 @@ footer{
     height: 80%;
   
 }
+.reseaux{
+    
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10%;
 
-.reseaux {
+}
+.logo {
+  margin-right: 2vw; 
+  background-color: rgba(82, 80, 80, 0.315);
+ width: 10vw;
+ height: 9vh;
+
+}
+
+.reseaux .box{
+  position: relative;
+width: 165px;
+  box-sizing: border-box;
+  text-align: center;
+ margin-right: 5px;
+
+}
+
+.reseaux .box .logo{
+  transition: 0.5s;
+  transform-origin: top;
+  transform: translateY(0) rotateX('0deg');
+}
+
+.reseaux .box:hover .logo{
+  transform: translateY(100%) rotateX(90deg);
+}
+.reseaux .box .logo {
+line-height: 100px;
+color: white;
+text-align: center;
+}
+
+.reseaux .box .mon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10vw;
+ height: 9vh;
+  background: #5A7C2A;
+  transition: 0.5s;
+  transform-origin: bottom;
+  transform: translateY(-100px) rotateX(90deg);
+}
+
+.reseaux .box:hover .mon{
+ transform: translateY(0) rotateX(0deg);
+}
+
+.reseaux .box .mon h3{
+  margin-top: 2vh;
+  padding: 0%;
+  /* list-style: 100px; */
+  font-size: 1.2em;
+  font-weight: 500;
+  color: white;
+  
+}
+
+
+/* .reseaux {
     margin-bottom: 20px;
     display: flex;
-    gap: 40px; /* Espacement entre les icônes */
-    justify-content: center; /* Centre les icônes */
+    gap: 40px; 
+    justify-content: center; 
     
-}
-.reseaux img{
+} */
+.logo img{
   height: 60px;
   width: 60px;
 }
@@ -242,11 +311,10 @@ footer{
 .contact-info {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 1.5em;
+    font-size: 1.7em;
     height: 30vh;
     width: 40vw;
-    color: white;
-    
+    color: white;    
 }
 
 
@@ -316,7 +384,7 @@ footer{
   .menu-section, .menu-section2 {
     width: 48%;
     text-align: center;
-    /* margin-bottom: 10px; */
+ 
  
   }
 

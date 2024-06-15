@@ -117,8 +117,8 @@ html, body {
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
-    align-items: center; /* Centre verticalement les enfants */
-    justify-content: space-between; /* Espacement équilibré entre les enfants */
+    align-items: center; 
+    justify-content: space-between; 
 }
 
 /* STICK MOZZAAAAAAAA */
@@ -131,8 +131,8 @@ html, body {
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
-    align-items: center; /* Centre verticalement les enfants */
-    justify-content: space-between; /* Espacement équilibré entre les enfants */
+    align-items: center; 
+    justify-content: space-between; 
 }
 
 .titreChili .lesPrix {
@@ -526,9 +526,9 @@ html, body {
   font-size: 1.2em;
 }
 .prix2 p{
-  height: 90px;
-  width: 90px;
-  font-size: 1.9em;
+  height: 70px;
+  width: 70px;
+  font-size: 1.3em;
 }
 
   .h2 {
@@ -568,7 +568,7 @@ html, body {
  /* FORMAT TABLETTE */
 @media screen and (min-width: 768px) and (max-width: 1024px){
   .backNuggets, .backMozza, .backChili, .backOignons, .backSalade{
-    background-image: url(../img/backtablette.png);
+    background-image: url(../img/backtelephone.png);
   }
   .responsiveNuggets img, .responsiveMozza img, .responsiveChili img, .responsiveOignons img, .responsiveSalade img{
     height: 550px;

@@ -5,14 +5,40 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Utiliser pour le moteur de recherche -->
+    <meta name="description" content="Snack Loos, site de restauration rapide.">
+    <!-- Définit le titre de la page lorsqu'elle est partagée -->
+    <meta property="og:title" content="Snack Loos">
+    <!-- Fournit une description de la page -->
+    <meta property="og:description" content="Snack Loos, snack spécialisé dans la restaurations rapide, vous accueil à Loos 59120.">
+
     <title>Accueil</title>
+    <!-- feuille de style CSS de la bibliothèque Leaflet pour les cartes interactives -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin=""/>
+    <!-- Lien vers la version générale de la feuille de style Leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <!-- feuille de style pour la page d'accueil -->
     <link rel="stylesheet" type="text/css" href="./Style/accueil.css">
-    <link rel="icon" href="./logosnack.png" type="image/svg+xml">
-</head>
+    
+    <!-- Favicon de la page -->
+    <link rel="icon" href="./img/logosnack.png" type="image/png">
+
+    <!--  polices Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Font préconnecté -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+<link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&family=Titan+One&display=swap" rel="stylesheet">
+    <!-- Lien vers la police Google "Titan One" -->
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+  
+   
+  </head>
 <body>
 
 <div class="backAcceuil" id="home">
@@ -29,7 +55,7 @@
             </ul>
                 <ul class="menuDeroulant">
                         <li class="submenu">
-                            <a href="./Page/lesBurgers.php" class="subdropbtn">Burgers</a>
+                            <a href="../Page/lesBurgers.php" class="subdropbtn">Burgers</a>
                             <ul class="deroulant">
                                 <li><a href="./Page/lesBurgers.php#burger simple">Burger Simple</a></li>
                                 <li><a href="./Page/lesBurgers.php#fishburger">Fish Burger</a></li>
@@ -40,7 +66,7 @@
                         </li>
                        
                     <li class="submenu">
-                        <a href="./Page/lesClassiques.php">Classiques</a>
+                        <a href="../Page/lesClassiques.php">Classiques</a>
                         <ul class="deroulant">
                             <li><a href="./Page/lesClassiques.php#kebab">Kebab</a></li>
                             <li><a href="./Page/lesClassiques.php#galette">Galette</a></li>
@@ -50,7 +76,7 @@
                         </ul>
                     </li>
                     <li class="submenu">
-                        <a href="./Page/lesCompositions.php">Compositions</a>
+                        <a href="../Page/lesCompositions.php">Compositions</a>
                         <ul class="deroulant">
                             <li><a href="./Page/lesCompositions.php#tacos">Tacos</a></li>
                             <li><a href="./Page/lesCompositions.php#tacosbowl">Tacosbowl</a></li>
@@ -60,7 +86,7 @@
                         </ul>
                     </li>
                     <li class="submenu">
-                        <a href="./Page/lesPetiteFaims.php">Petites Faims</a>
+                        <a href="../Page/lesPetiteFaims.php">Petites Faims</a>
                         <ul class="deroulant">
                             <li><a href="./Page/lesPetiteFaims#nuggets">Nuggets</a></li>
                             <li><a href="./Page/lesPetiteFaims#mozza">Stick Mozza</a></li>
@@ -154,9 +180,18 @@
     <p>09.52.67.14.63</p>
    </div>
    <div class="reseaux">
+    <div class="box">
    <div class="logo"><img src="img/snapchat-3.png" alt=""></div>
+   <div class="mon"><h3>Snack-loos</h3></div>
+   </div>
+   <div class="box">
    <div class="logo"><img src="img/instagram.png" alt=""></div>
+   <div class="mon"><h3>Snackloos</h3></div>
+   </div>
+   <div class="box">
    <div class="logo"><img src="img/facebook-2.png" alt=""></div>
+   <div class="mon"><h3>Snack loos</h3></div>
+   </div> 
   </div>
 </div>
 </div>

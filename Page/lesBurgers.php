@@ -9,6 +9,11 @@ $conn = getDatabaseConnection();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burgers</title>
     <link rel="stylesheet" type="text/css" href="../Style/burger.css">
+    <link rel="icon" href="../img/logosnack.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&family=Titan+One&display=swap" rel="stylesheet">
+  
 </head>
 <body > 
 <?php require_once '../menu.php'; ?> 

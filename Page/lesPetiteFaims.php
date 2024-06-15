@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petites faims</title>
     <link rel="stylesheet" type="text/css" href="../Style/petitefaim.css">
+    <link rel="icon" href="../img/logosnack.png" type="image/png">
 </head>
 <body>
     <?php require_once '../menu.php'; ?> 

@@ -9,6 +9,7 @@ $conn = getDatabaseConnection();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compositions</title>
     <link rel="stylesheet" type="text/css" href="../Style/composition.css">
+    <link rel="icon" href="../img/logosnack.png" type="image/png">
 </head>
 <body id="lesCompositions">
 <?php require_once '../menu.php'; ?> 
@@ -370,7 +371,7 @@ $conn = getDatabaseConnection();
         <span class="label">Salami</span>
         </div>
         <div class="item">
-        <img src="img/ring.png" alt="Oignons rings">
+        <img src="../img/ring.png" alt="Oignons rings">
         <span class="label">Oignons rings</span>
         </div>
         
@@ -468,11 +469,11 @@ $conn = getDatabaseConnection();
         <span class="label">Chèvre</span>
         </div>
         <div class="item">
-        <img src="img/pdt.png" alt="Galette de pomme de terre">
+        <img src="../img/pdt.png" alt="Galette de pomme de terre">
         <span class="label">Galette Pdt</span>
         </div>
         <div class="item">
-        <img src="i../mg/jambon.png" alt="Jamdon dinde">
+        <img src="../img/jambon.png" alt="Jamdon dinde">
         <span class="label">Jamdon dinde</span>
         </div>
         <div class="item">

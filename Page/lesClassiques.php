@@ -9,6 +9,7 @@ $conn = getDatabaseConnection();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classiques</title>
     <link rel="stylesheet" type="text/css" href="../Style/classique.css">
+    <link rel="icon" href="../img/logosnack.png" type="image/png">
 </head>
 <body>
 <?php require_once '../menu.php'; ?> 
@@ -172,7 +173,7 @@ $conn = getDatabaseConnection();
        <div class="h2supp1"><h2>SUPPLÉMENTS</h2></div>
         <div class="suppléments1">
             <div class="item">
-                <img src="img/chevre.png" alt="Fromage de Chèvre">
+                <img src="../img/chevre.png" alt="Fromage de Chèvre">
                 <span class="label">Chèvre</span>
                 </div>
                 <div class="item">
