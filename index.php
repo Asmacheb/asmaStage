@@ -43,7 +43,7 @@
 
 <div class="backAcceuil" id="home">
     <div class="navbar">
-      <div class="burgerMenu">
+   <div class="burgerMenu">
         <button class="burger-menu" onclick="toggleMenu()">
             <img src="img/menuvert.png" alt="Menu">
         </button>
@@ -55,7 +55,7 @@
             </ul>
                 <ul class="menuDeroulant">
                         <li class="submenu">
-                            <a href="../Page/lesBurgers.php" class="subdropbtn">Burgers</a>
+                            <p><a href="./Page/lesBurgers.php" class="subdropbtn">BURGERS</a></p>
                             <ul class="deroulant">
                                 <li><a href="./Page/lesBurgers.php#burger simple">Burger Simple</a></li>
                                 <li><a href="./Page/lesBurgers.php#fishburger">Fish Burger</a></li>
@@ -66,7 +66,7 @@
                         </li>
                        
                     <li class="submenu">
-                        <a href="../Page/lesClassiques.php">Classiques</a>
+                        <p><a href="./Page/lesClassiques.php#kebab">CLASSIQUES</a></p>
                         <ul class="deroulant">
                             <li><a href="./Page/lesClassiques.php#kebab">Kebab</a></li>
                             <li><a href="./Page/lesClassiques.php#galette">Galette</a></li>
@@ -76,7 +76,7 @@
                         </ul>
                     </li>
                     <li class="submenu">
-                        <a href="../Page/lesCompositions.php">Compositions</a>
+                      <p><a href="./Page/lesCompositions.php">COMPOSITIONS</a></p>
                         <ul class="deroulant">
                             <li><a href="./Page/lesCompositions.php#tacos">Tacos</a></li>
                             <li><a href="./Page/lesCompositions.php#tacosbowl">Tacosbowl</a></li>
@@ -86,14 +86,13 @@
                         </ul>
                     </li>
                     <li class="submenu">
-                        <a href="../Page/lesPetiteFaims.php">Petites Faims</a>
+                    <p><a href="./Page/lesPetiteFaims.php">PETITES FAIMS</a></p>
                         <ul class="deroulant">
                             <li><a href="./Page/lesPetiteFaims#nuggets">Nuggets</a></li>
                             <li><a href="./Page/lesPetiteFaims#mozza">Stick Mozza</a></li>
                             <li><a href="./Page/lesPetiteFaims#oignons">Oignons ring</a></li>
                             <li><a href="./Page/lesPetiteFaims#chili">Chili cheese</a></li>
                             <li><a href="./Page/lesPetiteFaims#salade">Salade</a></li>
-
                         </ul>
                     </li>
                 </ul>
@@ -110,7 +109,7 @@
        </div>
     </div>
 <div class="titre">
-  <h1>SNACK LOOS</h1>
+  <h1 id="title">SNACK LOOS</h1>
 </div>
 </div>
  

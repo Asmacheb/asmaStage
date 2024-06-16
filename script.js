@@ -2,21 +2,6 @@
 // MENU BURGER
 
 
-// function toggleMenu() {
-//     var menu = document.querySelector('.navMenu');
-//     menu.classList.toggle('active');
-// }
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     var menuLinks = document.querySelectorAll('.navMenu a');
-//     menuLinks.forEach(function(link) {
-//         link.addEventListener('click', function() {
-//             var menu = document.querySelector('.navMenu');
-//             menu.classList.remove('active');
-//         });
-//     });
-// });
-
 function toggleMenu() {
     const menu = document.querySelector('.navMenu');
     menu.classList.toggle('active');
@@ -47,6 +32,24 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+
+  // Animation du titre
+  const title = document.getElementById('title');
+  const titleText = title.textContent;
+  title.textContent = '';
+  let index = 0;
+
+  function typeLetter() {
+    if (index < titleText.length) {
+      title.textContent += titleText.charAt(index);
+      index++;
+      setTimeout(typeLetter, 150); // Ajustez la vitesse ici
+    }
+  }
+
+  typeLetter();
 
   
 //   MAP

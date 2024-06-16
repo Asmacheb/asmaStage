@@ -2,8 +2,12 @@ body {
     margin: 0;
     padding: 0;
     /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
   }
+
+  .hidden {
+    visibility: hidden;
+}
 
   footer {
     color: rgb(0, 0, 0)!important;
@@ -295,14 +299,6 @@ text-align: center;
   
 }
 
-
-/* .reseaux {
-    margin-bottom: 20px;
-    display: flex;
-    gap: 40px; 
-    justify-content: center; 
-    
-} */
 .logo img{
   height: 60px;
   width: 60px;
@@ -325,6 +321,7 @@ text-align: center;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+
   }
 
   .backAcceuil {
@@ -349,7 +346,7 @@ text-align: center;
   }
 
   .titre h1 {
-    font-size: 2.5em;
+    font-size: 2.8em;
     color: white;
     letter-spacing: 2px;
     margin-top: 5vh;
@@ -444,17 +441,71 @@ text-align: center;
   }
 
   .reseaux {
-    margin-bottom: 20px;
     display: flex;
     gap: 10px;
     justify-content: center;
+    flex-direction: row;
+    height: 20vh;
   }
 
   .reseaux img {
     height: 30px;
     width: 30px;
   }
-
+  .reseaux .box{
+    position: relative;
+  width: 65px;
+    box-sizing: border-box;
+    text-align: center;
+   margin-right: 5px;
+  
+  }
+  
+  .reseaux .box .logo{
+    transition: 0.5s;
+    transform-origin: top;
+    transform: translateY(0) rotateX('0deg');
+  }
+  
+  .reseaux .box:hover .logo{
+    transform: translateY(100%) rotateX(90deg);
+  }
+  .reseaux .box .logo {
+  line-height: 100px;
+  color: white;
+  text-align: center;
+  }
+  .box{
+    width: 15px;
+  }
+  .logo {
+    width: 18vw;
+    height: 9vh;
+  }
+  .reseaux .box .mon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18vw;
+   height: 9vh;
+    background: #5A7C2A;
+    transition: 0.5s;
+    transform-origin: bottom;
+    transform: translateY(-100px) rotateX(90deg);
+  }
+  
+  .reseaux .box:hover .mon{
+   transform: translateY(0) rotateX(0deg);
+  }
+  
+  .reseaux .box .mon h3{
+    padding: 0%;
+    /* list-style: 100px; */
+    font-size: 1.2em;
+    font-weight: 500;
+    color: white;
+    
+  }
   .contact-info {
     text-align: center;
     margin-bottom: 20px;
@@ -494,10 +545,13 @@ display: none;
   align-items: center;
   height: 70vh;
   width: 100vw;
-}
 
+}
+.navLogo{
+  height: 20px;
+}
 .titre h1 {
-  font-size: 2.5em;
+  font-size: 3.5em;
   color: white;
   letter-spacing: 2px;
   margin-top: 5vh;
@@ -571,8 +625,8 @@ display: none;
 .contact {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  height: 100vh;
   background-color: black;
 }
 
@@ -592,21 +646,75 @@ display: none;
 }
 
 .reseaux {
-  margin-bottom: 20px;
   display: flex;
   gap: 10px;
   justify-content: center;
+  top:0;
 }
 
 .reseaux img {
   height: 30px;
   width: 30px;
 }
+.reseaux .box{
+  position: relative;
+width: 65px;
+  box-sizing: border-box;
+  text-align: center;
+ margin-right: 95px;
+ 
+
+}
+
+.reseaux .box .logo{
+  transition: 0.5s;
+  transform-origin: top;
+  transform: translateY(0) rotateX('0deg');
+color: white;
+text-align: center;
+}
+
+.reseaux .box:hover .logo{
+  transform: translateY(100%) rotateX(90deg);
+}
+
+
+.logo {
+  width: 18vw;
+  height: 9vh;
+  margin-top: 5px;
+}
+.logo img{
+  height: 55px;
+  width: 55px;
+}
+.reseaux .box .mon{
+  position: absolute;
+  width: 18vw;
+ height: 9vh;
+  background: #5A7C2A;
+  transition: 0.5s;
+  transform-origin: bottom;
+  transform: translateY(-100px) rotateX(90deg);
+}
+
+.reseaux .box:hover .mon{
+ transform: translateY(0) rotateX(0deg);
+}
+
+.reseaux .box .mon h3{
+  padding: 0%;
+  /* list-style: 100px; */
+  font-size: 1.2em;
+  font-weight: 500;
+  color: white;
+  
+}
 
 .contact-info {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 1.2em;
+  font-size: 1.8em;
   color: white;
   width: 60vw;
 }
@@ -761,14 +869,17 @@ display: block;
       height: 40px;
       display: block;
   }
+  
   .navbar{
     height: 40px;
     width: 100vw;
     display: flex;
-   
     flex-direction: row-reverse;
     justify-content: space-between;
+    font-size: 1em;
   }
+
+
   .navLogo img {
       width: 100%;
       height: 100%;
@@ -779,76 +890,104 @@ display: block;
   }
   .burger-menu{
     display: block;
-    margin-right: 10px;
+
   }
    .burger-menu img {
         height: 40px;
         width: 40px;
+        margin-right: 15px;
     }
-  
+  .avatar img{
+    height: 35px;
+     width: 35px;
+  }
 
   .navMenu {
       display: none;
-      flex-direction: column;
-      width: 100%;
-      position: absolute;
-      top: 5vh;
-      left: 0;
-      background-color: #171816ae;
-      color: white;
-      list-style: none;
-      z-index: 999; /* Assurez-vous que le menu est au-dessus des autres éléments */
+      
   }
 
   .navMenu.active {
       display: block
   }
 
-  .menuDeroulant, .deroulant {
+  .menuDeroulant {
       display: none;
       flex-direction: column;
       list-style: none;
       color: white;
-      background-color: #171816ae; /* Ajoutez une couleur de fond pour les sous-menus */
+      background-color: #171816ae; 
+      height: 18vh;
+      width: 100%;
+      margin-top: 27vh; 
   }
 
-  .sousmenu .menuDeroulant {
-      position: static; /* Assurez-vous que les sous-menus sont positionnés statiquement */
-  }
-  .submenu .deroulant {
-    position: static; /* Assurez-vous que les sous-menus sont positionnés statiquement */
+.menuDeroulant li {
+  color: white;
+  padding: 6px;
+  text-decoration: none;
+  display: block;
+  list-style: none;
+  font-size: 1em;
 }
-  .sousmenu:hover .menuDeroulant,
-  .sousmenu .menuDeroulant.active,
-  .navMenu.active .menuDeroulant  {
+
+.soumenu{
+  display: none;
+  position: absolute;
+  background-color: #171816ba;
+  list-style: none; 
+ height: 10vh;
+  width: 100%;
+}
+.soumenu a, .submenu a{
+  font-size: 1em!important;
+}
+.deroulant li{
+  display: none;
+}
+
+.sousmenu .menuDeroulant {
+      position: static;
+      width: 100vw; 
+  }
+/* .submenu .deroulant {
+    position: static; 
+    width: 100%;
+} */
+.submenu {
+  height: 15px;
+}
+
+.sousmenu:hover .menuDeroulant,
+.sousmenu .menuDeroulant.active,
+.navMenu.active .menuDeroulant  {
       display: flex;
+     
   }
  .submenu:hover .deroulant,
   .submenu .deroulant.active {
       display: flex;
+     
   }
-  .navMenu li {
+  /* .navMenu li {
       width: 100%;
       text-align: center;
       padding: 10px;
       color: white;
-  }
+  } */
 .logoHome{
   display: none;
 }
-
-  .navMenu a, .menuDeroulant a {
-      color: white;
-      text-decoration: none;
-      padding: 10px; /* Ajoutez du padding pour les liens du menu */
-  }
-
-  .navMenu a:hover, .menuDeroulant a:hover {
+   .menuDeroulant a:hover {
       background-color: #f1f1f1;
       color: black;
+     
   }
+  
 }
 
+
+/* TABLETTE */
 @media screen and (min-width: 768px) and (max-width: 1180px){
   .navLogo {
     width: 40px;
@@ -856,25 +995,36 @@ display: block;
     display: block;
 }
 .navbar{
-  height: 50px;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  font-size: 1em;
 }
 .navLogo img {
-    width: 100%;
-    height: 100%;
+    width: 50px;
+    height: 50px;
 }
 
 .burgerMenu {
     display: block;
+    margin-right: 2vw;
 }
-
+.submenu {
+  height: 15px;
+}
+.submenu p{
+  margin-left: -5px;
+}
 .navMenu {
-    display: none;
+  display: none;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     position: absolute;
-    top: 5vh;
-    left: 0;
-    background-color: #171816ae;
+    top: 46px;
+   left: 0;
+    /* background-color: #171816ae; */
     color: white;
     list-style: none;
     z-index: 999; 
@@ -882,6 +1032,7 @@ display: block;
 
 .navMenu.active {
     display: flex;
+    left: 0;
 }
 
 .menuDeroulant {
@@ -889,11 +1040,18 @@ display: block;
     flex-direction: column;
     list-style: none;
     color: white;
-    background-color: #171816ae; /* Ajoutez une couleur de fond pour les sous-menus */
+    background-color: #171816ae;
+   margin-right: 45vw;
+   height: 20vh;
+   width: 100vw;
 }
 
 .sousmenu .menuDeroulant {
-    position: static; /* Assurez-vous que les sous-menus sont positionnés statiquement */
+    position: static; 
+}
+
+.soumenu a, .submenu a{
+  font-size: 1.3em!important;
 }
 
 .sousmenu:hover .menuDeroulant,
@@ -912,8 +1070,8 @@ display: block;
 display: none;
 }
 .burger-menu img {
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
 }
 .burger-menu{
   display: block;
@@ -921,11 +1079,12 @@ display: none;
 .navMenu a, .menuDeroulant a {
     color: white;
     text-decoration: none;
-    padding: 10px; /* Ajoutez du padding pour les liens du menu */
+   
 }
 
 .navMenu a:hover, .menuDeroulant a:hover {
     background-color: #f1f1f1;
     color: black;
+    
 }
 }
