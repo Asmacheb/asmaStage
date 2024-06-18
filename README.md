@@ -47,9 +47,6 @@ Cloner le dépôt :
 
 git clone <url-du-dépôt>
 
-Configurer la base de données :
-
-
 Démarrer le serveur :
 
 Utilisez un serveur local comme XAMPP ou MAMP pour servir les fichiers PHP.

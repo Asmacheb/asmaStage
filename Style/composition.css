@@ -522,7 +522,7 @@
     height: 10vh;
     width: 100vw;
    text-align: center;
-
+margin-top: -3vh;
    display: block;
    }
 
@@ -564,8 +564,8 @@
     align-items: center; /* Centre les éléments verticalement */
     height: 15vh; 
     width: 100vw; 
-    margin-left: 35vw;
-    margin-top:10vh;
+    margin-left: 25vw;
+    margin-top:7vh;
   }
  .prix-containerK, .prixK, .prix-containerT, .prixT{
   display: flex;
@@ -573,8 +573,8 @@
   align-items: center; /* Centre les éléments verticalement */
   height: 15vh; 
   width: 100vw; 
-  margin-top:10vh;
-
+  margin-top:7vh;
+  margin-left: 10vw;
  }
   .prix1 p{
     height: 60px;
@@ -764,7 +764,7 @@
   height: 25vh; 
   width: 100vw; 
  margin-top: 30px;
- margin-left: 110px;
+ margin-left: 40vw;
 }
 .option span{
   font-size: 1.2em;

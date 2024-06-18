@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (index < titleText.length) {
       title.textContent += titleText.charAt(index);
       index++;
-      setTimeout(typeLetter, 150); // Ajustez la vitesse ici
+      setTimeout(typeLetter, 150); 
     }
   }
 

@@ -813,9 +813,9 @@
     background-image: url(../img/backtelephone.png);
     background-color: black;
     display: flex;
-    flex-direction: column; /* Les enfants sont disposés en colonne */
-    align-items: center; /* Centre les enfants horizontalement */
-    padding: 0 20px; /* Ajout de padding pour ne pas que le contenu touche les bords */
+    flex-direction: column; 
+    align-items: center; 
+    padding: 0 20px; 
   }
   .responsiveKebab{
     height: 10vh;
@@ -880,8 +880,8 @@
 
 
   .suppléments2 img {
-    height: 45px;
-    width: 45px; 
+    height: 50px;
+    width: 50px; 
   }
   .suppléments2{
     height: 15vh;
@@ -889,8 +889,8 @@
     margin-top: -30px;
   }
 .suppléments2 .item{
-  height: 65px;
-  width: 65px;
+  height: 50px;
+  width: 50px;
 }
  
   .optionsupp2{
@@ -1012,8 +1012,8 @@
  
   }
   .viandes .item{
-    height: 60px;
-    width: 60px;
+    height: 50px;
+  width: 50px;
   }
   .h2supp1{
     font-size: 1.1em;
@@ -1023,8 +1023,8 @@
   }
 
   .suppléments1 img, .viandes img {
-    height: 60px;
-    width: 60px; 
+    height: 50px;
+    width: 50px;
   }
   .suppléments1{
     height: 15vh;
@@ -1035,8 +1035,8 @@
   }
 
 .suppléments1 .item{
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
 }
   .optionsupp1{
     height: 10vh;
@@ -1183,8 +1183,8 @@ height: 70vh;
   font-size: 1em;
 }
 .supplémentsSandwich img {
-  height: 45px;
-  width: 45px; 
+  height: 50px;
+  width: 50px;
 }
 .supplémentsSandwich{
   height: 15vh;
@@ -1193,8 +1193,8 @@ margin-left: 20px;
 }
 
 .supplémentsSandwich .item{
-height: 65px;
-width: 65px;
+  height: 50px;
+  width: 50px;
 }
 .optionsuppSandwich{
   height: 10vh;
@@ -1209,11 +1209,12 @@ width: 65px;
 .optionsuppSandwich p {
   height: 50px;
   width: 50px;
-  font-size: 1em; /* Taille de police pour le prix */
+  font-size: 1em; 
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 /* MENU ENFANT */
 
 .backEnfant {
@@ -1222,9 +1223,9 @@ width: 65px;
   background-image: url(../img/backtelephone.png);
   background-color: black;
   display: flex;
-  flex-direction: column; /* Les enfants sont disposés en colonne */
-  align-items: center; /* Centre les enfants horizontalement */
-  padding: 0 20px; /* Ajout de padding pour ne pas que le contenu touche les bords */
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px; 
 }
 
 .responsiveEnfant img{
@@ -1292,8 +1293,8 @@ width: 90vw;
 }
 
 .suppléments3 img {
-  height: 45px;
-  width: 45px; 
+  height: 50px;
+  width: 50px;
 }
 .suppléments3{
   height: 15vh;
@@ -1301,8 +1302,8 @@ width: 90vw;
   margin-top: -30px;
 }
 .suppléments3 .item{
-height: 65px;
-width: 65px;
+  height: 50px;
+  width: 50px;
 }
 
 .optionsupp3{
@@ -1402,7 +1403,7 @@ width: 65px;
               margin-left: -30vw;
               }
               
-  /* Kebab */
+  /* KEBAB */
   
 
   .backKebab {
@@ -1509,8 +1510,8 @@ width: 65px;
   }
 
   .suppléments2 .item {
-    height: 70px;
-  width: 70px;
+    height: 90px;
+    width: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1854,8 +1855,8 @@ margin-left: 20px;
 }
 
 .supplémentsSandwich .item{
-  height: 70px;
-  width: 70px;
+  height: 90px;
+    width: 90px;
 }
 .optionsuppSandwich{
   height: 10vh;
@@ -1974,8 +1975,8 @@ width: 90vw;
   margin-top: -10px;
 }
 .suppléments3 .item{
-  height: 70px;
-  width: 70px;
+  height: 90px;
+  width: 90px;
 }
 
 .optionsupp3{

@@ -257,10 +257,10 @@ html, body {
 /* TÉLÉPHONE */
 
 @media screen and (max-width: 767px){
-  button{
+  /* button{
     background-color: rgba(255, 255, 255, 0);
   }
-  
+   */
 
   .backSimple{
     height: 100vh;
@@ -462,9 +462,9 @@ html, body {
     align-items: center;
     padding: 0 30px;
   }
-  button{
+  /* button{
     background-color: rgba(255, 255, 255, 0);
-  }
+  } */
   
   .responsiveSimple, .responsiveSmash, .responsiveFish, .responsiveChicken, .responsiveRoyal {
     display: block;
@@ -556,7 +556,7 @@ html, body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 5px;
-    margin-top: -30px;
+    margin-top: -46px;
   }
 
   .suppléments2 .item {
