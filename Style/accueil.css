@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -157,7 +158,10 @@ body {
     margin-bottom: 20px; 
     list-style-type: none;
   }
-  
+  .menu-section2 a, .menu-title2 a{
+    list-style-type: none;
+    text-decoration: none;
+  }
   .menu-title2 {
     color: white;
     margin-bottom: 65px;
@@ -302,6 +306,7 @@ text-align: center;
 .logo img{
   height: 60px;
   width: 60px;
+  margin-top: 1vh;
 }
 
 .contact-info {
@@ -323,7 +328,9 @@ text-align: center;
     overflow-x: hidden;
 
   }
-
+footer{
+  font-size: 10px;
+}
   .backAcceuil {
     height: 100vh;
     width: 100vw;
@@ -343,13 +350,15 @@ text-align: center;
     align-items: center;
     height: 70vh;
     width: 100vw;
+  
   }
 
   .titre h1 {
-    font-size: 2.8em;
+    font-size: 2.4em;
     color: white;
     letter-spacing: 2px;
     margin-top: 5vh;
+    
   }
  .navContacts{
   display: none;
@@ -396,9 +405,9 @@ text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
     height: auto;
-    width: 50vw;
+    /* width: 50vw; */
   }
 
   .burgers img, .classiques img, .compositions img, .petitefaim img {
@@ -682,14 +691,16 @@ text-align: center;
 .logo {
   width: 18vw;
   height: 9vh;
-  margin-top: 5px;
+ 
 }
 .logo img{
   height: 55px;
   width: 55px;
+  margin-top: 1vh;
 }
 .reseaux .box .mon{
   position: absolute;
+
   width: 18vw;
  height: 9vh;
   background: #5A7C2A;
@@ -727,7 +738,7 @@ text-align: center;
 
 /* CODE POUR LE MENU */
 
-
+body{  overflow-x: hidden;}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -864,6 +875,10 @@ display: block;
    /* RESPONSIVE BURGER */
 /* TÉLÉPHONE */
 @media screen and (max-width: 767px) {
+  body{
+    top: 0;
+    left: 0;
+  }
   .navLogo {
       width: 40px;
       height: 40px;
@@ -872,11 +887,12 @@ display: block;
   
   .navbar{
     height: 40px;
-    width: 100vw;
+    width: 98vw;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     font-size: 1em;
+    top: 0;
   }
 
 
@@ -918,8 +934,10 @@ display: block;
       color: white;
       background-color: #171816ae; 
       height: 18vh;
-      width: 100%;
-      margin-top: 27vh; 
+      max-width: 100vw;
+      margin-top: 220px; 
+      right: 0;
+      margin-right: -15vw;
   }
 
 .menuDeroulant li {
@@ -937,7 +955,9 @@ display: block;
   background-color: #171816ba;
   list-style: none; 
  height: 10vh;
-  width: 100%;
+  width: 100vw;
+  right: 0;
+  margin-right: -15vw;
 }
 .soumenu a, .submenu a{
   font-size: 1em!important;
@@ -956,18 +976,21 @@ display: block;
 } */
 .submenu {
   height: 15px;
+  margin-left: -5vh;
 }
 
 .sousmenu:hover .menuDeroulant,
 .sousmenu .menuDeroulant.active,
 .navMenu.active .menuDeroulant  {
       display: flex;
-     
+      right: 0!important;
+     margin-right: -20vw;
   }
  .submenu:hover .deroulant,
   .submenu .deroulant.active {
       display: flex;
-     
+      right: 0!important;
+      margin-right: -15vw;
   }
   /* .navMenu li {
       width: 100%;
@@ -1028,6 +1051,7 @@ display: block;
     color: white;
     list-style: none;
     z-index: 999; 
+    margin-left: -5vw;
 }
 
 .navMenu.active {
@@ -1041,30 +1065,39 @@ display: block;
     list-style: none;
     color: white;
     background-color: #171816ae;
-   margin-right: 45vw;
+ left: 0;
    height: 20vh;
    width: 100vw;
+   margin-left: -5vw;
 }
 
 .sousmenu .menuDeroulant {
     position: static; 
+    margin-left: -5vw;
 }
 
 .soumenu a, .submenu a{
-  font-size: 1.3em!important;
+  font-size: 1em!important;
 }
 
 .sousmenu:hover .menuDeroulant,
 .sousmenu .menuDeroulant.active,
 .navMenu.active .menuDeroulant {
     display: flex;
+   
 }
-
+.submenu:hover .deroulant,
+.submenu .deroulant.active {
+    display: flex;
+    right: 0!important;
+    margin-left: -5vw;
+}
 .navMenu li {
     width: 100%;
     text-align: center;
-    padding: 10px;
+    padding: 7px;
     color: white;
+    
 }
 .logoHome{
 display: none;

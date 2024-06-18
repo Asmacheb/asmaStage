@@ -48,6 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Se connecter</title>
     <link rel="stylesheet" type="text/css" href="../Style/connexion.css">
+    <link rel="icon" href="../img/logosnack.png" type="image/png">
 </head>
 <body>
 <div class="logoHome"><a href="../index.php#home"><img src="../img/logoHome.png" alt="Logo"></a></div>

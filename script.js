@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
   // Animation du titre
   const title = document.getElementById('title');
   const titleText = title.textContent;

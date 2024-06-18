@@ -174,7 +174,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border: 3px solid white
+   
   }
 
 
@@ -324,7 +324,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border: 3px solid white
+  
   }
 
 /* CARBONNADEEEEEEEE*/
@@ -453,7 +453,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border: 3px solid white
+   
   }
 
   .item {
@@ -522,15 +522,16 @@
     height: 10vh;
     width: 100vw;
    text-align: center;
-   margin-left: -20vw;
-   margin-top: -5vh;
+
    display: block;
    }
 
     .responsiveTacos img,  .responsiveTacosbowl img, .responsiveKapsalon img, .responsiveAssiette img{
       height: 200px;
       width: 200px;
+      display: block;
    }
+   
 
   .titre1{
     width: 100vw;
@@ -564,7 +565,7 @@
     height: 15vh; 
     width: 100vw; 
     margin-left: 35vw;
-    margin-top:5vh;
+    margin-top:10vh;
   }
  .prix-containerK, .prixK, .prix-containerT, .prixT{
   display: flex;
@@ -727,11 +728,12 @@
   height: 10vh;
   width: 100vw;
  text-align: center;
- margin-left: -20vw;
+
  }
  .responsiveCarbonnade img{
   height: 200px;
   width: 200px;
+  display: block;
  }
   .titre1{
     width: 100vw;
@@ -868,14 +870,15 @@
     width: 100vw;
    text-align: center;
    display: block;
-   margin-left: -30vw;
-   margin-top: -5vh;
+  
    }
   
    .responsiveTacos img,  .responsiveTacosbowl img, .responsiveKapsalon img, .responsiveAssiette img{
     height: 300px;
     width: 300px;
+    display: block;
  }
+
 
   .titre1{
     width: 100vw;
@@ -914,7 +917,7 @@
     height: 15vh; 
     width: 100vw; 
     margin-left: 45vw;
-    margin-top: 15vh;
+    margin-top: 5vh;
   }
 
   .prix-containerK, .prixK, .prix-containerT, .prixT{
@@ -923,7 +926,7 @@
     align-items: center; /* Centre les éléments verticalement */
     height: 15vh; 
     width: 100vw; 
-    margin-top:10vh;
+ margin-left: 5vw;
   
    }
 
@@ -952,10 +955,10 @@
 
  
   .h2viande{
-    font-size: 1.6em;
+    font-size: 1.4em;
     height: 5vh;
     width: 100vw;
-   
+   margin-top: -2vh;
   }
   .viandes{
     height: 15vh;
@@ -964,19 +967,19 @@
  
   }
   .viandes .item{
-    height: 90px;
-    width: 90px;
+    height: 70px;
+    width: 70px;
   }
   .h2supp1{
-    font-size: 1.6em;
+    font-size: 1.4em;
     height: 5vh;
     width: 100vw;
     margin-top: -2vh;
   }
 
   .suppléments1 img, .viandes img {
-    height: 70px;
-    width: 70px; 
+    height: 60px;
+    width: 60px; 
   }
   .suppléments1{
     height: 15vh;
@@ -987,8 +990,8 @@
   }
 
 .suppléments1 .item{
-  height: 90px;
-  width: 90px;
+  height: 70px;
+  width: 70px;
 }
   .optionsupp1{
     height: 10vh;
@@ -1001,9 +1004,9 @@
     font-size: 1.5em; 
   }
   .optionsupp1 p {
-    height: 70px;
-    width: 70px;
-    font-size: 1.5em; 
+    height:55px;
+    width: 55px;
+    font-size: 1.3em; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1048,13 +1051,15 @@
 height: 25vh;
   width: 100vw;
  text-align: center;
-margin-left: -30vw;
+
 }
 
 .responsiveCarbonnade img {
   height: 300px;
   width: 300px;
+  display: block;
 }
+
 
 .titre1 {
   width: 100vw;

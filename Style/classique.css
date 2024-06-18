@@ -795,11 +795,13 @@
     overflow-x: hidden;
   }
   
+
+
   .responsiveKebab, .responsivePanini, .responsiveGalette, .responsiveSandwich, .responsiveEnfant{
     display: block;
       }
 
-      .responsiveKebab img, .responsivePanini img, .responsiveGalette img, .responsiveSandwich img, .responsiveEnfant img{
+      .responsiveKebab img, .responsivePanini img, .responsiveGalette img, .responsiveEnfant img{
     height: 200px;
     width: 200px;
           }    
@@ -849,22 +851,19 @@
     align-items: center; 
     height: 20vh; 
     width: 100vw; 
-    margin-top:-5vh;
+  margin-top: 9vh;
+  margin-left: 25vw;
   }
 .option span{
     font-size: 1em;
 }
 .prix2 p{
-  height: 80px;
-  width: 80px;
+  height: 70px;
+  width: 70px;
   font-size: 1.3em;
   
 }
-.prix2{
-  height: 15vh;
-  width: 90vw;
 
-}
   .h2 {
     font-size: 1.2em;
     height: 5vh; 
@@ -895,7 +894,7 @@
 }
  
   .optionsupp2{
-    height: 10vh;
+    height: 15vh;
     width: 90vw;
     margin-top: 15px;
     gap: 10px;
@@ -907,7 +906,7 @@
   }
 
   .optionsupp2 p {
-    height: 50px;
+   height: 50px;
     width: 50px;
     font-size: 1em; /* Taille de police pour le prix */
     display: flex;
@@ -1020,7 +1019,7 @@
     font-size: 1.1em;
     height: 5vh;
     width: 100vw;
-    margin-top: -2vh;
+    margin-top: -1vh;
   }
 
   .suppléments1 img, .viandes img {
@@ -1096,7 +1095,10 @@ margin-top: 5px;
   height: 10vh;
 width: 50vw;
 text-align: center;
-
+}
+.responsiveSandwich img{
+  height: 170px;
+  width: 170px;
 }
 .titresandwich{
   width: 100vw;
@@ -1142,8 +1144,8 @@ text-align: center;
 
 
 .prixSandwich p{
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   font-size: 1.3em;
 }
 .sandwichchaud p, .sandwichfroid p {
@@ -1168,6 +1170,7 @@ height: 70vh;
   height: 10vh;
   font-size: 0.5em;
   margin-left: 40vw;
+  margin-top: 5vh;
 }
 .sectionfroid{
   margin-left: 40px;
@@ -1303,7 +1306,7 @@ width: 65px;
 }
 
 .optionsupp3{
-  height: 10vh;
+  height: 15vh;
   width: 90vw;
   margin-top: 15px;
   gap: 10px;
@@ -1438,6 +1441,9 @@ width: 65px;
     width: 100vw;
     
   }
+  .h2Second h2{
+    font-size: 1.8em;
+  }
 
   .description2 {
     width: 90vw;
@@ -1485,7 +1491,7 @@ width: 65px;
   }
 
   .h2supp2 {
-    font-size: 1.7em;
+    font-size: 1.4em;
     height: 10vh;
     width: 100vw;
     
@@ -1493,17 +1499,18 @@ width: 65px;
 
   .suppléments2 {
     height: 15vh;
-    width: 90vw;
+    width: 95vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 5px;
-    margin-top: -30px;
+    margin-top: -35px;
+    margin-left: -5px;
   }
 
   .suppléments2 .item {
-    height: 90px;
-    width: 90px;
+    height: 70px;
+  width: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1621,6 +1628,7 @@ width: 65px;
     height: 10vh; 
     width: 100vw; 
     margin-left: 40vw;
+    margin-top: -5vh;
   }
 
   .prix1 p{
@@ -1642,7 +1650,7 @@ width: 65px;
 
  
   .h2viande{
-    font-size: 1.6em;
+    font-size: 1.4em;
     height: 5vh;
     width: 100vw;
     margin-top: -2vh;
@@ -1654,19 +1662,19 @@ width: 65px;
  
   }
   .viandes .item{
-    height: 90px;
-    width: 90px;
+    height: 70px;
+    width: 70px;
   }
   .h2supp1{
-    font-size: 1.6em;
+    font-size: 1.4em;
     height: 5vh;
     width: 100vw;
     margin-top: -2vh;
   }
 
   .suppléments1 img, .viandes img {
-    height: 70px;
-    width: 70px; 
+    height: 60px;
+    width: 60px; 
   }
   .suppléments1{
     height: 15vh;
@@ -1677,8 +1685,8 @@ width: 65px;
   }
 
 .suppléments1 .item{
-  height: 90px;
-  width: 90px;
+  height: 70px;
+  width: 70px;
 }
   .optionsupp1{
     height: 10vh;
@@ -1686,14 +1694,15 @@ width: 65px;
 margin-top: 5px;
     gap: 5px;
     margin-left: 20px;
+    margin-top: -3vh;
   }
   .optionsupp1 span {
     font-size: 1.5em; 
   }
   .optionsupp1 p {
-    height: 70px;
-    width: 70px;
-    font-size: 1.5em; 
+    height: 50px;
+    width: 50px;
+    font-size: 1.2em; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1742,8 +1751,8 @@ text-align: center;
 }
 
 .responsiveSandwich img{
-  height: 270px;
-  width: 270px;
+  height: 200px;
+  width: 200px;
 }
 .titresandwich{
   width: 100vw;
@@ -1789,18 +1798,19 @@ font-size: 1.5em;
   height: 15vh; 
   width: 50vw; 
   margin-left: -40px;
+  margin-top: -3vh;
 
   /* margin: 120px 50px 50px 50px; */
 }
 
 
 .prixSandwich p{
-  height: 90px;
-  width: 90px;
-  font-size: 1.9em;
+  height: 70px;
+  width: 70px;
+  font-size: 1.4em;
 }
 .sandwichchaud p, .sandwichfroid p {
-  font-size: 3em;
+  font-size: 2.7em;
   color: white;
   padding: 2px 0;
 }
@@ -1821,6 +1831,7 @@ height: 70vh;
   height: 10vh;
   font-size: 0.5em;
   margin-left: 10vw;
+  margin-top: 5vh;
 }
 .sectionfroid{
   margin-left: 40px;
@@ -1833,8 +1844,8 @@ height: 70vh;
   font-size: 1.7em;
 }
 .supplémentsSandwich img {
-  height: 70px;
-  width: 70px; 
+  height: 60px;
+  width: 60px; 
 }
 .supplémentsSandwich{
   height: 15vh;
@@ -1843,8 +1854,8 @@ margin-left: 20px;
 }
 
 .supplémentsSandwich .item{
-  height: 90px;
-  width: 90px; 
+  height: 70px;
+  width: 70px;
 }
 .optionsuppSandwich{
   height: 10vh;
@@ -1857,9 +1868,9 @@ margin-left: 20px;
   font-size: 1.5em; 
 }
 .optionsuppSandwich p {
-  height: 70px;
-  width: 70px;
-  font-size: 1.5em; /* Taille de police pour le prix */
+  height: 50px;
+    width: 50px;
+  font-size: 1.2em; /* Taille de police pour le prix */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1947,30 +1958,30 @@ width: 90vw;
 }
 
 .h2supp3{
-  font-size: 1.7em;
+  font-size: 1.4em;
     height: 10vh;
     width: 100vw;
-  margin-top: -15px;
+  margin-top: 5vh;
 }
 
 .suppléments3 img {
-  height: 90px;
-  width: 90px; 
+  height: 60px;
+  width: 60px; 
 }
 .suppléments3{
   height: 15vh;
   width: 90vw;
-  margin-top: -30px;
+  margin-top: -10px;
 }
 .suppléments3 .item{
-  height: 90px;
-  width: 90px; 
+  height: 70px;
+  width: 70px;
 }
 
 .optionsupp3{
-  height: 10vh;
+  height: 15vh;
   width: 90vw;
-  margin-top: 15px;
+ 
   gap: 10px;
   margin-left: 20px;
 }
@@ -1980,8 +1991,8 @@ width: 90vw;
 }
 
 .optionsupp3 p {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   font-size: 1.2em; /* Taille de police pour le prix */
   display: flex;
   justify-content: center;

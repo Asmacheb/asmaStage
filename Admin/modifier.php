@@ -45,6 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modifier les Prix</title>
     <link rel="stylesheet" type="text/css" href="../Style/modifier.css">
+    <link rel="icon" href="../img/logosnack.png" type="image/png">
 </head>
 <body>
 <a href="deconnexion.php" class="deconnexion-btn">Déconnexion</a>

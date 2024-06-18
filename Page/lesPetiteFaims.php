@@ -10,7 +10,7 @@
 <body>
     <?php require_once '../menu.php'; ?> 
 <!-- NUGGETS -->
-    <div class="backNuggets">
+    <div class="backNuggets" id="nuggets">
         <div class="titre4">
           <div class="h2Quatre"><h2>LES NUGGETS</h2></div>
         </div> 
@@ -34,7 +34,7 @@
     </div>
 
     <!-- STICK MOZZA -->
-    <div class="backMozza">
+    <div class="backMozza" id="mozza">
         <div class="titre4">
           <div class="h2Quatre"><h2>STICK MOZZA</h2></div>
         </div> 
@@ -57,7 +57,7 @@
         </div>
     </div>
     <!-- OIGNONS RINGS -->
-    <div class="backOignons">
+    <div class="backOignons" id="oignons">
         <div class="titre4">
           <div class="h2Quatre"><h2>OIGNONS RINGS</h2></div>
         </div> 
@@ -80,7 +80,7 @@
         </div>
     </div>
     <!-- CHILI CHEESE -->
-    <div class="backChili">
+    <div class="backChili" id="chili">
         <div class="titre4">
           <div class="h2Quatre"><h2>CHILI CHEESE</h2></div>
         </div> 
@@ -103,7 +103,7 @@
         </div>
     </div>
     <!-- SALADE -->
-    <div class="backSalade">
+    <div class="backSalade" id="salade">
         <div class="titre2">
             <div class="h2Second">
            <div class="h2"> <h2>SALADE COMPOSÉ</h2></div>
