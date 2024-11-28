@@ -93,8 +93,20 @@
         height: 40px;
         display: block;
     }
+    button {
+      background: none; /* Supprime tout fond */
+      border: none; /* Supprime les bordures */
+      outline: none; /* Supprime les contours */
+      padding: 0; /* Supprime les paddings */
+      margin: 0; /* Supprime les marges */
+  }
+  
+  img {
+      background: none; /* Supprime tout fond */
+      border: none; /* Supprime les bordures */
+  }
   .navbar{
-    height: 50px;
+    height: 55px;
   }
     .navLogo img {
         width: 100%;
@@ -104,8 +116,20 @@
       transform: scale(1.08);
     }
     .burgerMenu {
-        display: none
-    }
+      display: block; /* Assurez-vous que le menu burger est visible sur mobile */
+      background: transparent; /* Supprime tout fond blanc */
+      border: none; /* Supprime toute bordure */
+      padding: 0; /* Supprime tout espace inutile */
+      margin: 0; /* Supprime toute marge inutile */
+  }
+  
+  .burger-menu img {
+      height: 40px;
+      width: 40px;
+      display: block; /* Affiche correctement l'image */
+      background: transparent; /* Supprime tout fond blanc */
+      border: none; /* Supprime toute bordure */
+  }
   
     .navMenu {
         display: none;
@@ -157,6 +181,7 @@
         height: 40px;
         width: 40px;
         display: none;
+        
     }
   
     .navMenu a, .menuDeroulant a {

@@ -118,11 +118,11 @@
   <div class="menu-section">
    <a href="../Page/lesBurgers.php"><h2 class="menu-title">LES BURGERS</h2></a>
     <div class="burgers">
-    <a href="../Page/lesBurgers.php#burgersimple"><img src="img/lesimple.png" alt="Le Burger simple"></a>
-    <a href="../Page/lesBurgers.php#fishburger"><img src="img/lefish.png" alt="Le Fish Burger"></a>
-    <a href="../Page/lesBurgers.php#smashburger"><img src="img/lesmash.png" alt="Le Smash Burger"></a>
-    <a href="../Page/lesBurgers.php#chickenburger"><img src="img/lechicken.png" alt="Le Chicken Burger"></a>
-    <a href="../Page/lesBurgers.php#royalburger"><img src="img/leroyal.png" alt="Le Royal Burger"></a>
+    <a href="./Page/lesBurgers.php#burgersimple"><img src="img/lesimple.png" alt="Le Burger simple"></a>
+    <a href="./Page/lesBurgers.php#fishburger"><img src="img/lefish.png" alt="Le Fish Burger"></a>
+    <a href="./Page/lesBurgers.php#smashburger"><img src="img/lesmash.png" alt="Le Smash Burger"></a>
+    <a href="./Page/lesBurgers.php#chickenburger"><img src="img/lechicken.png" alt="Le Chicken Burger"></a>
+    <a href="./Page/lesBurgers.php#royalburger"><img src="img/leroyal.png" alt="Le Royal Burger"></a>
     </div>
   </div>
   
