@@ -24,7 +24,7 @@
     transform: scale(1.08); 
   }
   .burgerMenu {
-    display: none; /* Cache le burger menu sur grand écran */
+    display: none; 
   }
   .deroulant{
     text-decoration: none;
@@ -35,7 +35,7 @@
     width: auto;
     position: static;
     background-color: transparent;
-    display: flex; /* Affiche le menu horizontalement */
+    display: flex; 
   }
   .submenu{
     list-style: none;
@@ -43,7 +43,7 @@
   .navMenu li {
     width: auto;
     padding: 10px 15px;
-    position: relative; /* Ajouté pour permettre le positionnement relatif du sous-menu */
+    position: relative; 
   }
   
   .menuDeroulant {
@@ -52,11 +52,11 @@
     background-color: #171816ba;
     padding: 10px;
     border-radius: 5px;
-    top: 100%; /* Positionne le sous-menu directement en dessous de son parent */
+    top: 100%; 
     left: 0;
-    list-style: none; /* Enlève les puces des listes */
-    padding: 0; /* Enlève le padding par défaut */
-    margin: 0; /* Enlève la marge par défaut */
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
   }
   
   .menuDeroulant li {
@@ -104,7 +104,7 @@
       transform: scale(1.08);
     }
     .burgerMenu {
-        display: block;
+        display: none
     }
   
     .navMenu {
@@ -117,7 +117,7 @@
         background-color: #171816ae;
         color: white;
         list-style: none;
-        z-index: 999; /* Assurez-vous que le menu est au-dessus des autres éléments */
+        z-index: 999; 
     }
   
     .navMenu.active {
@@ -129,11 +129,11 @@
         flex-direction: column;
         list-style: none;
         color: white;
-        /* background-color: #171816ae;  */
+       
     }
   
     .submenu .menuDeroulant {
-        position: static; /* Assurez-vous que les sous-menus sont positionnés statiquement */
+        position: static; 
     }
   
     .submenu:hover .menuDeroulant,
@@ -156,12 +156,13 @@
     .burger-menu img {
         height: 40px;
         width: 40px;
+        display: none;
     }
   
     .navMenu a, .menuDeroulant a {
         color: white;
         text-decoration: none;
-        padding: 10px; /* Ajoutez du padding pour les liens du menu */
+        padding: 10px;
     }
   
     .navMenu a:hover, .menuDeroulant a:hover {

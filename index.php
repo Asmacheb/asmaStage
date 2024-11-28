@@ -12,7 +12,7 @@
     <!-- Fournit une description de la page -->
     <meta property="og:description" content="Snack Loos, snack spécialisé dans la restaurations rapide, vous accueil à Loos 59120.">
 
-    <title>Accueil</title>
+    <title>Snack Loos</title>
     <!-- feuille de style CSS de la bibliothèque Leaflet pour les cartes interactives -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
@@ -44,9 +44,9 @@
 <div class="backAcceuil" id="home">
     <div class="navbar">
    <div class="burgerMenu">
-        <button class="burger-menu" onclick="toggleMenu()">
+        <!-- <button class="burger-menu" onclick="toggleMenu()">
             <img src="img/menuvert.png" alt="Menu">
-        </button>
+        </button> -->
     </div>
         <ul class="navMenu">
             <li class="sousmenu">
@@ -57,7 +57,7 @@
                         <li class="submenu">
                             <p><a href="./Page/lesBurgers.php" class="subdropbtn">BURGERS</a></p>
                             <ul class="deroulant">
-                                <li><a href="./Page/lesBurgers.php#burger simple">Burger Simple</a></li>
+                                <li><a href="./Page/lesBurgers.php#burgersimple">Burger Simple</a></li>
                                 <li><a href="./Page/lesBurgers.php#fishburger">Fish Burger</a></li>
                                 <li><a href="./Page/lesBurgers.php#smashburger">Smash Burger </a></li>
                                 <li><a href="./Page/lesBurgers.php#chickenburger">Chicken Burger </a></li>
@@ -104,9 +104,9 @@
         <ul class="navContacts">
             <li><a href="#contact" class="Le">Contacts</a></li>
         </ul>
-       <div class="avatar">
+       <!-- <div class="avatar">
         <a href="./Admin/connexion.php"><img src="./img/user.png" alt=""></a>
-       </div>
+       </div> -->
     </div>
 <div class="titre">
   <h1 id="title">SNACK LOOS</h1>

@@ -28,19 +28,19 @@ $conn = getDatabaseConnection();
       <div class="prix-container2">
       <div class="prix2">
       <?php
-                    try {
-                        $stmt = $conn->prepare("
-                            SELECT Prix.prix_seul, Prix.prix_menu 
-                            FROM Prix 
-                            JOIN Coûter ON Prix.id_prix = Coûter.id_prix 
-                            JOIN Food ON Coûter.id_food = Food.id_food 
-                            WHERE Food.nom_food = 'BURGER SIMPLE'
-                        ");
-                        $stmt->execute();
-                        $row = $stmt->fetch(PDO::FETCH_ASSOC);
-                    } catch (PDOException $e) {
-                        echo "Erreur : " . $e->getMessage();
-                    }
+                    // try {
+                    //     $stmt = $conn->prepare("
+                    //         SELECT Prix.prix_seul, Prix.prix_menu 
+                    //         FROM Prix 
+                    //         JOIN Coûter ON Prix.id_prix = Coûter.id_prix 
+                    //         JOIN Food ON Coûter.id_food = Food.id_food 
+                    //         WHERE Food.nom_food = 'BURGER SIMPLE'
+                    //     ");
+                    //     $stmt->execute();
+                    //     $row = $stmt->fetch(PDO::FETCH_ASSOC);
+                    // } catch (PDOException $e) {
+                    //     echo "Erreur : " . $e->getMessage();
+                    // }
                     ?>
                     <div class="option">
                         <span>SEUL</span>
@@ -111,19 +111,19 @@ $conn = getDatabaseConnection();
           <div class="prix-container2">
           <div class="prix2">
           <?php
-                    try {
-                        $stmt = $conn->prepare("
-                            SELECT Prix.prix_seul, Prix.prix_menu 
-                            FROM Prix 
-                            JOIN Coûter ON Prix.id_prix = Coûter.id_prix 
-                            JOIN Food ON Coûter.id_food = Food.id_food 
-                            WHERE Food.nom_food = 'FISH BURGER'
-                        ");
-                        $stmt->execute();
-                        $row = $stmt->fetch(PDO::FETCH_ASSOC);
-                    } catch (PDOException $e) {
-                        echo "Erreur : " . $e->getMessage();
-                    }
+                    // try {
+                    //     $stmt = $conn->prepare("
+                    //         SELECT Prix.prix_seul, Prix.prix_menu 
+                    //         FROM Prix 
+                    //         JOIN Coûter ON Prix.id_prix = Coûter.id_prix 
+                    //         JOIN Food ON Coûter.id_food = Food.id_food 
+                    //         WHERE Food.nom_food = 'FISH BURGER'
+                    //     ");
+                    //     $stmt->execute();
+                    //     $row = $stmt->fetch(PDO::FETCH_ASSOC);
+                    // } catch (PDOException $e) {
+                    //     echo "Erreur : " . $e->getMessage();
+                    // }
                     ?>
                     <div class="option">
                         <span>SEUL</span>
@@ -193,19 +193,19 @@ $conn = getDatabaseConnection();
           <div class="prix-container2">
           <div class="prix2">
           <?php
-                    try {
-                        $stmt = $conn->prepare("
-                            SELECT Prix.prix_seul, Prix.prix_menu 
-                            FROM Prix 
-                            JOIN Coûter ON Prix.id_prix = Coûter.id_prix 
-                            JOIN Food ON Coûter.id_food = Food.id_food 
-                            WHERE Food.nom_food = 'SMASH BURGER'
-                        ");
-                        $stmt->execute();
-                        $row = $stmt->fetch(PDO::FETCH_ASSOC);
-                    } catch (PDOException $e) {
-                        echo "Erreur : " . $e->getMessage();
-                    }
+                    // try {
+                    //     $stmt = $conn->prepare("
+                    //         SELECT Prix.prix_seul, Prix.prix_menu 
+                    //         FROM Prix 
+                    //         JOIN Coûter ON Prix.id_prix = Coûter.id_prix 
+                    //         JOIN Food ON Coûter.id_food = Food.id_food 
+                    //         WHERE Food.nom_food = 'SMASH BURGER'
+                    //     ");
+                    //     $stmt->execute();
+                    //     $row = $stmt->fetch(PDO::FETCH_ASSOC);
+                    // } catch (PDOException $e) {
+                    //     echo "Erreur : " . $e->getMessage();
+                    // }
                     ?>
                     <div class="option">
                         <span>SEUL</span>
@@ -275,19 +275,19 @@ $conn = getDatabaseConnection();
           <div class="prix-container2">
           <div class="prix2">
           <?php
-                    try {
-                        $stmt = $conn->prepare("
-                            SELECT Prix.prix_seul, Prix.prix_menu 
-                            FROM Prix 
-                            JOIN Coûter ON Prix.id_prix = Coûter.id_prix 
-                            JOIN Food ON Coûter.id_food = Food.id_food 
-                            WHERE Food.nom_food = 'CHICKEN BURGER'
-                        ");
-                        $stmt->execute();
-                        $row = $stmt->fetch(PDO::FETCH_ASSOC);
-                    } catch (PDOException $e) {
-                        echo "Erreur : " . $e->getMessage();
-                    }
+                    // try {
+                    //     $stmt = $conn->prepare("
+                    //         SELECT Prix.prix_seul, Prix.prix_menu 
+                    //         FROM Prix 
+                    //         JOIN Coûter ON Prix.id_prix = Coûter.id_prix 
+                    //         JOIN Food ON Coûter.id_food = Food.id_food 
+                    //         WHERE Food.nom_food = 'CHICKEN BURGER'
+                    //     ");
+                    //     $stmt->execute();
+                    //     $row = $stmt->fetch(PDO::FETCH_ASSOC);
+                    // } catch (PDOException $e) {
+                    //     echo "Erreur : " . $e->getMessage();
+                    // }
                     ?>
                     <div class="option">
                         <span>SEUL</span>
@@ -357,19 +357,19 @@ $conn = getDatabaseConnection();
           <div class="prix-container2">
           <div class="prix2">
           <?php
-                    try {
-                        $stmt = $conn->prepare("
-                            SELECT Prix.prix_seul, Prix.prix_menu 
-                            FROM Prix 
-                            JOIN Coûter ON Prix.id_prix = Coûter.id_prix 
-                            JOIN Food ON Coûter.id_food = Food.id_food 
-                            WHERE Food.nom_food = 'ROYAL BURGER'
-                        ");
-                        $stmt->execute();
-                        $row = $stmt->fetch(PDO::FETCH_ASSOC);
-                    } catch (PDOException $e) {
-                        echo "Erreur : " . $e->getMessage();
-                    }
+                    // try {
+                    //     $stmt = $conn->prepare("
+                    //         SELECT Prix.prix_seul, Prix.prix_menu 
+                    //         FROM Prix 
+                    //         JOIN Coûter ON Prix.id_prix = Coûter.id_prix 
+                    //         JOIN Food ON Coûter.id_food = Food.id_food 
+                    //         WHERE Food.nom_food = 'ROYAL BURGER'
+                    //     ");
+                    //     $stmt->execute();
+                    //     $row = $stmt->fetch(PDO::FETCH_ASSOC);
+                    // } catch (PDOException $e) {
+                    //     echo "Erreur : " . $e->getMessage();
+                    // }
                     ?>
                     <div class="option">
                         <span>SEUL</span>

@@ -19,6 +19,17 @@ body {
     margin-top: auto;
     font-size: 1em;
 }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%; /* S'assurer qu'elle ne dépasse pas */
+  overflow: hidden; /* Empêcher les débordements */
+  position: relative; /* Corrige les positionnements */
+  background-color: rgba(0, 0, 0, 0.8); /* Ajuster si besoin */
+}
+
 
   .burger-menu-container {
     position: fixed;
@@ -326,12 +337,12 @@ text-align: center;
   body {
     margin: 0;
     padding: 0;
-   
-
   }
+
 footer{
   font-size: 10px;
 }
+
   .backAcceuil {
     height: 100vh;
     width: 100vw;
@@ -345,6 +356,7 @@ footer{
 .avatar{
   display: none;
 }
+
   .titre {
     display: flex;
     justify-content: center;
@@ -353,7 +365,7 @@ footer{
     width: 100vw;
   
   }
-
+ 
   .titre h1 {
     font-size: 2.4em;
     color: white;
@@ -880,14 +892,15 @@ display: block;
 @media screen and (max-width: 767px) {
   
   .navLogo {
-      width: 40px;
-      height: 40px;
-      display: block;
+      width: 50px;
+      height: 50px;
+      display: none;
+   
   }
   
   .navbar{
     height: 40px;
-    width: 99vw;
+    width: 92vw;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -903,16 +916,16 @@ display: block;
   }
 
   .burgerMenu {
-      display: block;
+      display: none;
   }
   .burger-menu{
-    display: block;
+    display: none;
 
   }
    .burger-menu img {
         height: 40px;
         width: 40px;
-        
+        display: none;
     }
   .avatar img{
     height: 35px;
@@ -942,7 +955,7 @@ display: block;
       margin-top: 224px; 
       right: 0;
       margin-right: -15vw;
-     
+   
   }
 
 .menuDeroulant li {
@@ -953,7 +966,7 @@ display: block;
   list-style: none;
   font-size: 1em;
   right: 0;
- 
+
 }
 
 .soumenu{
