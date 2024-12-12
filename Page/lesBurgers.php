@@ -21,10 +21,10 @@ $conn = getDatabaseConnection();
     <div class="backSimple" id="burgersimple">
     <div class="titre2">
         <div class="h2Second">
-       <div class="h2"> <h2 id="burger_simple">BURGER SIMPLE</h2></div>
-       <div class="description2"> <p> Pain burger, un steack, salade, tomate, cheddar, sauce au choix.</p></div>
+       <!-- <div class="h2"> <h2 id="burger_simple">BURGER SIMPLE</h2></div> -->
+       <!-- <div class="description2"> <p> Pain burger, un steack, salade, tomate, cheddar, sauce au choix.</p></div> -->
       </div>
-      <div class="responsiveSimple"><img src="../img/imgsimple.png" alt="burger simple"></div>
+      <!-- <div class="responsiveSimple"><img src="../img/imgsimple.png" alt="burger simple"></div> -->
       <div class="prix-container2">
       <div class="prix2">
       <?php
@@ -44,17 +44,18 @@ $conn = getDatabaseConnection();
                     ?>
                     <div class="option">
                         <span>SEUL</span>
-                        <p><?php echo htmlspecialchars($row['prix_seul']) . "€"; ?></p>
+                        <p>3.50<?php echo htmlspecialchars($row['prix_seul']) . "€"; ?></p>
                     </div>
                     <div class="option">
                         <span>MENU</span>
-                        <p><?php echo htmlspecialchars($row['prix_menu']) . "€"; ?></p>
+                        <p>6.50<?php echo htmlspecialchars($row['prix_menu']) . "€"; ?></p>
                     </div>
                 </div>
             </div>
         </div>
  <div class="titresupp2">
-   <div class="h2supp2"><h2>SUPPLÉMENTS</h2></div>
+ <div class="description2"> <p> Pain burger, un steack, salade, tomate, cheddar, sauce au choix.</p></div>
+   <!-- <div class="h2supp2"><h2>SUPPLÉMENTS</h2></div>
     <div class="suppléments2">
         <div class="item">
             <img src="../img/chevre.png" alt="Fromage de Chèvre">
@@ -94,8 +95,9 @@ $conn = getDatabaseConnection();
     <div class="optionsupp2">
         <span>2 Suppléments</span>
         <p>1.50€</p>
-    </div>
+    </div> -->
 </div>
+
 </div>
     </div>
 
@@ -104,10 +106,10 @@ $conn = getDatabaseConnection();
     <div class="backFish" id="fishburger">
         <div class="titre2">
             <div class="h2Second">
-           <div class="h2"> <h2>FISH BURGER</h2></div>
-           <div class="description2"> <p> Pain burger, poisson pané, salade, tomate, cheddar, sauce au choix.</p></div>
+           <!-- <div class="h2"> <h2>FISH BURGER</h2></div> -->
+           <!-- <div class="description2"> <p> Pain burger, poisson pané, salade, tomate, cheddar, sauce au choix.</p></div> -->
            </div>
-           <div class="responsiveFish"><img src="../img/imgfish.png" alt="fish burger"></div>
+           <!-- <div class="responsiveFish"><img src="../img/imgfish.png" alt="fish burger"></div> -->
           <div class="prix-container2">
           <div class="prix2">
           <?php
@@ -137,7 +139,8 @@ $conn = getDatabaseConnection();
             </div>
         </div>
      <div class="titresupp2">
-       <div class="h2supp2"><h2>SUPPLÉMENTS</h2></div>
+     <div class="description2"> <p> Pain burger, poisson pané, salade, tomate, cheddar, sauce au choix.</p></div>
+       <!-- <div class="h2supp2"><h2>SUPPLÉMENTS</h2></div>
         <div class="suppléments2">
             <div class="item">
                 <img src="../img/chevre.png" alt="Fromage de Chèvre">
@@ -176,20 +179,20 @@ $conn = getDatabaseConnection();
         <div class="optionsupp2">
             <span>2 Suppléments</span>
             <p>1.50€</p>
-        </div>
+        </div> -->
+
     </div>
     </div>
-    
-    
         </div>
+        
     <!-- BURGER SMASH -->
     <div class="backSmash" id="smashburger">
         <div class="titre2">
             <div class="h2Second">
-           <div class="h2"> <h2>SMASH BURGER</h2></div>
-           <div class="description2"> <p> Pain brioché, deux steacks ou un filet de poulet , salade, tomate, cheddar, sauce au choix.</p></div>
+           <!-- <div class="h2"> <h2>SMASH BURGER</h2></div> -->
+           <!-- <div class="description2"> <p> Pain brioché, deux steacks ou un filet de poulet , salade, tomate, cheddar, sauce au choix.</p></div> -->
            </div>
-           <div class="responsiveSmash"><img src="../img/imgsmash.png" alt="smash burger"></div>
+           <!-- <div class="responsiveSmash"><img src="../img/imgsmash.png" alt="smash burger"></div> -->
           <div class="prix-container2">
           <div class="prix2">
           <?php
@@ -219,7 +222,8 @@ $conn = getDatabaseConnection();
             </div>
         </div>
      <div class="titresupp2">
-       <div class="h2supp2"><h2>SUPPLÉMENTS</h2></div>
+     <div class="description2"> <p> Pain brioché, deux steacks ou un filet de poulet , salade, tomate, cheddar, sauce au choix.</p></div>
+       <!-- <div class="h2supp2"><h2>SUPPLÉMENTS</h2></div>
        <div class="suppléments2">
             <div class="item">
                 <img src="../img/chevre.png" alt="Fromage de Chèvre">
@@ -258,7 +262,7 @@ $conn = getDatabaseConnection();
         <div class="optionsupp2">
             <span>2 Suppléments</span>
             <p>1.50€</p>
-        </div>
+        </div> -->
     </div>
     </div>
     
@@ -268,10 +272,10 @@ $conn = getDatabaseConnection();
     <div class="backChicken" id="chickenburger">
         <div class="titre2">
             <div class="h2Second">
-           <div class="h2"> <h2>CHICKEN BURGER</h2></div>
-           <div class="description2"> <p> Pain burger, un steack, salade, tomate, cheddar, sauce au choix.</p></div>
+           <!-- <div class="h2"> <h2>CHICKEN BURGER</h2></div> -->
+           <!-- <div class="description2"> <p> Pain burger, un steack, salade, tomate, cheddar, sauce au choix.</p></div> -->
           </div>
-          <div class="responsiveChicken"><img src="../img/imgchicken.png" alt="chicken burger"></div>
+          <!-- <div class="responsiveChicken"><img src="../img/imgchicken.png" alt="chicken burger"></div> -->
           <div class="prix-container2">
           <div class="prix2">
           <?php
@@ -301,7 +305,8 @@ $conn = getDatabaseConnection();
             </div>
         </div>
      <div class="titresupp2">
-       <div class="h2supp2"><h2>SUPPLÉMENTS</h2></div>
+     <div class="description2"> <p> Pain burger, un steack, salade, tomate, cheddar, sauce au choix.</p></div>
+       <!-- <div class="h2supp2"><h2>SUPPLÉMENTS</h2></div>
        <div class="suppléments2">
             <div class="item">
                 <img src="../img/chevre.png" alt="Fromage de Chèvre">
@@ -340,7 +345,7 @@ $conn = getDatabaseConnection();
         <div class="optionsupp2">
             <span>2 Suppléments</span>
             <p>1.50€</p>
-        </div>
+        </div> -->
     </div>
     </div>
     
@@ -350,10 +355,10 @@ $conn = getDatabaseConnection();
     <div class="backRoyal" id="royalburger">
         <div class="titre2">
             <div class="h2Second">
-           <div class="h2"> <h2>ROYAL BURGER</h2></div>
-           <div class="description2"> <p> Pain burger, un steack, salade, tomate, cheddar, sauce au choix.</p></div>
+           <!-- <div class="h2"> <h2>ROYAL BURGER</h2></div> -->
+           <!-- <div class="description2"> <p> Pain burger, un steack, salade, tomate, cheddar, sauce au choix.</p></div> -->
           </div>
-          <div class="responsiveRoyal"><img src="../img/imgroyal.png" alt="burger royal"></div>
+          <!-- <div class="responsiveRoyal"><img src="../img/imgroyal.png" alt="burger royal"></div> -->
           <div class="prix-container2">
           <div class="prix2">
           <?php
@@ -383,7 +388,8 @@ $conn = getDatabaseConnection();
             </div>
         </div>
      <div class="titresupp2">
-       <div class="h2supp2"><h2>SUPPLÉMENTS</h2></div>
+     <div class="description2"> <p> Pain burger, un steack, salade, tomate, cheddar, sauce au choix.</p></div>
+       <!-- <div class="h2supp2"><h2>SUPPLÉMENTS</h2></div>
        <div class="suppléments2">
             <div class="item">
                 <img src="../img/chevre.png" alt="Fromage de Chèvre">
@@ -422,7 +428,7 @@ $conn = getDatabaseConnection();
         <div class="optionsupp2">
             <span>2 Suppléments</span>
             <p>1.50€</p>
-        </div>
+        </div> -->
     </div>
     </div>
         </div>

@@ -44,9 +44,11 @@
 <div class="backAcceuil" id="home">
     <div class="navbar">
    <div class="burgerMenu">
+    <p>Menus</p>
         <!-- <button class="burger-menu" onclick="toggleMenu()">
             <img src="img/menuvert.png" alt="Menu">
         </button> -->
+        
     </div>
         <ul class="navMenu">
             <li class="sousmenu">
@@ -176,7 +178,7 @@
     <p>Du Lundi au Samedi: 11h/14h 18h/22h</p>
     <p>Dimanche: Fermé</p>
     <p>Place du Général de Gaulle Loos, 59120</p>
-    <p>09.52.67.14.63</p>
+    <p class="tel">09 52 67 14 63</p>
    </div>
    <div class="reseaux">
     <div class="box">
@@ -194,7 +196,7 @@
   </div>
 </div>
 </div>
-<footer><p>© 2024 Snack Loos - Tous droits réservés - Conception et dévloppement par Chebaiki Asma</p>
+<footer><p>© 2024 Snack Loos - Tous droits réservés - Conception et dévloppement par C.A</p>
 </footer>
 
 <script src="./script.js"></script>

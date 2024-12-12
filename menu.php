@@ -7,7 +7,8 @@
         
         <div class="burgerMenu">
             <button class="burger-menu" onclick="toggleMenu()">
-                <img src="../img/menuvert.png" alt="Menu">
+           <p class="Menus">MENUS</p>
+                <!-- <img src="./img/menuvert.png" alt="Menu"> -->
             </button>
         </div>
         <ul class="navMenu">
